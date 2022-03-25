@@ -16,6 +16,7 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
+    <class path="..\_myPackages\utils" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -31,7 +32,9 @@
     <library name="lrs" />
     <library name="xapi" />
     <library name="thx.core" />
-    <library name="msignal" />
+    <library name="xapi" />
+    <library name="tstool" />
+    <library name="signals" />
   </haxelib>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>

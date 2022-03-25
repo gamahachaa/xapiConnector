@@ -1,6 +1,6 @@
 %1
 
-robocopy bin "C:\xampp\htdocs\localhost\php\mail" * /E 
+rem robocopy bin "C:\xampp\htdocs\localhost\php\mail" * /E 
 set BINDIR=%cd%\bin\
 
 
