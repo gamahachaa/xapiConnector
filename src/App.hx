@@ -10,8 +10,8 @@ import php.Web;
 import xapi.Activity;
 import xapi.Agent;
 import xapi.Context;
-import xapi.Param;
-import xapi.Result;
+import xapi.Params;
+import xapi.Results;
 import xapi.Statement;
 import xapi.Verb;
 import xapi.activities.Definition;
@@ -29,7 +29,7 @@ class App
 	var resultMessageBack:Map<String,Dynamic>;
 	var _maindebug:Bool;
 	var lrs:LearninLocker;
-
+   
 	
 
 
@@ -41,13 +41,15 @@ class App
 
 		params = Lib.hashOfAssociativeArray(SuperGlobal._REQUEST);
 		resultMessageBack = [];
-		resultMessageBack.set(Result.STATUS, Result.FAILED_VALUE);
+		resultMessageBack.set(Results.STATUS, Results.FAILED_VALUE);
 		/*******************************
 		 * Init local var
 		/*******************************/
 		var location = Web.getHostName();
-		_maindebug = location.indexOf("test.salt.ch") >-1;
-		if (!params.exists(Param.LRS))
+		//_maindebug = location.indexOf("test.salt.ch") >-1 || params.exists("debug");
+		_maindebug = params.exists("debug");
+		if (_maindebug) trace("debug");
+		if (!params.exists(Params.LRS))
 		{
 			lrs = if (_maindebug)
 			{
@@ -60,7 +62,7 @@ class App
 		}
 		else
 		{
-			lrs = cast(Unserializer.run(params.get(Param.LRS)), LearninLocker);
+			lrs = cast(Unserializer.run(params.get(Params.LRS)), LearninLocker);
 		}
 		/*************************************
 		 * Setup async listeners
@@ -69,14 +71,14 @@ class App
 		lrs.errorStatus.add(onError);
 		lrs.signalStatus.add(onStatus);
 		//lrs.onLrsTestSignal.add(onLRSTest);
-
-		if (params.exists(Param.STATEMENT))
+        
+		if (params.exists(Params.STATEMENT))
 		{
-			sendStatement( params.get(Param.STATEMENT));
+			sendStatement( params.get(Params.STATEMENT));
 		}
-		else if (params.exists(Param.STATEMENTS))
+		else if (params.exists(Params.STATEMENTS))
 		{
-			sendStatements( params.get(Param.STATEMENTS));
+			sendStatements( params.get(Params.STATEMENTS));
 		}
 		else
 		{
@@ -98,6 +100,7 @@ class App
 			#end
 			*/
 		}
+		
 	}
 	/*function prepareStatement(stmts:Array<Statement>)
 	{
@@ -128,10 +131,12 @@ class App
 	
 	function sendStatements(stmt:String)
 	{
+
 		var debugStage = 0;
 		try
 		{
-			var statements = cast (Unserializer.run(stmt), Array<Dynamic>);
+			var statements = cast (Unserializer.run(stmt.urlDecode()), Array<Dynamic>);
+
 			var stmts:Array<Statement> = [];
 			for (i in statements)
 			{
@@ -140,16 +145,17 @@ class App
 			debugStage++;
 
 			lrs.postStatements(stmts);
+
 			//Lib.print(Json.stringify(resultMessageBack));
 			debugStage++;
 		}
 		catch (e:Exception)
 		{
 			//trace(e.message);
-			resultMessageBack.set( Result.MESSAGE, e.message);
-			resultMessageBack.set( Result.DETAILS, e.details);
-			resultMessageBack.set( Result.NATIVE, e.native);
-			resultMessageBack.set( Result.STAGE, debugStage);
+			resultMessageBack.set( Results.MESSAGE, e.message);
+			resultMessageBack.set( Results.DETAILS, e.details);
+			resultMessageBack.set( Results.NATIVE, e.native);
+			resultMessageBack.set( Results.STAGE, debugStage);
 			//resultMessageBack.set("native", e.previous);
 			Lib.print(Json.stringify(resultMessageBack));
 		}
@@ -160,6 +166,7 @@ class App
 	 */
 	function sendStatement(stmt:String)
 	{
+
 		var stage = 0;
 		try
 		{
@@ -173,10 +180,10 @@ class App
 		catch (e:Exception)
 		{
 			//trace(e.message);
-			resultMessageBack.set(Result.MESSAGE, e.message);
-			resultMessageBack.set(Result.DETAILS, e.details);
-			resultMessageBack.set(Result.NATIVE, e.native);
-			resultMessageBack.set(Result.STAGE, stage);
+			resultMessageBack.set(Results.MESSAGE, e.message);
+			resultMessageBack.set(Results.DETAILS, e.details);
+			resultMessageBack.set(Results.NATIVE, e.native);
+			resultMessageBack.set(Results.STAGE, stage);
 			//resultMessageBack.set("native", e.previous);
 			Lib.print(Json.stringify(resultMessageBack));
 		}
@@ -189,11 +196,11 @@ class App
 		#end
 		if (status == 200)
 		{
-			resultMessageBack.set(Result.STATUS,  Result.SUCCESS_VALUE);
+			resultMessageBack.set(Results.STATUS,  Results.SUCCESS_VALUE);
 		}
 		else
 		{
-			resultMessageBack.set(Result.STATUS,  Result.FAILED_VALUE);
+			resultMessageBack.set(Results.STATUS,  Results.FAILED_VALUE);
 		}
 	}
 
@@ -202,7 +209,7 @@ class App
 		#if debug
 		//if(!_maindebug) trace("App::onError::msg", Std.string(msg) );
 		#end
-		resultMessageBack.set(Result.MESSAGE, msg);
+		resultMessageBack.set(Results.MESSAGE, msg);
 		Lib.print(Json.stringify(resultMessageBack));
 	}
 
@@ -211,7 +218,7 @@ class App
 		#if debug
 		//if(!_maindebug) trace("App::onData::data", Json.parse( data ));
 		#end
-		resultMessageBack.set(Result.STATEMENT_IDS, Json.parse(data));
+		resultMessageBack.set(Results.STATEMENT_IDS, Json.parse(data));
 		Lib.print(Json.stringify(resultMessageBack));
 	}
 
