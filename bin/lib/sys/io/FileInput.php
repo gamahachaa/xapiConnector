@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\std/php/_std/sys/io/FileInput.hx
  */
 
 namespace sys\io;

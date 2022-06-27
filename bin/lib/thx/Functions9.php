@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx
  */
 
 namespace thx;
@@ -14,11 +13,11 @@ class Functions9 {
 	 * @return \Closure
 	 */
 	public static function curry ($f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:308: lines 308-312
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:291: characters 5-134
 		return function ($a, $b, $c, $d, $e, $f0, $g, $h) use (&$f) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:309: lines 309-311
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:291: characters 72-132
 			return function ($i) use (&$f, &$g, &$c, &$e, &$f0, &$b, &$d, &$a, &$h) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:310: characters 5-41
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:291: characters 93-129
 				return $f($a, $b, $c, $d, $e, $f0, $g, $h, $i);
 			};
 		};

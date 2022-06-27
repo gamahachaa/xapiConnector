@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx
  */
 
 namespace thx;
@@ -20,10 +19,11 @@ class Functions0 {
 	 * @return \Closure
 	 */
 	public static function after ($callback, $n) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:16: lines 16-17
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:16: lines 16-18
 		return function () use (&$n, &$callback) {
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:17: lines 17-18
 			if (($n -= 1) === 0) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:17: characters 4-14
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:18: characters 9-19
 				$callback();
 			}
 		};
@@ -38,11 +38,11 @@ class Functions0 {
 	 * @return \Closure
 	 */
 	public static function join ($fa, $fb) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:23: lines 23-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:23: lines 23-26
 		return function () use (&$fb, &$fa) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:24: characters 4-8
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:24: characters 7-11
 			$fa();
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:25: characters 4-8
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:25: characters 7-11
 			$fb();
 		};
 	}
@@ -55,16 +55,16 @@ class Functions0 {
 	 * @return \Closure
 	 */
 	public static function memoize ($callback) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:32: characters 3-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:32: characters 5-30
 		$result = null;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:33: lines 33-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:33: lines 33-37
 		return function () use (&$result, &$callback) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:34: lines 34-35
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:34: lines 34-35
 			if ($result === null) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:35: characters 5-24
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:35: characters 9-28
 				$result = $callback();
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:36: characters 4-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:36: characters 7-20
 			return $result;
 		};
 	}
@@ -77,9 +77,9 @@ class Functions0 {
 	 * @return \Closure
 	 */
 	public static function negate ($callback) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:55: characters 3-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:55: lines 55-56
 		return function () use (&$callback) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:55: characters 21-39
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:56: characters 7-25
 			return !$callback();
 		};
 	}
@@ -93,13 +93,13 @@ class Functions0 {
 	 * @return \Closure
 	 */
 	public static function once ($f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:45: lines 45-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:45: lines 45-49
 		return function () use (&$f) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:46: characters 4-14
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:46: characters 7-17
 			$t = $f;
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:47: characters 4-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:47: characters 7-25
 			$f = Boot::getStaticClosure(Functions::class, 'noop');
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:48: characters 4-7
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:48: characters 7-10
 			$t();
 		};
 	}
@@ -113,9 +113,9 @@ class Functions0 {
 	 * @return \Closure
 	 */
 	public static function times ($n, $callback) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:61: characters 3-76
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:62: lines 62-63
 		return function () use (&$n, &$callback) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:61: characters 28-76
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:63: characters 14-62
 			$_this = Ints::range($n);
 			$result = [];
 			$data = $_this->arr;
@@ -140,9 +140,9 @@ class Functions0 {
 	 * @return \Closure
 	 */
 	public static function timesi ($n, $callback) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:69: characters 3-77
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:71: lines 71-72
 		return function () use (&$n, &$callback) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:69: characters 28-77
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:72: characters 14-63
 			$_this = Ints::range($n);
 			$result = [];
 			$data = $_this->arr;

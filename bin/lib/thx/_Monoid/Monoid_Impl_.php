@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Monoid.hx
  */
 
 namespace thx\_Monoid;
@@ -17,7 +16,7 @@ final class Monoid_Impl_ {
 	 * @return mixed
 	 */
 	public static function append ($this1, $a0, $a1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Monoid.hx:22: characters 3-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Monoid.hx:18: characters 5-31
 		return $this1->append($a0, $a1);
 	}
 
@@ -27,7 +26,7 @@ final class Monoid_Impl_ {
 	 * @return \Closure
 	 */
 	public static function get_semigroup ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Monoid.hx:14: characters 3-21
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Monoid.hx:12: characters 42-60
 		return $this1->append;
 	}
 
@@ -37,7 +36,7 @@ final class Monoid_Impl_ {
 	 * @return mixed
 	 */
 	public static function get_zero ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Monoid.hx:19: characters 3-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Monoid.hx:15: characters 23-39
 		return $this1->zero;
 	}
 }

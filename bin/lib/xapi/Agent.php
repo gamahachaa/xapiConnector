@@ -1,14 +1,11 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx
  */
 
 namespace xapi;
 
-use \php\_Boot\HxAnon;
 use \php\Boot;
 use \haxe\Exception;
-use \haxe\Log;
 use \xapi\types\IActor;
 use \php\_Boot\HxString;
 use \xapi\types\Standards;
@@ -32,6 +29,24 @@ class Agent implements IActor {
 	public $objectType;
 
 	/**
+	 * @param mixed $json
+	 * 
+	 * @return Agent
+	 */
+	public static function FROM_JSON ($json) {
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:80: lines 80-85
+		try {
+			#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:81: characters 16-43
+			$tmp = \Reflect::field($json, "mbox");
+			#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:81: characters 6-73
+			return new Agent($tmp, \Reflect::field($json, "name"));
+		} catch(\Throwable $_g) {
+			#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:84: characters 4-8
+			return null;
+		}
+	}
+
+	/**
 	 * @todo create function to create instance from JSON
 	 * @param	email
 	 * @param	name
@@ -50,8 +65,6 @@ class Agent implements IActor {
 		$this->objectType = "Agent";
 		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:27: characters 3-12
 		$this->mbox = "";
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:29: characters 3-8
-		(Log::$trace)("Agent.Agent :: ", new _HxAnon_Agent0("xapi/Agent.hx", 29, "xapi.Agent", "new", \Array_hx::wrap([$email])));
 		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:31: lines 31-32
 		if (HxString::indexOf($email, "mailto:") === -1) {
 			#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:32: characters 4-20
@@ -77,7 +90,7 @@ class Agent implements IActor {
 	 * @return string
 	 */
 	public function getActorUrl () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:46: characters 3-78
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:50: characters 3-78
 		return "&actor=" . (\rawurlencode("{\"name\":\"" . ($this->get_name()??'null') . "\",\"mbox\":\"" . ($this->get_mbox()??'null') . "\"}")??'null');
 	}
 
@@ -85,7 +98,7 @@ class Agent implements IActor {
 	 * @return string
 	 */
 	public function getFirstName () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:51: characters 3-62
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:55: characters 3-62
 		return \StringTools::replace((HxString::split($this->get_mbox(), ".")->arr[0] ?? null), "mailto:", "");
 	}
 
@@ -93,15 +106,23 @@ class Agent implements IActor {
 	 * @return string
 	 */
 	public function getLastName () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:58: characters 3-42
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:62: characters 3-42
 		return (HxString::split((HxString::split($this->get_mbox(), ".")->arr[1] ?? null), "@")->arr[0] ?? null);
 	}
 
 	/**
 	 * @return string
 	 */
+	public function getSimpleEmail () {
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:46: characters 3-49
+		return \StringTools::replace($this->get_mbox(), "mailto:", "");
+	}
+
+	/**
+	 * @return string
+	 */
 	public function get_mbox () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:67: characters 3-14
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:71: characters 3-14
 		return $this->mbox;
 	}
 
@@ -109,7 +130,7 @@ class Agent implements IActor {
 	 * @return string
 	 */
 	public function get_name () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:62: characters 3-14
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:66: characters 3-14
 		return $this->name;
 	}
 
@@ -117,18 +138,8 @@ class Agent implements IActor {
 	 * @return string
 	 */
 	public function get_objectType () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:72: characters 3-20
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:76: characters 3-20
 		return $this->objectType;
-	}
-}
-
-class _HxAnon_Agent0 extends HxAnon {
-	function __construct($fileName, $lineNumber, $className, $methodName, $customParams) {
-		$this->fileName = $fileName;
-		$this->lineNumber = $lineNumber;
-		$this->className = $className;
-		$this->methodName = $methodName;
-		$this->customParams = $customParams;
 	}
 }
 

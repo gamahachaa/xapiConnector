@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx
  */
 
 namespace xapi;
@@ -19,7 +18,7 @@ class BadEmailFormat {
 	 * @return void
 	 */
 	public function __construct ($mail) {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:94: characters 3-20
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:107: characters 3-20
 		$this->email = $mail;
 	}
 
@@ -27,7 +26,7 @@ class BadEmailFormat {
 	 * @return string
 	 */
 	public function get_email () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:98: characters 3-15
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:111: characters 3-15
 		return $this->email;
 	}
 }

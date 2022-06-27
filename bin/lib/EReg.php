@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\std/php/_std/EReg.hx
  */
 
 use \php\_Boot\HxAnon;

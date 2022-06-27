@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx
  */
 
 namespace thx\_Ord;
@@ -16,9 +15,9 @@ final class Ord_Impl_ {
 	 * @return \Closure
 	 */
 	public static function contramap ($this1, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:67: lines 67-69
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:64: characters 5-59
 		return function ($b0, $b1) use (&$f, &$this1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:68: characters 4-29
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:64: characters 31-56
 			return $this1($f($b0), $f($b1));
 		};
 	}
@@ -31,7 +30,7 @@ final class Ord_Impl_ {
 	 * @return bool
 	 */
 	public static function equal ($this1, $a0, $a1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:64: characters 3-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:61: characters 5-30
 		return $this1($a0, $a1) === OrderingImpl::EQ();
 	}
 
@@ -39,9 +38,9 @@ final class Ord_Impl_ {
 	 * @return \Closure
 	 */
 	public static function forComparable () {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:89: lines 89-91
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:80: characters 5-77
 		return function ($a, $b) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:90: characters 4-43
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:80: characters 35-74
 			return Ordering_Impl_::fromInt($a->compareTo($b));
 		};
 	}
@@ -50,9 +49,9 @@ final class Ord_Impl_ {
 	 * @return \Closure
 	 */
 	public static function forComparableOrd () {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:94: lines 94-96
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:83: characters 5-59
 		return function ($a, $b) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:95: characters 4-25
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:83: characters 35-56
 			return $a->compareTo($b);
 		};
 	}
@@ -63,9 +62,9 @@ final class Ord_Impl_ {
 	 * @return \Closure
 	 */
 	public static function fromIntComparison ($f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:84: lines 84-86
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:77: characters 5-72
 		return function ($a, $b) use (&$f) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:85: characters 4-36
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:77: characters 37-69
 			return Ordering_Impl_::fromInt($f($a, $b));
 		};
 	}
@@ -78,16 +77,16 @@ final class Ord_Impl_ {
 	 * @return int
 	 */
 	public static function intComparison ($this1, $a0, $a1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:77: characters 17-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:70: characters 19-31
 		$__hx__switch = ($this1($a0, $a1)->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:78: characters 13-15
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:71: characters 16-18
 			return -1;
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:80: characters 13-14
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:73: characters 16-17
 			return 1;
 		} else if ($__hx__switch === 2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:79: characters 13-14
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:72: characters 16-17
 			return 0;
 		}
 	}
@@ -98,9 +97,9 @@ final class Ord_Impl_ {
 	 * @return \Closure
 	 */
 	public static function inverse ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:72: lines 72-74
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:67: characters 5-59
 		return function ($a0, $a1) use (&$this1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:73: characters 4-23
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:67: characters 37-56
 			return $this1($a1, $a0);
 		};
 	}
@@ -113,13 +112,13 @@ final class Ord_Impl_ {
 	 * @return mixed
 	 */
 	public static function max ($this1, $a0, $a1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:52: characters 17-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:49: characters 19-31
 		$__hx__switch = ($this1($a0, $a1)->index);
 		if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:54: characters 13-15
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:51: characters 16-18
 			return $a0;
 		} else if ($__hx__switch === 0 || $__hx__switch === 2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:53: characters 18-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:50: characters 21-23
 			return $a1;
 		}
 	}
@@ -132,13 +131,13 @@ final class Ord_Impl_ {
 	 * @return mixed
 	 */
 	public static function min ($this1, $a0, $a1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:58: characters 17-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:55: characters 19-31
 		$__hx__switch = ($this1($a0, $a1)->index);
 		if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:60: characters 13-15
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:57: characters 16-18
 			return $a1;
 		} else if ($__hx__switch === 0 || $__hx__switch === 2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:59: characters 18-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:56: characters 21-23
 			return $a0;
 		}
 	}
@@ -151,7 +150,7 @@ final class Ord_Impl_ {
 	 * @return OrderingImpl
 	 */
 	public static function order ($this1, $a0, $a1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:49: characters 3-22
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:46: characters 5-24
 		return $this1($a0, $a1);
 	}
 }

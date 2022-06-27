@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx
  */
 
 namespace thx;
@@ -25,7 +24,7 @@ class Iterables {
 	 * @return bool
 	 */
 	public static function all ($it, $predicate) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:24: characters 3-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:24: characters 5-51
 		return Iterators::all($it->iterator(), $predicate);
 	}
 
@@ -38,7 +37,7 @@ class Iterables {
 	 * @return bool
 	 */
 	public static function any ($it, $predicate) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:30: characters 3-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:30: characters 5-51
 		return Iterators::any($it->iterator(), $predicate);
 	}
 
@@ -53,24 +52,24 @@ class Iterables {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function differenceBy ($a, $b, $eq) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:283: characters 3-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:278: characters 5-28
 		$res = new \Array_hx();
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:284: characters 13-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:279: characters 15-27
 		$e = $a->iterator();
 		while ($e->hasNext()) {
 			unset($e1);
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:284: lines 284-287
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:279: lines 279-282
 			$e1 = $e->next();
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:285: lines 285-286
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:280: lines 280-281
 			if (!Iterables::any($b, function ($x) use (&$e1, &$eq) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:285: characters 30-54
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:280: characters 35-58
 				return $eq($x, $e1);
 			})) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:286: characters 5-16
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:281: characters 9-20
 				$res->arr[$res->length++] = $e1;
 			}
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:288: characters 3-13
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:283: characters 5-15
 		return $res;
 	}
 
@@ -83,21 +82,21 @@ class Iterables {
 	 * @return object
 	 */
 	public static function dropLeft ($itr, $n) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:238: lines 238-252
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:234: lines 234-248
 		return new _HxAnon_Iterables0(function () use (&$itr, &$n) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:240: characters 5-30
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:236: characters 9-36
 			$itr1 = $itr->iterator();
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:241: characters 5-19
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:237: characters 9-23
 			$count = $n;
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:242: lines 242-246
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:238: lines 238-242
 			while ($count > 0) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:243: lines 243-245
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:239: lines 239-241
 				if ($itr1->hasNext()) {
-					#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:244: characters 7-17
+					#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:240: characters 13-23
 					$itr1->next();
 				}
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:247: lines 247-250
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:243: lines 243-246
 			return new _HxAnon_Iterables1(Boot::getInstanceClosure($itr1, 'next'), Boot::getInstanceClosure($itr1, 'hasNext'));
 		});
 	}
@@ -111,7 +110,7 @@ class Iterables {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function dropUntil ($it, $fn) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:259: characters 3-48
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:254: characters 5-49
 		return Iterators::dropUntil($it->iterator(), $fn);
 	}
 
@@ -124,7 +123,7 @@ class Iterables {
 	 * @return void
 	 */
 	public static function eachPair ($it, $handler) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:36: characters 10-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:36: characters 12-54
 		Iterators::eachPair($it->iterator(), $handler);
 	}
 
@@ -139,7 +138,7 @@ class Iterables {
 	 * @return bool
 	 */
 	public static function equals ($a, $b, $equality = null) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:44: characters 3-64
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:44: characters 5-66
 		return Iterators::equals($a->iterator(), $b->iterator(), $equality);
 	}
 
@@ -153,7 +152,7 @@ class Iterables {
 	 * @return Option
 	 */
 	public static function extrema ($it, $ord) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:225: characters 3-48
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:222: characters 5-50
 		return Iterables::extremaBy($it, Boot::getStaticClosure(Functions::class, 'identity'), $ord);
 	}
 
@@ -169,46 +168,46 @@ class Iterables {
 	 * @return Option
 	 */
 	public static function extremaBy ($it, $f, $ord) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:208: characters 3-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:205: characters 5-44
 		$found = Option::None();
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:209: characters 13-15
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:206: characters 15-17
 		$a = $it->iterator();
 		while ($a->hasNext()) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:209: lines 209-216
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:206: lines 206-213
 			$a1 = $a->next();
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:210: lines 210-215
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:207: lines 207-212
 			$__hx__switch = ($found->index);
 			if ($__hx__switch === 0) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:213: characters 15-16
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:210: characters 19-20
 				$_g = $found->params[0];
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:212: characters 15-16
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:209: characters 19-20
 				$t = $_g;
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:212: lines 212-214
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:209: lines 209-211
 				if ($ord($f($a1), $f($t->_0)) === OrderingImpl::LT()) {
-					#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:212: characters 54-72
+					#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:209: characters 58-76
 					$this1 = new _HxAnon_Iterables2($a1, $t->_1);
-					#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:212: characters 49-73
+					#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:209: characters 53-77
 					$found = Option::Some($this1);
 				} else {
-					#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:213: characters 15-16
+					#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:210: characters 19-20
 					$t1 = $_g;
-					#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:213: lines 213-214
+					#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:210: lines 210-211
 					if ($ord($f($a1), $f($t1->_1)) === OrderingImpl::GT()) {
-						#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:213: characters 54-72
+						#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:210: characters 58-76
 						$this2 = new _HxAnon_Iterables2($t1->_0, $a1);
-						#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:213: characters 49-73
+						#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:210: characters 53-77
 						$found = Option::Some($this2);
 					}
 				}
 			} else if ($__hx__switch === 1) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:211: characters 21-36
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:208: characters 25-40
 				$this3 = new _HxAnon_Iterables2($a1, $a1);
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:211: characters 16-37
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:208: characters 20-41
 				$found = Option::Some($this3);
 			} else {
 			}
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:217: characters 3-15
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:214: characters 5-17
 		return $found;
 	}
 
@@ -221,7 +220,7 @@ class Iterables {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function filter ($it, $predicate) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:50: characters 3-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:50: characters 5-54
 		return Iterators::filter($it->iterator(), $predicate);
 	}
 
@@ -234,7 +233,7 @@ class Iterables {
 	 * @return mixed
 	 */
 	public static function find ($it, $predicate) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:56: characters 3-50
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:56: characters 5-52
 		return Iterators::find($it->iterator(), $predicate);
 	}
 
@@ -247,7 +246,7 @@ class Iterables {
 	 * @return Option
 	 */
 	public static function findOption ($it, $predicate) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:62: characters 10-46
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:62: characters 12-48
 		$value = Iterators::find($it->iterator(), $predicate);
 		if (null === $value) {
 			return Option::None();
@@ -264,7 +263,7 @@ class Iterables {
 	 * @return mixed
 	 */
 	public static function first ($it) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:68: characters 3-40
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:68: characters 5-42
 		return Iterators::first($it->iterator());
 	}
 
@@ -277,9 +276,9 @@ class Iterables {
 	 * @return object
 	 */
 	public static function fmap ($it, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:129: characters 3-72
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:128: characters 5-76
 		return new _HxAnon_Iterables0(function () use (&$f, &$it) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:129: characters 32-71
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:128: characters 35-74
 			return Iterators::fmap($it->iterator(), $f);
 		});
 	}
@@ -293,9 +292,9 @@ class Iterables {
 	 * @return object
 	 */
 	public static function fmapi ($it, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:141: characters 3-73
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:140: characters 5-77
 		return new _HxAnon_Iterables0(function () use (&$f, &$it) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:141: characters 32-72
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:140: characters 35-75
 			return Iterators::fmapi($it->iterator(), $f);
 		});
 	}
@@ -309,7 +308,7 @@ class Iterables {
 	 * @return mixed
 	 */
 	public static function get ($it, $index) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:74: characters 3-45
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:74: characters 5-47
 		return Iterators::get($it->iterator(), $index);
 	}
 
@@ -322,7 +321,7 @@ class Iterables {
 	 * @return Option
 	 */
 	public static function getOption ($it, $index) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:80: characters 10-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:80: characters 12-43
 		$value = Iterators::get($it->iterator(), $index);
 		if (null === $value) {
 			return Option::None();
@@ -339,7 +338,7 @@ class Iterables {
 	 * @return bool
 	 */
 	public static function hasElements ($it) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:92: characters 10-46
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:92: characters 12-48
 		return $it->iterator()->hasNext();
 	}
 
@@ -352,7 +351,7 @@ class Iterables {
 	 * @return int
 	 */
 	public static function indexOf ($it, $element) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:98: characters 3-51
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:98: characters 5-53
 		return Iterators::indexOf($it->iterator(), $element);
 	}
 
@@ -364,7 +363,7 @@ class Iterables {
 	 * @return bool
 	 */
 	public static function isEmpty ($it) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:104: characters 10-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:104: characters 12-44
 		return !$it->iterator()->hasNext();
 	}
 
@@ -378,14 +377,14 @@ class Iterables {
 	 * @return bool
 	 */
 	public static function isIterable ($v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:113: characters 3-106
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:113: characters 5-108
 		$fields = (\Reflect::isObject($v) && (null === \Type::getClass($v)) ? \Reflect::fields($v) : \Type::getInstanceFields(\Type::getClass($v)));
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:114: lines 114-115
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:114: characters 5-53
 		if (!\Lambda::has($fields, "iterator")) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:115: characters 4-16
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:114: characters 41-53
 			return false;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:116: characters 10-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:115: characters 12-60
 		$f = \Reflect::field($v, "iterator");
 		if (!($f instanceof \Closure)) {
 			return ($f instanceof HxClosure);
@@ -402,7 +401,7 @@ class Iterables {
 	 * @return mixed
 	 */
 	public static function last ($it) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:86: characters 3-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:86: characters 5-41
 		return Iterators::last($it->iterator());
 	}
 
@@ -415,7 +414,7 @@ class Iterables {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function map ($it, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:123: characters 3-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:122: characters 5-43
 		return Iterators::map($it->iterator(), $f);
 	}
 
@@ -428,7 +427,7 @@ class Iterables {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function mapi ($it, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:135: characters 3-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:134: characters 5-44
 		return Iterators::mapi($it->iterator(), $f);
 	}
 
@@ -442,7 +441,7 @@ class Iterables {
 	 * @return Option
 	 */
 	public static function max ($it, $ord) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:200: characters 10-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:197: characters 12-34
 		return Iterables::minBy($it, Boot::getStaticClosure(Functions::class, 'identity'), Ord_Impl_::inverse($ord));
 	}
 
@@ -457,7 +456,7 @@ class Iterables {
 	 * @return Option
 	 */
 	public static function maxBy ($it, $f, $ord) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:186: characters 3-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:183: characters 5-39
 		return Iterables::minBy($it, $f, Ord_Impl_::inverse($ord));
 	}
 
@@ -471,7 +470,7 @@ class Iterables {
 	 * @return Option
 	 */
 	public static function min ($it, $ord) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:193: characters 3-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:190: characters 5-46
 		return Iterables::minBy($it, Boot::getStaticClosure(Functions::class, 'identity'), $ord);
 	}
 
@@ -486,24 +485,24 @@ class Iterables {
 	 * @return Option
 	 */
 	public static function minBy ($it, $f, $ord) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:172: characters 3-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:171: characters 5-33
 		$found = Option::None();
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:173: characters 13-15
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:172: characters 15-17
 		$a = $it->iterator();
 		while ($a->hasNext()) {
 			unset($a1);
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:173: lines 173-177
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:172: lines 172-174
 			$a1 = $a->next();
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:174: lines 174-176
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:173: characters 15-91
 			if (!Options::any($found, function ($a0) use (&$f, &$ord, &$a1) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:175: characters 5-34
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:173: characters 40-69
 				return $ord($f($a0), $f($a1)) === OrderingImpl::LT();
 			})) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:176: characters 17-24
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:173: characters 84-91
 				$found = Option::Some($a1);
 			}
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:178: characters 3-15
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:175: characters 5-17
 		return $found;
 	}
 
@@ -516,7 +515,7 @@ class Iterables {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function order ($it, $sort) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:147: characters 3-46
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:146: characters 5-48
 		return Iterators::order($it->iterator(), $sort);
 	}
 
@@ -530,7 +529,7 @@ class Iterables {
 	 * @return mixed
 	 */
 	public static function reduce ($it, $callback, $initial) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:153: characters 3-60
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:152: characters 5-62
 		return Iterators::reduce($it->iterator(), $callback, $initial);
 	}
 
@@ -544,7 +543,7 @@ class Iterables {
 	 * @return mixed
 	 */
 	public static function reducei ($it, $callback, $initial) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:159: characters 3-61
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:158: characters 5-63
 		return Iterators::reducei($it->iterator(), $callback, $initial);
 	}
 
@@ -557,7 +556,7 @@ class Iterables {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function takeUntil ($it, $fn) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:231: characters 3-48
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:228: characters 5-49
 		return Iterators::takeUntil($it->iterator(), $fn);
 	}
 
@@ -569,7 +568,7 @@ class Iterables {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function toArray ($it) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:165: characters 3-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:164: characters 5-44
 		return Iterators::toArray($it->iterator());
 	}
 
@@ -584,32 +583,32 @@ class Iterables {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function unionBy ($a, $b, $eq) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:267: characters 3-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:262: characters 5-29
 		$res = new \Array_hx();
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:268: characters 13-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:263: characters 14-26
 		$e = $a->iterator();
 		while ($e->hasNext()) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:268: lines 268-270
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:263: lines 263-265
 			$e1 = $e->next();
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:269: characters 4-15
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:264: characters 7-18
 			$res->arr[$res->length++] = $e1;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:271: characters 13-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:266: characters 15-27
 		$e = $b->iterator();
 		while ($e->hasNext()) {
 			unset($e1);
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:271: lines 271-274
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:266: lines 266-269
 			$e1 = $e->next();
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:272: lines 272-273
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:267: lines 267-268
 			if (!Iterables::any($res, function ($x) use (&$e1, &$eq) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:272: characters 32-56
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:267: characters 37-60
 				return $eq($x, $e1);
 			})) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:273: characters 5-16
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:268: characters 9-20
 				$res->arr[$res->length++] = $e1;
 			}
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:275: characters 3-13
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:270: characters 5-15
 		return $res;
 	}
 
@@ -621,7 +620,7 @@ class Iterables {
 	 * @return object
 	 */
 	public static function unzip ($it) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:295: characters 3-40
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:289: characters 5-42
 		return Iterators::unzip($it->iterator());
 	}
 
@@ -633,7 +632,7 @@ class Iterables {
 	 * @return object
 	 */
 	public static function unzip3 ($it) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:301: characters 3-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:295: characters 3-41
 		return Iterators::unzip3($it->iterator());
 	}
 
@@ -645,7 +644,7 @@ class Iterables {
 	 * @return object
 	 */
 	public static function unzip4 ($it) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:307: characters 3-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:301: characters 5-43
 		return Iterators::unzip4($it->iterator());
 	}
 
@@ -657,7 +656,7 @@ class Iterables {
 	 * @return object
 	 */
 	public static function unzip5 ($it) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:313: characters 3-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:307: characters 5-43
 		return Iterators::unzip5($it->iterator());
 	}
 
@@ -670,7 +669,7 @@ class Iterables {
 	 * @return object[]|\Array_hx
 	 */
 	public static function zip ($it1, $it2) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:319: characters 3-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:313: characters 5-57
 		return Iterators::zip($it1->iterator(), $it2->iterator());
 	}
 
@@ -684,7 +683,7 @@ class Iterables {
 	 * @return object[]|\Array_hx
 	 */
 	public static function zip3 ($it1, $it2, $it3) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:325: characters 3-72
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:319: characters 5-74
 		return Iterators::zip3($it1->iterator(), $it2->iterator(), $it3->iterator());
 	}
 
@@ -699,7 +698,7 @@ class Iterables {
 	 * @return object[]|\Array_hx
 	 */
 	public static function zip4 ($it1, $it2, $it3, $it4) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:331: characters 3-88
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:325: characters 5-90
 		return Iterators::zip4($it1->iterator(), $it2->iterator(), $it3->iterator(), $it4->iterator());
 	}
 
@@ -715,7 +714,7 @@ class Iterables {
 	 * @return object[]|\Array_hx
 	 */
 	public static function zip5 ($it1, $it2, $it3, $it4, $it5) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterables.hx:338: characters 3-104
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterables.hx:331: characters 5-106
 		return Iterators::zip5($it1->iterator(), $it2->iterator(), $it3->iterator(), $it4->iterator(), $it5->iterator());
 	}
 }

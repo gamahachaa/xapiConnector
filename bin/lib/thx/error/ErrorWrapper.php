@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/error/ErrorWrapper.hx
  */
 
 namespace thx\error;
@@ -28,9 +27,9 @@ class ErrorWrapper extends Error {
 	 * @return void
 	 */
 	public function __construct ($message, $innerError, $stack = null, $pos = null) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/error/ErrorWrapper.hx:15: characters 3-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/error/ErrorWrapper.hx:14: characters 5-31
 		parent::__construct($message, $stack, $pos);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/error/ErrorWrapper.hx:17: characters 3-31
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/error/ErrorWrapper.hx:16: characters 5-33
 		$this->innerError = $innerError;
 	}
 }

@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx
  */
 
 namespace thx;
@@ -20,16 +19,16 @@ class Orderings {
 	 * @return OrderingImpl
 	 */
 	public static function negate ($o) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:39: lines 39-43
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:36: lines 36-40
 		$__hx__switch = ($o->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:40: characters 13-15
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:37: characters 14-16
 			return OrderingImpl::GT();
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:42: characters 13-15
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:39: characters 14-16
 			return OrderingImpl::LT();
 		} else if ($__hx__switch === 2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:41: characters 13-15
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:38: characters 14-16
 			return OrderingImpl::EQ();
 		}
 	}
@@ -46,16 +45,16 @@ class Orderings {
 
 
 		self::$monoid = new _HxAnon_Orderings0(OrderingImpl::EQ(), function ($o0, $o1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:31: lines 31-35
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:29: lines 29-33
 			$__hx__switch = ($o0->index);
 			if ($__hx__switch === 0) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:32: characters 13-15
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:30: characters 16-18
 				return OrderingImpl::LT();
 			} else if ($__hx__switch === 1) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:34: characters 13-15
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:32: characters 16-18
 				return OrderingImpl::GT();
 			} else if ($__hx__switch === 2) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Ord.hx:33: characters 13-15
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Ord.hx:31: characters 16-18
 				return $o1;
 			}
 		});

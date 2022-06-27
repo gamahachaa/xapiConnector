@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx
  */
 
 namespace thx;
@@ -56,23 +55,23 @@ class Floats {
 	 * @return float
 	 */
 	public static function angleDifference ($a, $b, $turn = 360.0) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:21: lines 21-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:20: lines 20-27
 		if ($turn === null) {
 			$turn = 360.0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:22: characters 3-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:21: characters 5-28
 		$r = fmod(($b - $a), $turn);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:23: lines 23-24
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:22: lines 22-23
 		if ($r < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:24: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:23: characters 7-16
 			$r += $turn;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:25: lines 25-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:24: lines 24-25
 		if ($r > ($turn / 2)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:26: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:25: characters 7-16
 			$r -= $turn;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:27: characters 3-11
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:26: characters 5-13
 		return $r;
 	}
 
@@ -84,12 +83,12 @@ class Floats {
 	 * @return bool
 	 */
 	public static function canParse ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:42: characters 10-84
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:41: characters 12-86
 		if (!(Floats::$pattern_parse->match($s) || Floats::$pattern_inf->match($s))) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:42: characters 60-84
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:41: characters 62-86
 			return Floats::$pattern_neg_inf->match($s);
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:42: characters 10-84
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:41: characters 12-86
 			return true;
 		}
 	}
@@ -103,9 +102,9 @@ class Floats {
 	 * @return float
 	 */
 	public static function ceilTo ($f, $decimals) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:34: characters 3-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:33: characters 5-36
 		$p = (10 ** $decimals);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:35: characters 3-31
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:34: characters 5-33
 		return \ceil($f * $p) / $p;
 	}
 
@@ -124,15 +123,15 @@ class Floats {
 	 * @return float
 	 */
 	public static function clamp ($v, $min, $max) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:54: characters 10-45
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:53: characters 12-47
 		if ($v < $min) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:54: characters 20-23
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:53: characters 22-25
 			return $min;
 		} else if ($v > $max) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:54: characters 37-40
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:53: characters 39-42
 			return $max;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:54: characters 43-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:53: characters 45-46
 			return $v;
 		}
 	}
@@ -147,15 +146,15 @@ class Floats {
 	 * @return float
 	 */
 	public static function clampSym ($v, $max) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:61: characters 10-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:60: characters 12-31
 		$min = -$max;
 		if ($v < $min) {
 			return $min;
 		} else if ($v > $max) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:61: characters 25-28
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:60: characters 27-30
 			return $max;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:61: characters 16-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:60: characters 18-19
 			return $v;
 		}
 	}
@@ -169,15 +168,15 @@ class Floats {
 	 * @return int
 	 */
 	public static function compare ($a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:67: characters 10-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:66: characters 12-40
 		if ($a < $b) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:67: characters 18-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:66: characters 20-22
 			return -1;
 		} else if ($a > $b) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:67: characters 32-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:66: characters 34-35
 			return 1;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:67: characters 36-37
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:66: characters 38-39
 			return 0;
 		}
 	}
@@ -191,9 +190,9 @@ class Floats {
 	 * @return float
 	 */
 	public static function floorTo ($f, $decimals) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:73: characters 3-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:72: characters 5-36
 		$p = (10 ** $decimals);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:74: characters 3-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:73: characters 5-34
 		return \floor($f * $p) / $p;
 	}
 
@@ -203,12 +202,12 @@ class Floats {
 	 * @return float
 	 */
 	public static function ftrunc ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:221: characters 10-62
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:220: characters 12-64
 		if ($value < 0.0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:221: characters 24-41
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:220: characters 26-43
 			return \ceil($value);
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:221: characters 44-62
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:220: characters 46-64
 			return \floor($value);
 		}
 	}
@@ -223,7 +222,7 @@ class Floats {
 	 * @return float
 	 */
 	public static function interpolate ($f, $a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:81: characters 3-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:80: characters 5-27
 		return ($b - $a) * $f + $a;
 	}
 
@@ -239,7 +238,7 @@ class Floats {
 	 * @return float
 	 */
 	public static function interpolateAngle ($f, $a, $b, $turn = 360) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:89: characters 3-80
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:88: characters 5-82
 		if ($turn === null) {
 			$turn = 360;
 		}
@@ -257,20 +256,20 @@ class Floats {
 	 * @return float
 	 */
 	public static function interpolateAngleCCW ($f, $a, $b, $turn = 360) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:114: lines 114-120
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:113: lines 113-119
 		if ($turn === null) {
 			$turn = 360;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:115: characters 3-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:114: characters 5-30
 		$a = Floats::wrapCircular($a, $turn);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:116: characters 3-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:115: characters 5-30
 		$b = Floats::wrapCircular($b, $turn);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:117: lines 117-118
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:116: lines 116-117
 		if ($b > $a) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:118: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:117: characters 7-16
 			$b -= $turn;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:119: characters 3-50
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:118: characters 5-52
 		return Floats::wrapCircular(Floats::interpolate($f, $a, $b), $turn);
 	}
 
@@ -285,20 +284,20 @@ class Floats {
 	 * @return float
 	 */
 	public static function interpolateAngleCW ($f, $a, $b, $turn = 360) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:103: lines 103-109
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:102: lines 102-108
 		if ($turn === null) {
 			$turn = 360;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:104: characters 3-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:103: characters 5-30
 		$a = Floats::wrapCircular($a, $turn);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:105: characters 3-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:104: characters 5-30
 		$b = Floats::wrapCircular($b, $turn);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:106: lines 106-107
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:105: lines 105-106
 		if ($b < $a) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:107: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:106: characters 7-16
 			$b += $turn;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:108: characters 3-50
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:107: characters 5-52
 		return Floats::wrapCircular(Floats::interpolate($f, $a, $b), $turn);
 	}
 
@@ -314,7 +313,7 @@ class Floats {
 	 * @return float
 	 */
 	public static function interpolateAngleWidest ($f, $a, $b, $turn = 360) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:97: characters 3-72
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:96: characters 5-74
 		if ($turn === null) {
 			$turn = 360;
 		}
@@ -330,12 +329,12 @@ class Floats {
 	 * @return mixed
 	 */
 	public static function max ($a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:126: characters 10-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:125: characters 12-25
 		if ($a > $b) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:126: characters 18-19
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:125: characters 20-21
 			return $a;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:126: characters 22-23
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:125: characters 24-25
 			return $b;
 		}
 	}
@@ -349,12 +348,12 @@ class Floats {
 	 * @return mixed
 	 */
 	public static function min ($a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:132: characters 10-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:131: characters 12-25
 		if ($a < $b) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:132: characters 18-19
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:131: characters 20-21
 			return $a;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:132: characters 22-23
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:131: characters 24-25
 			return $b;
 		}
 	}
@@ -373,7 +372,7 @@ class Floats {
 	 * @return bool
 	 */
 	public static function nearEqualAngles ($a, $b, $turn = 360.0, $tollerance = 1e-9) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:164: characters 3-61
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:163: characters 5-63
 		if ($turn === null) {
 			$turn = 360.0;
 		}
@@ -395,36 +394,36 @@ class Floats {
 	 * @return bool
 	 */
 	public static function nearEquals ($a, $b, $tollerance = 1e-9) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:139: lines 139-155
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:138: lines 138-154
 		if ($tollerance === null) {
 			$tollerance = 1e-9;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:140: lines 140-146
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:139: lines 139-145
 		if (\is_finite($a)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:142: lines 142-143
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:141: lines 141-142
 			if (!\is_finite($b)) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:143: characters 5-17
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:142: characters 9-21
 				return false;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:145: characters 4-40
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:144: characters 7-43
 			return \abs($a - $b) <= $tollerance;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:147: lines 147-148
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:146: lines 146-147
 		if (\is_nan($a)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:148: characters 4-24
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:147: characters 7-27
 			return \is_nan($b);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:149: lines 149-150
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:148: lines 148-149
 		if (\is_nan($b)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:150: characters 4-16
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:149: characters 7-19
 			return false;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:151: lines 151-152
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:150: lines 150-151
 		if (!\is_finite($b)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:152: characters 4-29
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:151: characters 7-32
 			return ($a > 0) === ($b > 0);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:154: characters 3-15
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:153: characters 5-17
 		return false;
 	}
 
@@ -438,7 +437,7 @@ class Floats {
 	 * @return bool
 	 */
 	public static function nearZero ($n, $tollerance = 1e-9) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:171: characters 3-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:170: characters 5-37
 		if ($tollerance === null) {
 			$tollerance = 1e-9;
 		}
@@ -453,15 +452,15 @@ class Floats {
 	 * @return float
 	 */
 	public static function normalize ($v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:177: characters 10-24
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:176: characters 12-26
 		if ($v < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:177: characters 19-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:176: characters 21-22
 			return 0;
 		} else if ($v > 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:177: characters 22-23
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:176: characters 24-25
 			return 1;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:177: characters 16-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:176: characters 18-19
 			return $v;
 		}
 	}
@@ -474,20 +473,20 @@ class Floats {
 	 * @return float
 	 */
 	public static function parse ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:183: lines 183-184
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:182: lines 182-183
 		if (HxString::substring($s, 0, 1) === "+") {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:184: characters 4-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:183: characters 7-25
 			$s = HxString::substring($s, 1);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:185: characters 10-139
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:184: characters 12-141
 		if (Floats::$pattern_inf->match($s)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:185: characters 36-58
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:184: characters 38-60
 			return \Math::$POSITIVE_INFINITY;
 		} else if (Floats::$pattern_neg_inf->match($s)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:185: characters 94-116
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:184: characters 96-118
 			return \Math::$NEGATIVE_INFINITY;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:185: characters 122-139
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:184: characters 124-141
 			return \Std::parseFloat($s);
 		}
 	}
@@ -501,7 +500,7 @@ class Floats {
 	 * @return float
 	 */
 	public static function root ($base, $index) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:192: characters 3-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:191: characters 5-37
 		return ($base ** (1 / $index));
 	}
 
@@ -514,9 +513,9 @@ class Floats {
 	 * @return float
 	 */
 	public static function roundTo ($f, $decimals) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:198: characters 3-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:197: characters 5-36
 		$p = (10 ** $decimals);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:199: characters 3-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:198: characters 5-34
 		return \floor($f * $p + 0.5) / $p;
 	}
 
@@ -528,12 +527,12 @@ class Floats {
 	 * @return int
 	 */
 	public static function sign ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:206: characters 10-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:205: characters 12-30
 		if ($value < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:206: characters 22-24
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:205: characters 24-26
 			return -1;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:206: characters 27-28
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:205: characters 29-30
 			return 1;
 		}
 	}
@@ -546,7 +545,7 @@ class Floats {
 	 * @return float
 	 */
 	public static function toFloat ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:215: characters 3-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:214: characters 5-27
 		return Floats::parse($s);
 	}
 
@@ -556,7 +555,7 @@ class Floats {
 	 * @return string
 	 */
 	public static function toString ($v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:209: characters 3-14
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:208: characters 5-16
 		return "" . ($v??'null');
 	}
 
@@ -566,12 +565,12 @@ class Floats {
 	 * @return int
 	 */
 	public static function trunc ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:218: characters 10-60
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:217: characters 12-62
 		if ($value < 0.0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:218: characters 24-40
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:217: characters 26-42
 			return (int)(\ceil($value));
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:218: characters 43-60
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:217: characters 45-62
 			return (int)(\floor($value));
 		}
 	}
@@ -589,14 +588,14 @@ class Floats {
 	 * @return float
 	 */
 	public static function wrap ($v, $min, $max) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:230: characters 3-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:229: characters 5-31
 		$range = $max - $min + 1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:231: lines 231-232
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:230: characters 5-54
 		if ($v < $min) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:232: characters 4-40
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:230: characters 18-54
 			$v += $range * (($min - $v) / $range + 1);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:233: characters 3-33
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:231: characters 5-35
 		return $min + fmod(($v - $min), $range);
 	}
 
@@ -609,14 +608,14 @@ class Floats {
 	 * @return float
 	 */
 	public static function wrapCircular ($v, $max) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:240: characters 3-14
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:238: characters 5-16
 		$v = fmod($v, $max);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:241: lines 241-242
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:239: lines 239-240
 		if ($v < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:242: characters 4-12
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:240: characters 7-15
 			$v += $max;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:243: characters 3-11
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:241: characters 5-13
 		return $v;
 	}
 
@@ -636,7 +635,7 @@ class Floats {
 		self::$pattern_neg_inf = new \EReg("^-(inf|Inf|INF)\$", "");
 		self::$order = Ord_Impl_::fromIntComparison(Boot::getStaticClosure(Floats::class, 'compare'));
 		self::$monoid = new _HxAnon_Floats0(0.0, function ($a, $b) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Floats.hx:251: characters 106-118
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Floats.hx:250: characters 55-67
 			return $a + $b;
 		});
 	}

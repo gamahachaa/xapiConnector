@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx
  */
 
 namespace thx\_Tuple;
@@ -19,7 +18,7 @@ final class Tuple2_Impl_ {
 	 * @return object
 	 */
 	public static function _new ($_0, $_1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:88: character 2
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:85: character 3
 		$this1 = new _HxAnon_Tuple2_Impl_0($_0, $_1);
 		return $this1;
 	}
@@ -30,7 +29,7 @@ final class Tuple2_Impl_ {
 	 * @return object
 	 */
 	public static function arrayToTuple2 ($v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:150: characters 10-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:144: characters 12-34
 		$this1 = new _HxAnon_Tuple2_Impl_0(($v->arr[0] ?? null), ($v->arr[1] ?? null));
 		return $this1;
 	}
@@ -44,7 +43,7 @@ final class Tuple2_Impl_ {
 	 * @return mixed
 	 */
 	public static function dropLeft ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:118: characters 10-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:112: characters 12-31
 		$this2 = $this1->_1;
 		return $this2;
 	}
@@ -58,7 +57,7 @@ final class Tuple2_Impl_ {
 	 * @return mixed
 	 */
 	public static function dropRight ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:125: characters 10-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:119: characters 12-31
 		$this2 = $this1->_0;
 		return $this2;
 	}
@@ -71,7 +70,7 @@ final class Tuple2_Impl_ {
 	 * @return object
 	 */
 	public static function flip ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:111: characters 3-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:105: characters 5-42
 		return new _HxAnon_Tuple2_Impl_0($this1->_1, $this1->_0);
 	}
 
@@ -81,7 +80,7 @@ final class Tuple2_Impl_ {
 	 * @return mixed
 	 */
 	public static function get_left ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:102: characters 3-17
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:98: characters 30-44
 		return $this1->_0;
 	}
 
@@ -91,7 +90,7 @@ final class Tuple2_Impl_ {
 	 * @return mixed
 	 */
 	public static function get_right ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:105: characters 3-17
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:99: characters 31-45
 		return $this1->_1;
 	}
 
@@ -102,7 +101,7 @@ final class Tuple2_Impl_ {
 	 * @return object
 	 */
 	public static function map ($this1, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:141: characters 10-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:135: characters 12-43
 		$_0 = $this1->_0;
 		$this2 = new _HxAnon_Tuple2_Impl_0($_0, $f($this1->_1));
 		return $this2;
@@ -118,7 +117,7 @@ final class Tuple2_Impl_ {
 	 * @return object
 	 */
 	public static function of ($_0, $_1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:83: characters 10-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:80: characters 12-30
 		$this1 = new _HxAnon_Tuple2_Impl_0($_0, $_1);
 		return $this1;
 	}
@@ -129,9 +128,9 @@ final class Tuple2_Impl_ {
 	 * @return \Closure
 	 */
 	public static function squeeze ($f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:144: lines 144-146
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:138: lines 138-140
 		return function ($tp) use (&$f) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:145: characters 4-26
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:139: characters 7-28
 			return $f($tp->_0, $tp->_1);
 		};
 	}
@@ -144,7 +143,7 @@ final class Tuple2_Impl_ {
 	 * @return string
 	 */
 	public static function toString ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:138: characters 3-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:132: characters 5-43
 		return "Tuple2(" . \Std::string($this1->_0) . "," . \Std::string($this1->_1) . ")";
 	}
 
@@ -158,7 +157,7 @@ final class Tuple2_Impl_ {
 	 * @return object
 	 */
 	public static function with ($this1, $v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:132: characters 10-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:126: characters 12-43
 		$this2 = new _HxAnon_Tuple2_Impl_1($this1->_0, $this1->_1, $v);
 		return $this2;
 	}

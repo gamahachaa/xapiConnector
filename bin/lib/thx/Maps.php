@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx
  */
 
 namespace thx;
@@ -25,15 +24,15 @@ class Maps {
 	 * @return IMap
 	 */
 	public static function copyTo ($src, $dst) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:24: characters 15-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:23: characters 16-26
 		$key = $src->keys();
 		while ($key->hasNext()) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:24: lines 24-25
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:23: lines 23-24
 			$key1 = $key->next();
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:25: characters 4-30
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:24: characters 7-33
 			$dst->set($key1, $src->get($key1));
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:26: characters 3-13
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:25: characters 5-15
 		return $dst;
 	}
 
@@ -47,9 +46,9 @@ class Maps {
 	 * @return mixed
 	 */
 	public static function foldLeftWithKeys ($map, $f, $acc) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:70: characters 3-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:73: lines 73-76
 		return Iterators::reduce($map->keys(), function ($acc, $k) use (&$f, &$map) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:70: characters 45-73
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:74: characters 24-52
 			return $f($acc, $k, $map->get($k));
 		}, $acc);
 	}
@@ -65,13 +64,13 @@ class Maps {
 	 * @return StringMap
 	 */
 	public static function fromArray ($array, $toKey, $toVal) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:61: lines 61-64
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:64: lines 64-67
 		return Arrays::reduce($array, function ($acc, $curr) use (&$toKey, &$toVal) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:62: characters 4-37
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:65: characters 7-40
 			$key = $toKey($curr);
 			$value = $toVal($curr);
 			$acc->data[$key] = $value;
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:63: characters 4-14
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:66: characters 7-17
 			return $acc;
 		}, new StringMap());
 	}
@@ -87,14 +86,14 @@ class Maps {
 	 * @return mixed
 	 */
 	public static function getAlt ($map, $key, $alt) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:92: characters 3-24
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:99: characters 5-26
 		$v = $map->get($key);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:93: characters 10-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:100: characters 12-31
 		if (null === $v) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:93: characters 22-25
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:100: characters 24-27
 			return $alt;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:93: characters 28-29
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:100: characters 30-31
 			return $v;
 		}
 	}
@@ -110,16 +109,16 @@ class Maps {
 	 * @return mixed
 	 */
 	public static function getAltSet ($map, $key, $alt) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:101: characters 3-24
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:108: characters 5-26
 		$v = $map->get($key);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:102: lines 102-107
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:109: lines 109-114
 		if ($v !== null) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:103: characters 4-5
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:110: characters 7-8
 			return $v;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:105: characters 4-21
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:112: characters 7-24
 			$map->set($key, $alt);
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:106: characters 4-7
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:113: characters 7-10
 			return $alt;
 		}
 	}
@@ -133,7 +132,7 @@ class Maps {
 	 * @return Option
 	 */
 	public static function getOption ($map, $key) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:76: characters 10-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:83: characters 12-41
 		$value = $map->get($key);
 		if (null === $value) {
 			return Option::None();
@@ -150,19 +149,19 @@ class Maps {
 	 * @return bool
 	 */
 	public static function isEmpty ($map) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:114: characters 3-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:121: characters 5-37
 		return !$map->iterator()->hasNext();
 	}
 
 	/**
-	 * Returns true if a value is of any type of Map. Equivalent to `Std.isOfType(v, IMap)`.
+	 * Returns true if a value is of any type of Map. Equivalent to `Std.is(v, IMap)`.
 	 * 
 	 * @param mixed $v
 	 * 
 	 * @return bool
 	 */
 	public static function isMap ($v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:120: characters 3-31
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:127: characters 5-27
 		return ($v instanceof IMap);
 	}
 
@@ -176,11 +175,11 @@ class Maps {
 	 * @return IMap
 	 */
 	public static function mapValues ($map, $f, $acc) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:39: lines 39-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:40: lines 40-43
 		return Maps::reduce($map, function ($m, $t) use (&$f) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:40: characters 4-24
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:41: characters 7-27
 			$m->set($t->_0, $f($t->_1));
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:41: characters 4-12
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:42: characters 7-15
 			return $m;
 		}, $acc);
 	}
@@ -200,13 +199,13 @@ class Maps {
 	 * @return IMap
 	 */
 	public static function merge ($dest, $sources) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:139: lines 139-144
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:146: lines 146-151
 		return Arrays::reduce($sources, function ($result, $source) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:140: lines 140-143
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:147: lines 147-150
 			return Iterators::reduce($source->keys(), function ($result, $key) use (&$source) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:141: characters 5-37
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:148: characters 9-41
 				$result->set($key, $source->get($key));
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:142: characters 5-18
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:149: characters 9-22
 				return $result;
 			}, $result);
 		}, $dest);
@@ -222,7 +221,7 @@ class Maps {
 	 * @return mixed
 	 */
 	public static function reduce ($map, $f, $acc) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:48: characters 3-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:49: characters 5-38
 		return Arrays::reduce(Maps::tuples($map), $f, $acc);
 	}
 
@@ -232,7 +231,7 @@ class Maps {
 	 * @return string
 	 */
 	public static function string ($m) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:123: lines 123-125
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:130: lines 130-132
 		$_this = Maps::tuples($m);
 		$result = [];
 		$data = $_this->arr;
@@ -254,11 +253,11 @@ class Maps {
 	 * @return object
 	 */
 	public static function toObject ($map) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:82: lines 82-85
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:89: lines 89-92
 		return Arrays::reduce(Maps::tuples($map), function ($o, $t) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:83: characters 4-35
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:90: characters 7-38
 			\Reflect::setField($o, $t->_0, $t->_1);
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:84: characters 4-12
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:91: characters 7-15
 			return $o;
 		}, new HxAnon());
 	}
@@ -271,9 +270,9 @@ class Maps {
 	 * @return object[]|\Array_hx
 	 */
 	public static function tuples ($map) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:33: characters 3-76
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:32: lines 32-34
 		return Iterators::map($map->keys(), function ($key) use (&$map) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:33: characters 46-75
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:33: characters 14-43
 			$this1 = new _HxAnon_Maps0($key, $map->get($key));
 			return $this1;
 		});
@@ -287,9 +286,9 @@ class Maps {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function values ($map) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:54: characters 3-71
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:55: lines 55-57
 		return Iterators::map($map->keys(), function ($key) use (&$map) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Maps.hx:54: characters 51-70
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Maps.hx:56: characters 7-26
 			return $map->get($key);
 		});
 	}

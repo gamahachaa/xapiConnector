@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx
  */
 
 namespace thx;
@@ -19,7 +18,7 @@ class ArrayStrings {
 	 * @return string[]|\Array_hx
 	 */
 	public static function compact ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1577: characters 10-60
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1522: characters 12-62
 		$result = [];
 		$data = $arr->arr;
 		$_g_current = 0;
@@ -42,7 +41,7 @@ class ArrayStrings {
 	 * @return string
 	 */
 	public static function max ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1583: characters 3-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1528: characters 5-60
 		return Options::getOrElse(Arrays::maxBy($arr, Strings::$order), null);
 	}
 
@@ -54,7 +53,7 @@ class ArrayStrings {
 	 * @return string
 	 */
 	public static function min ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1589: characters 3-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1534: characters 5-60
 		return Options::getOrElse(Arrays::minBy($arr, Strings::$order), null);
 	}
 }

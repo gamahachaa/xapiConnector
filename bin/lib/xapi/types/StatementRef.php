@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\xapi/git/xapi/types/StatementRef.hx
  */
 
 namespace xapi\types;

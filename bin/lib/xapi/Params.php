@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: ../_myPackages/utils/xapi/Params.hx
  */
 
 namespace xapi;
@@ -15,6 +14,10 @@ class Params {
 	/**
 	 * @var string
 	 */
+	const GET = "get";
+	/**
+	 * @var string
+	 */
 	const LRS = "lrs";
 	/**
 	 * @var string
@@ -24,6 +27,10 @@ class Params {
 	 * @var string
 	 */
 	const STATEMENTS = "statements";
+	/**
+	 * @var string
+	 */
+	const VOID = "void";
 
 }
 

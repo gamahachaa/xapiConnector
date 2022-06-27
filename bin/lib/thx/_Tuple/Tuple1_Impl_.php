@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx
  */
 
 namespace thx\_Tuple;
@@ -18,7 +17,7 @@ final class Tuple1_Impl_ {
 	 * @return mixed
 	 */
 	public static function _new ($_0) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:48: character 2
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:48: character 3
 		$this1 = $_0;
 		return $this1;
 	}
@@ -29,7 +28,7 @@ final class Tuple1_Impl_ {
 	 * @return mixed
 	 */
 	public static function arrayToTuple ($v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:70: characters 10-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:67: characters 12-28
 		$this1 = ($v->arr[0] ?? null);
 		return $this1;
 	}
@@ -40,7 +39,7 @@ final class Tuple1_Impl_ {
 	 * @return mixed
 	 */
 	public static function get__0 ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:54: characters 3-14
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:51: characters 28-39
 		return $this1;
 	}
 
@@ -52,7 +51,7 @@ final class Tuple1_Impl_ {
 	 * @return string
 	 */
 	public static function toString ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:67: characters 3-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:64: characters 5-29
 		return "Tuple1(" . \Std::string($this1) . ")";
 	}
 
@@ -66,7 +65,7 @@ final class Tuple1_Impl_ {
 	 * @return object
 	 */
 	public static function with ($this1, $v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Tuple.hx:61: characters 10-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Tuple.hx:58: characters 12-29
 		$this2 = new _HxAnon_Tuple1_Impl_0($this1, $v);
 		return $this2;
 	}

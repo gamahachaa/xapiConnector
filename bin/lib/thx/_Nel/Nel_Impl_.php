@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx
  */
 
 namespace thx\_Nel;
@@ -23,19 +22,19 @@ final class Nel_Impl_ {
 	 * @return NonEmptyList
 	 */
 	public static function append ($this1, $nel) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:79: lines 79-82
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:80: lines 80-83
 		$__hx__switch = ($this1->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:80: characters 16-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:81: characters 19-20
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:80: characters 20-35
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:81: characters 23-38
 			return NonEmptyList::ConsNel($x, $nel);
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:81: characters 17-18
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:82: characters 20-21
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:81: characters 20-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:82: characters 23-25
 			$xs = $this1->params[1];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:81: characters 25-51
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:82: characters 28-54
 			return NonEmptyList::ConsNel($x, Nel_Impl_::append($xs, $nel));
 		}
 	}
@@ -47,16 +46,16 @@ final class Nel_Impl_ {
 	 * @return NonEmptyList
 	 */
 	public static function concat ($this1, $xs) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:85: characters 17-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:86: characters 19-36
 		$_g = Nel_Impl_::fromArray($xs);
 		$__hx__switch = ($_g->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:86: characters 14-19
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:87: characters 17-22
 			$other = $_g->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:86: characters 22-51
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:87: characters 25-53
 			return Nel_Impl_::append($this1, $other);
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:87: characters 15-19
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:88: characters 18-22
 			return $this1;
 		}
 	}
@@ -70,7 +69,7 @@ final class Nel_Impl_ {
 	 * @return NonEmptyList
 	 */
 	public static function cons ($a, $nl) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:33: characters 3-24
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:32: characters 5-26
 		return NonEmptyList::ConsNel($a, $nl);
 	}
 
@@ -83,19 +82,19 @@ final class Nel_Impl_ {
 	 * @return NonEmptyList
 	 */
 	public static function flatMap ($this1, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:58: lines 58-61
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:58: lines 58-61
 		$__hx__switch = ($this1->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:59: characters 16-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:59: characters 19-20
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:59: characters 20-24
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:59: characters 23-27
 			return $f($x);
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:60: characters 17-18
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:60: characters 20-21
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:60: characters 20-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:60: characters 23-25
 			$xs = $this1->params[1];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:60: characters 25-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:60: characters 28-58
 			return Nel_Impl_::append($f($x), Nel_Impl_::flatMap($xs, $f));
 		}
 	}
@@ -109,19 +108,19 @@ final class Nel_Impl_ {
 	 * @return mixed
 	 */
 	public static function fold ($this1, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:67: lines 67-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:67: lines 67-70
 		$__hx__switch = ($this1->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:68: characters 16-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:68: characters 19-20
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:68: characters 20-21
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:68: characters 23-24
 			return $x;
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:69: characters 17-18
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:69: characters 20-21
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:69: characters 20-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:69: characters 23-25
 			$xs = $this1->params[1];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:69: characters 25-41
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:69: characters 28-44
 			return $f($x, Nel_Impl_::fold($xs, $f));
 		}
 	}
@@ -135,22 +134,22 @@ final class Nel_Impl_ {
 	 * @return Option
 	 */
 	public static function fromArray ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:40: lines 40-46
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:40: lines 40-46
 		if ($arr->length === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:40: characters 31-35
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:40: characters 28-32
 			return Option::None();
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:41: characters 4-49
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:41: characters 9-55
 			$res = NonEmptyList::Single(($arr->arr[$arr->length - 1] ?? null));
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:42: characters 14-52
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:42: characters 19-57
 			$i = Ints::rangeIter($arr->length - 2, -1, -1);
 			while ($i->hasNext()) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:42: lines 42-44
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:42: lines 42-44
 				$i1 = $i->next();
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:43: characters 5-31
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:43: characters 11-37
 				$res = NonEmptyList::ConsNel(($arr->arr[$i1] ?? null), $res);
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:45: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:45: characters 9-18
 			return Option::Some($res);
 		}
 	}
@@ -163,19 +162,19 @@ final class Nel_Impl_ {
 	 * @return mixed
 	 */
 	public static function head ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:95: lines 95-98
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:96: lines 96-99
 		$__hx__switch = ($this1->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:96: characters 16-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:97: characters 19-20
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:96: characters 20-21
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:97: characters 24-25
 			return $x;
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:97: characters 17-18
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:98: characters 20-21
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:97: characters 20-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:98: characters 23-25
 			$xs = $this1->params[1];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:97: characters 25-26
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:98: characters 29-30
 			return $x;
 		}
 	}
@@ -189,19 +188,19 @@ final class Nel_Impl_ {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function init ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:117: lines 117-121
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:118: lines 118-121
 		$__hx__switch = ($this1->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:118: characters 16-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:119: characters 19-20
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:118: characters 20-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:119: characters 24-26
 			return new \Array_hx();
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:119: characters 17-18
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:120: characters 20-21
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:119: characters 20-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:120: characters 23-25
 			$xs = $this1->params[1];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:120: characters 5-46
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:120: characters 29-70
 			return (\Array_hx::wrap([$x]))->concat(Nel_Impl_::init($xs));
 		}
 	}
@@ -213,19 +212,19 @@ final class Nel_Impl_ {
 	 * @return NonEmptyList
 	 */
 	public static function intersperse ($this1, $a) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:192: lines 192-195
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:192: lines 192-195
 		$__hx__switch = ($this1->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:193: characters 16-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:193: characters 19-20
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:193: characters 20-29
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:193: characters 23-32
 			return NonEmptyList::Single($x);
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:194: characters 17-18
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:194: characters 20-21
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:194: characters 20-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:194: characters 23-25
 			$xs = $this1->params[1];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:194: characters 25-66
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:194: characters 28-69
 			return NonEmptyList::ConsNel($x, NonEmptyList::ConsNel($a, Nel_Impl_::intersperse($xs, $a)));
 		}
 	}
@@ -239,19 +238,19 @@ final class Nel_Impl_ {
 	 * @return mixed
 	 */
 	public static function last ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:130: lines 130-133
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:130: lines 130-133
 		$__hx__switch = ($this1->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:131: characters 16-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:131: characters 19-20
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:131: characters 20-21
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:131: characters 24-25
 			return $x;
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:132: characters 17-18
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:132: characters 20-21
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:132: characters 20-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:132: characters 23-25
 			$xs = $this1->params[1];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:132: characters 25-34
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:132: characters 29-38
 			return Nel_Impl_::last($xs);
 		}
 	}
@@ -265,11 +264,11 @@ final class Nel_Impl_ {
 	 * @return NonEmptyList
 	 */
 	public static function map ($this1, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:52: characters 18-33
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:52: characters 20-35
 		$fb = $f;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:52: characters 3-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:52: characters 5-36
 		return Nel_Impl_::flatMap($this1, function ($v) use (&$fb) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:52: characters 18-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:52: characters 20-35
 			return Nel_Impl_::pure($fb($v));
 		});
 	}
@@ -283,16 +282,16 @@ final class Nel_Impl_ {
 	 * @return NonEmptyList
 	 */
 	public static function nel ($hd, $tl) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:17: characters 17-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:16: characters 19-32
 		$_g = Nel_Impl_::fromArray($tl);
 		$__hx__switch = ($_g->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:18: characters 14-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:17: characters 17-20
 			$nel = $_g->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:18: characters 20-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:17: characters 23-36
 			return Nel_Impl_::cons($hd, $nel);
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:19: characters 15-23
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:18: characters 18-26
 			return Nel_Impl_::pure($hd);
 		}
 	}
@@ -307,7 +306,7 @@ final class Nel_Impl_ {
 	 * @return object
 	 */
 	public static function pop ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:155: characters 10-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:155: characters 12-37
 		$_0 = Nel_Impl_::last($this1);
 		$this2 = new _HxAnon_Nel_Impl_0($_0, Nel_Impl_::init($this1));
 		return $this2;
@@ -321,7 +320,7 @@ final class Nel_Impl_ {
 	 * @return NonEmptyList
 	 */
 	public static function pure ($a) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:27: characters 3-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:26: characters 5-21
 		return NonEmptyList::Single($a);
 	}
 
@@ -336,7 +335,7 @@ final class Nel_Impl_ {
 	 * @return NonEmptyList
 	 */
 	public static function push ($this1, $a) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:144: characters 3-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:144: characters 5-29
 		return Nel_Impl_::append($this1, NonEmptyList::Single($a));
 	}
 
@@ -346,9 +345,9 @@ final class Nel_Impl_ {
 	 * @return \Closure
 	 */
 	public static function semigroup () {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:202: lines 202-204
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:202: characters 5-90
 		return function ($nl, $nr) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:203: characters 4-46
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:202: characters 47-87
 			return Nel_Impl_::append($nl, $nr);
 		};
 	}
@@ -362,7 +361,7 @@ final class Nel_Impl_ {
 	 * @return object
 	 */
 	public static function shift ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:173: characters 10-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:173: characters 12-37
 		$_0 = Nel_Impl_::head($this1);
 		$this2 = new _HxAnon_Nel_Impl_0($_0, Nel_Impl_::tail($this1));
 		return $this2;
@@ -376,19 +375,19 @@ final class Nel_Impl_ {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function tail ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:105: lines 105-108
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:106: lines 106-109
 		$__hx__switch = ($this1->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:106: characters 16-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:107: characters 19-20
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:106: characters 20-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:107: characters 24-26
 			return new \Array_hx();
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:107: characters 17-18
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:108: characters 20-21
 			$x = $this1->params[0];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:107: characters 20-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:108: characters 23-25
 			$xs = $this1->params[1];
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:107: characters 25-37
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:108: characters 29-41
 			return Nel_Impl_::toArray($xs);
 		}
 	}
@@ -402,26 +401,26 @@ final class Nel_Impl_ {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function toArray ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:182: lines 182-187
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:182: lines 182-187
 		$go = null;
 		$go = function ($acc, $xs) use (&$go) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:183: lines 183-186
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:183: lines 183-186
 			$__hx__switch = ($xs->index);
 			if ($__hx__switch === 0) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:184: characters 17-18
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:184: characters 21-22
 				$x = $xs->params[0];
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:184: characters 21-34
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:184: characters 25-38
 				return Arrays::append($acc, $x);
 			} else if ($__hx__switch === 1) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:185: characters 18-19
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:185: characters 22-23
 				$x = $xs->params[0];
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:185: characters 21-23
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:185: characters 25-27
 				$xs1 = $xs->params[1];
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:185: characters 26-47
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:185: characters 30-51
 				return $go(Arrays::append($acc, $x), $xs1);
 			}
 		};
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:188: characters 3-22
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:188: characters 5-24
 		return $go(new \Array_hx(), $this1);
 	}
 
@@ -435,7 +434,7 @@ final class Nel_Impl_ {
 	 * @return NonEmptyList
 	 */
 	public static function unshift ($this1, $a) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Nel.hx:164: characters 3-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Nel.hx:164: characters 5-28
 		return NonEmptyList::ConsNel($a, $this1);
 	}
 }

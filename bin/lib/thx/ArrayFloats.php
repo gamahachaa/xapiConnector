@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx
  */
 
 namespace thx;
@@ -20,7 +19,7 @@ class ArrayFloats {
 	 * @return float
 	 */
 	public static function average ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1451: characters 3-31
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1393: characters 5-33
 		return ArrayFloats::sum($arr) / $arr->length;
 	}
 
@@ -32,7 +31,7 @@ class ArrayFloats {
 	 * @return float[]|\Array_hx
 	 */
 	public static function compact ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1458: characters 15-75
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1401: characters 17-77
 		$result = [];
 		$data = $arr->arr;
 		$_g_current = 0;
@@ -44,7 +43,7 @@ class ArrayFloats {
 				$result[] = $item;
 			}
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1458: characters 3-75
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1401: characters 5-77
 		return \Array_hx::wrap($result);
 	}
 
@@ -56,7 +55,7 @@ class ArrayFloats {
 	 * @return float
 	 */
 	public static function max ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1464: characters 3-47
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1407: characters 5-49
 		return Options::get(Arrays::maxBy($arr, Floats::$order));
 	}
 
@@ -68,7 +67,7 @@ class ArrayFloats {
 	 * @return float
 	 */
 	public static function min ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1470: characters 3-47
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1413: characters 5-49
 		return Options::get(Arrays::minBy($arr, Floats::$order));
 	}
 
@@ -84,18 +83,18 @@ class ArrayFloats {
 	 * @return float[]|\Array_hx
 	 */
 	public static function resize ($array, $length, $fill = 0.0) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1478: lines 1478-1483
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1421: lines 1421-1426
 		if ($fill === null) {
 			$fill = 0.0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1479: lines 1479-1480
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1422: lines 1422-1423
 		while ($array->length < $length) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1480: characters 4-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1423: characters 7-23
 			$array->arr[$array->length++] = $fill;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1481: characters 3-46
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1424: characters 5-48
 		$array->splice($length, $array->length - $length);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1482: characters 3-15
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1425: characters 5-17
 		return $array;
 	}
 
@@ -111,13 +110,13 @@ class ArrayFloats {
 	 * @return float[]|\Array_hx
 	 */
 	public static function resized ($array, $length, $fill = 0.0) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1491: lines 1491-1494
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1436: lines 1436-1439
 		if ($fill === null) {
 			$fill = 0.0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1492: characters 3-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1437: characters 5-25
 		$array = (clone $array);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1493: characters 3-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1438: characters 5-39
 		return ArrayFloats::resize($array, $length, $fill);
 	}
 
@@ -129,18 +128,18 @@ class ArrayFloats {
 	 * @return float
 	 */
 	public static function standardDeviation ($array) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1500: lines 1500-1501
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1445: lines 1445-1446
 		if ($array->length < 2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1501: characters 4-14
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1446: characters 7-17
 			return 0.0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1502: lines 1502-1505
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1447: lines 1447-1450
 		$mean = ArrayFloats::average($array);
 		$variance = Arrays::reduce($array, function ($acc, $val) use (&$mean) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1504: characters 5-41
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1449: characters 13-49
 			return $acc + (($val - $mean) ** 2);
 		}, 0) / ($array->length - 1);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1506: characters 3-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1451: characters 5-31
 		return \sqrt($variance);
 	}
 
@@ -152,9 +151,9 @@ class ArrayFloats {
 	 * @return float
 	 */
 	public static function sum ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1513: characters 3-66
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1458: characters 5-68
 		return Arrays::reduce($arr, function ($tot, $v) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1513: characters 46-60
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1458: characters 48-62
 			return $tot + $v;
 		}, 0.0);
 	}

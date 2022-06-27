@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx
  */
 
 namespace xapi;
@@ -26,9 +25,9 @@ class MissingActorIri {
 	 * @return void
 	 */
 	public function __construct ($agent) {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:85: characters 3-21
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:98: characters 3-21
 		$this->agent = $agent;
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:86: characters 3-29
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Agent.hx:99: characters 3-29
 		$this->msg = "Agent IRI is empty";
 	}
 }

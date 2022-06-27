@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx
  */
 
 namespace thx;
@@ -19,7 +18,7 @@ class ArrayInts {
 	 * @return float
 	 */
 	public static function average ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1524: characters 3-31
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1469: characters 5-33
 		return ArrayInts::sum($arr) / $arr->length;
 	}
 
@@ -31,7 +30,7 @@ class ArrayInts {
 	 * @return int
 	 */
 	public static function max ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1530: characters 3-45
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1475: characters 5-47
 		return Options::get(Arrays::maxBy($arr, Ints::$order));
 	}
 
@@ -43,7 +42,7 @@ class ArrayInts {
 	 * @return int
 	 */
 	public static function min ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1536: characters 3-45
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1481: characters 5-47
 		return Options::get(Arrays::minBy($arr, Ints::$order));
 	}
 
@@ -59,18 +58,18 @@ class ArrayInts {
 	 * @return int[]|\Array_hx
 	 */
 	public static function resize ($array, $length, $fill = 0) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1544: lines 1544-1549
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1489: lines 1489-1494
 		if ($fill === null) {
 			$fill = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1545: lines 1545-1546
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1490: lines 1490-1491
 		while ($array->length < $length) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1546: characters 4-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1491: characters 7-23
 			$array->arr[$array->length++] = $fill;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1547: characters 3-46
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1492: characters 5-48
 		$array->splice($length, $array->length - $length);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1548: characters 3-15
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1493: characters 5-17
 		return $array;
 	}
 
@@ -86,13 +85,13 @@ class ArrayInts {
 	 * @return int[]|\Array_hx
 	 */
 	public static function resized ($array, $length, $fill = 0) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1557: lines 1557-1560
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1502: lines 1502-1505
 		if ($fill === null) {
 			$fill = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1558: characters 3-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1503: characters 3-23
 		$array = (clone $array);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1559: characters 3-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1504: characters 3-37
 		return ArrayInts::resize($array, $length, $fill);
 	}
 
@@ -104,9 +103,9 @@ class ArrayInts {
 	 * @return int
 	 */
 	public static function sum ($arr) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1566: characters 3-64
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1511: characters 5-66
 		return Arrays::reduce($arr, function ($tot, $v) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Arrays.hx:1566: characters 46-60
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Arrays.hx:1511: characters 48-62
 			return $tot + $v;
 		}, 0);
 	}

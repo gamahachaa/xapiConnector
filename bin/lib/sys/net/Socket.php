@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\std/php/_std/sys/net/Socket.hx
  */
 
 namespace sys\net;

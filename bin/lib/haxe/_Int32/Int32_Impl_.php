@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\std/haxe/Int32.hx
  */
 
 namespace haxe\_Int32;

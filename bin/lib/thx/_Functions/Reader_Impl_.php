@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx
  */
 
 namespace thx\_Functions;
@@ -15,9 +14,9 @@ final class Reader_Impl_ {
 	 * @return \Closure
 	 */
 	public static function flatMap ($this1, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:424: lines 424-426
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:351: lines 351-353
 		return function ($a) use (&$f, &$this1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:425: characters 4-24
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:352: characters 7-27
 			return $f($this1($a))($a);
 		};
 	}

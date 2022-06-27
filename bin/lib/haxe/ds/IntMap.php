@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\std/php/_std/haxe/ds/IntMap.hx
  */
 
 namespace haxe\ds;

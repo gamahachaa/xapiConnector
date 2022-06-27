@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx
  */
 
 namespace thx;
@@ -21,9 +20,9 @@ class Functions1 {
 	 * @return \Closure
 	 */
 	public static function compose ($fa, $fb) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:81: characters 3-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:85: characters 5-46
 		return function ($v) use (&$fb, &$fa) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:81: characters 26-42
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:85: characters 30-46
 			return $fa($fb($v));
 		};
 	}
@@ -37,9 +36,9 @@ class Functions1 {
 	 * @return \Closure
 	 */
 	public static function contramap ($fbc, $fab) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:93: characters 3-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:97: characters 5-45
 		return function ($a) use (&$fbc, &$fab) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:93: characters 24-42
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:97: characters 27-45
 			return $fbc($fab($a));
 		};
 	}
@@ -54,11 +53,11 @@ class Functions1 {
 	 * @return \Closure
 	 */
 	public static function join ($fa, $fb) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:100: lines 100-103
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:104: lines 104-107
 		return function ($v) use (&$fb, &$fa) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:101: characters 4-9
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:105: characters 7-12
 			$fa($v);
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:102: characters 4-9
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:106: characters 7-12
 			$fb($v);
 		};
 	}
@@ -72,9 +71,9 @@ class Functions1 {
 	 * @return \Closure
 	 */
 	public static function map ($fab, $fbc) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:87: characters 3-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:91: characters 5-45
 		return function ($a) use (&$fbc, &$fab) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:87: characters 24-42
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:91: characters 27-45
 			return $fbc($fab($a));
 		};
 	}
@@ -90,32 +89,32 @@ class Functions1 {
 	 * @return \Closure
 	 */
 	public static function memoize ($callback, $resolver = null) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:112: lines 112-113
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:116: lines 116-117
 		if (null === $resolver) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:113: characters 4-12
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:117: characters 7-15
 			$resolver = function ($v) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:113: characters 31-42
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:117: characters 36-47
 				return "" . \Std::string($v);
 			};
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:114: characters 13-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:118: characters 15-38
 		$map_data = null;
 		$this1 = [];
 		$map_data = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:115: lines 115-122
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:119: lines 119-126
 		return function ($v) use (&$map_data, &$callback, &$resolver) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:116: characters 4-26
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:120: characters 7-29
 			$key = $resolver($v);
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:117: lines 117-118
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:121: lines 121-122
 			if (\array_key_exists($key, $map_data)) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:118: characters 5-24
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:122: characters 9-28
 				return ($map_data[$key] ?? null);
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:119: characters 4-29
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:123: characters 7-32
 			$result = $callback($v);
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:120: characters 4-24
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:124: characters 7-27
 			$map_data[$key] = $result;
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:121: characters 4-17
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:125: characters 7-20
 			return $result;
 		};
 	}
@@ -128,9 +127,9 @@ class Functions1 {
 	 * @return \Closure
 	 */
 	public static function negate ($callback) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:129: characters 3-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:133: lines 133-134
 		return function ($v) use (&$callback) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:129: characters 25-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:134: characters 7-26
 			return !$callback($v);
 		};
 	}
@@ -153,9 +152,9 @@ class Functions1 {
 	 * @return \Closure
 	 */
 	public static function swapArguments ($callback) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:154: characters 3-56
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:161: lines 161-162
 		return function ($a2, $a1) use (&$callback) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:154: characters 33-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:162: characters 7-30
 			return $callback($a1, $a2);
 		};
 	}
@@ -169,9 +168,9 @@ class Functions1 {
 	 * @return \Closure
 	 */
 	public static function times ($n, $callback) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:140: characters 3-90
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:145: lines 145-146
 		return function ($value) use (&$n, &$callback) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:140: characters 37-90
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:146: characters 14-67
 			$_this = Ints::range($n);
 			$result = [];
 			$data = $_this->arr;
@@ -196,9 +195,9 @@ class Functions1 {
 	 * @return \Closure
 	 */
 	public static function timesi ($n, $callback) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:148: characters 3-93
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:154: lines 154-155
 		return function ($value) use (&$n, &$callback) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:148: characters 37-93
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:155: characters 14-70
 			$_this = Ints::range($n);
 			$result = [];
 			$data = $_this->arr;

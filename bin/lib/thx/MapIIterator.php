@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterators.hx
  */
 
 namespace thx;
@@ -28,11 +27,11 @@ class MapIIterator {
 	 * @return void
 	 */
 	public function __construct ($base, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterators.hx:405: characters 22-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterators.hx:401: characters 24-25
 		$this->i = 0;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterators.hx:408: characters 3-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterators.hx:404: characters 5-21
 		$this->base = $base;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterators.hx:409: characters 3-13
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterators.hx:405: characters 5-15
 		$this->f = $f;
 	}
 
@@ -40,7 +39,7 @@ class MapIIterator {
 	 * @return bool
 	 */
 	public function hasNext () {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterators.hx:419: characters 3-24
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterators.hx:415: characters 5-26
 		return $this->base->hasNext();
 	}
 
@@ -48,11 +47,11 @@ class MapIIterator {
 	 * @return mixed
 	 */
 	public function next () {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterators.hx:413: characters 3-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterators.hx:409: characters 5-36
 		$result = ($this->f)($this->base->next(), $this->i);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterators.hx:414: characters 3-6
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterators.hx:410: characters 5-8
 		$this->i++;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Iterators.hx:415: characters 3-16
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Iterators.hx:411: characters 5-18
 		return $result;
 	}
 }

@@ -7,6 +7,7 @@ import php.SuperGlobal;
 import haxe.Serializer;
 import haxe.Unserializer;
 import php.Web;
+import regex.ExpReg;
 import xapi.Activity;
 import xapi.Agent;
 import xapi.Context;
@@ -19,6 +20,7 @@ import xapi.activities.Definition;
 import xapi.types.Score;
 import xapi.types.StatementRef;
 using StringTools;
+using regex.ExpReg;
 /**
  * ...
  * @author bb
@@ -29,12 +31,8 @@ class App
 	var resultMessageBack:Map<String,Dynamic>;
 	var _maindebug:Bool;
 	var lrs:LearninLocker;
+	var sentdata:String;
    
-	
-
-
-	
-
 	public function new()
 	{
 		Serializer.USE_CACHE = true;
@@ -46,14 +44,14 @@ class App
 		 * Init local var
 		/*******************************/
 		var location = Web.getHostName();
-		//_maindebug = location.indexOf("test.salt.ch") >-1 || params.exists("debug");
-		_maindebug = params.exists("debug");
-		if (_maindebug) trace("debug");
+		_maindebug = location.indexOf("test.salt.ch") >-1 || params.exists("debug");
+		//_maindebug = params.exists("debug");
+		//if (_maindebug) trace("debug");
 		if (!params.exists(Params.LRS))
 		{
 			lrs = if (_maindebug)
 			{
-				new LearninLocker("test","https://qast.test.salt.ch/data/xAPI/","a36cc73da2a8a79f20b36e7502c10ed7eebee98b", "c2d3b79c52e94a99c4e239a3de529ffd6a60d2b0");
+				new LearninLocker("TM_TEST","https://qast.test.salt.ch/data/xAPI/","", "", "Basic NDdlYTQ5M2MyYjk5YTU0NjhmODEzYzliYWY1ODI1NWNmMmNiMThkZDo2MjMyNDFiZDg5MjNhYzAxYzFhMzI4NDcyYzU1YTA0YTBiZmU2ODI1");
 			}
 			else
 			{
@@ -70,6 +68,9 @@ class App
 		lrs.httpData.add(onData);
 		lrs.errorStatus.add(onError);
 		lrs.signalStatus.add(onStatus);
+		lrs.onStatementSignal.add(onGetStatement);
+		if (_maindebug)
+			lrs.debugData.add(onDebug);
 		//lrs.onLrsTestSignal.add(onLRSTest);
         
 		if (params.exists(Params.STATEMENT))
@@ -80,54 +81,39 @@ class App
 		{
 			sendStatements( params.get(Params.STATEMENTS));
 		}
+		else if (params.exists(Params.GET)){
+			var get = params.get(Params.GET).trim();
+			if (params.get(Params.GET).trim() == "" || !ExpReg.UUID.STRING_TO_REG("gi").match(get))
+			{
+				resultMessageBack.set(Results.MESSAGE, Results.BAD_UUID);
+				Lib.print(Json.stringify(resultMessageBack));
+			}
+			else{
+				lrs.getStatementById(get);
+			}
+			//trace("ok");
+		}
 		else
 		{
-			/*
-			#if debug
-			if (params.exists("verb"))
-			{
-				lrs.postStatement(prepareLeagacy());
-			}
-			else
-			{
-
-				//trace("App::App send test");
-				sendStatement(testSerializer());
-				//sendStatement(Serializer.run(testStatementCoach()));
-			}
-			#else
-				lrs.postStatement(prepareLeagacy());
-			#end
-			*/
+			resultMessageBack.set(Results.MESSAGE, Results.NO_PARAM_VALUE);
+			Lib.print(Json.stringify(resultMessageBack));
+			
 		}
 		
 	}
-	/*function prepareStatement(stmts:Array<Statement>)
+	
+	function onGetStatement(d: Dynamic) 
 	{
-		var s:String ="";
-		try
-		{
-			//trace(stmts);
-			s = Json.stringify(stmts);
-			//trace(s);
-			//trace("STMT2");
-			var ereg = ~/,\s*"[^"]+":null|"[^"]+":null,?/g;
-			var ereg2 = ~/,\s*"[^"]+":\[\]|"[^"]+":\[\],?/g;
-			var ereg3 = ~/,\s*"[^"]+":\{\}|"[^"]+":\ {\},?/g;
+		resultMessageBack.set(Results.STATEMENT, d);
+		resultMessageBack.set(Results.STATUS, Results.SUCCESS_VALUE);
+		Lib.print(Json.stringify(resultMessageBack));
+	}
+	
+	function onDebug(s:String) 
+	{
+		resultMessageBack.set("sentData", s);
+	}
 
-			s = ereg.replace(s, "");
-			s = ereg2.replace(s, "");
-			s = ereg3.replace(s, "");
-		}
-		catch (e:Dynamic)
-		{
-			trace(e);
-		}
-		#if debug
-		//trace(s);
-		#end
-		return s;
-	}*/
 	
 	function sendStatements(stmt:String)
 	{
@@ -135,17 +121,17 @@ class App
 		var debugStage = 0;
 		try
 		{
-			var statements = cast (Unserializer.run(stmt.urlDecode()), Array<Dynamic>);
+			/*var statements = cast (Unserializer.run(stmt.urlDecode()), Array<Dynamic>);
 
 			var stmts:Array<Statement> = [];
 			for (i in statements)
 			{
 				stmts.push(cast(i, Statement));
-			}
+			}*/
 			debugStage++;
 
-			lrs.postStatements(stmts);
-
+			lrs.postStatements(Unserializer.run(stmt.urlDecode()));
+             resultMessageBack.set("sentData", sentdata);
 			//Lib.print(Json.stringify(resultMessageBack));
 			debugStage++;
 		}
@@ -170,10 +156,11 @@ class App
 		var stage = 0;
 		try
 		{
-			var statement = Unserializer.run(stmt);
+			var statement = Unserializer.run(stmt.urlDecode());
 			stage++;
 
 			lrs.postStatement(cast(statement, Statement));
+			resultMessageBack.set("sentData", sentdata);
 			//Lib.print(Json.stringify(resultMessageBack));
 			stage++;
 		}
@@ -200,7 +187,7 @@ class App
 		}
 		else
 		{
-			resultMessageBack.set(Results.STATUS,  Results.FAILED_VALUE);
+			resultMessageBack.set(Results.STATUS,  Results.FAILED_VALUE + status);
 		}
 	}
 

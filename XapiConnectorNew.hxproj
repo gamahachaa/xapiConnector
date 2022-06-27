@@ -16,7 +16,6 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="..\_myPackages\utils" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -35,6 +34,8 @@
     <library name="xapi" />
     <library name="tstool" />
     <library name="signals" />
+    <library name="utils" />
+    <library name="quality" />
   </haxelib>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>

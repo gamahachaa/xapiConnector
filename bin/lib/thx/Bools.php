@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx
  */
 
 namespace thx;
@@ -18,19 +17,19 @@ class Bools {
 	 * @return bool
 	 */
 	public static function canParse ($v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:22: characters 17-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:21: characters 61-76
 		$_g = \mb_strtolower($v);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:22: lines 22-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:21: lines 21-22
 		if ($_g === null) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:23: characters 55-59
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:22: characters 56-60
 			return true;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:22: characters 17-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:21: characters 61-76
 			if ($_g === "0" || $_g === "1" || $_g === "false" || $_g === "off" || $_g === "on" || $_g === "true") {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:23: characters 55-59
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:22: characters 56-60
 				return true;
 			} else {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:24: characters 12-17
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:23: characters 13-18
 				return false;
 			}
 		}
@@ -45,15 +44,15 @@ class Bools {
 	 * @return int
 	 */
 	public static function compare ($a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:10: characters 10-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:10: characters 12-37
 		if ($a === $b) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:10: characters 19-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:10: characters 21-22
 			return 0;
 		} else if ($a) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:10: characters 28-30
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:10: characters 30-32
 			return -1;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:10: characters 33-34
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:10: characters 35-36
 			return 1;
 		}
 	}
@@ -68,12 +67,12 @@ class Bools {
 	 * @return Option
 	 */
 	public static function option ($cond, $a) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:48: characters 10-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:46: characters 12-39
 		if ($cond) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:48: characters 20-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:46: characters 22-29
 			return Option::Some($a);
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:48: characters 33-37
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:46: characters 35-39
 			return Option::None();
 		}
 	}
@@ -86,24 +85,24 @@ class Bools {
 	 * @return bool
 	 */
 	public static function parse ($v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:31: characters 17-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:29: characters 65-80
 		$_g = \mb_strtolower($v);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:31: lines 31-33
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:29: lines 29-31
 		if ($_g === null) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:33: characters 36-41
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:31: characters 37-42
 			return false;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:31: characters 17-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:29: characters 65-80
 			if ($_g === "1" || $_g === "on" || $_g === "true") {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:32: characters 28-32
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:30: characters 29-33
 				return true;
 			} else if ($_g === "0" || $_g === "false" || $_g === "off") {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:33: characters 36-41
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:31: characters 37-42
 				return false;
 			} else {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:34: characters 9-10
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:32: characters 10-11
 				$v = $_g;
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:34: characters 12-17
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:32: characters 13-18
 				throw Exception::thrown("unable to parse \"" . ($v??'null') . "\"");
 			}
 		}
@@ -117,12 +116,12 @@ class Bools {
 	 * @return int
 	 */
 	public static function toInt ($v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:16: characters 10-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:16: characters 12-21
 		if ($v) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:16: characters 14-15
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:16: characters 16-17
 			return 1;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:16: characters 18-19
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:16: characters 20-21
 			return 0;
 		}
 	}
@@ -136,7 +135,7 @@ class Bools {
 	 * @return bool
 	 */
 	public static function xor ($a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Bools.hx:41: characters 3-16
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Bools.hx:39: characters 5-18
 		return $a !== $b;
 	}
 }

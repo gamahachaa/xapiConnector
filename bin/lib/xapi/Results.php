@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: ../_myPackages/utils/xapi/Results.hx
  */
 
 namespace xapi;
@@ -15,7 +14,15 @@ class Results {
 	/**
 	 * @var string
 	 */
+	const BAD_UUID = "Missing UUID or bad format";
+	/**
+	 * @var string
+	 */
 	const DETAILS = "details";
+	/**
+	 * @var string
+	 */
+	const FAILED_404_VALUE = "failed404";
 	/**
 	 * @var string
 	 ********************************************
@@ -34,7 +41,15 @@ class Results {
 	/**
 	 * @var string
 	 */
+	const NO_PARAM_VALUE = "No significant param recieved";
+	/**
+	 * @var string
+	 */
 	const STAGE = "stage";
+	/**
+	 * @var string
+	 */
+	const STATEMENT = "statement";
 	/**
 	 * @var string
 	 */

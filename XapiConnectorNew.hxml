@@ -4,8 +4,9 @@
 -lib xapi
 -lib tstool
 -lib signals
+-lib utils
+-lib quality
 -cp src
--cp ../_myPackages/utils
 -php bin
 -D haxeJSON
 -main Main

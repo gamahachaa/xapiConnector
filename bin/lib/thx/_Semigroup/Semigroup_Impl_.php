@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Semigroup.hx
  */
 
 namespace thx\_Semigroup;
@@ -15,7 +14,7 @@ final class Semigroup_Impl_ {
 	 * @return \Closure
 	 */
 	public static function get_append ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Semigroup.hx:8: characters 3-14
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Semigroup.hx:6: characters 33-44
 		return $this1;
 	}
 }

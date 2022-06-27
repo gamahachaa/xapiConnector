@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx
  */
 
 namespace thx;
@@ -20,7 +19,7 @@ class Functions {
 	 * @return mixed
 	 */
 	public static function applyTo ($f, $a) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:472: characters 3-14
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:400: characters 5-16
 		return $f($a);
 	}
 
@@ -33,7 +32,7 @@ class Functions {
 	 * @return bool
 	 */
 	public static function equality ($a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:437: characters 3-16
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:365: characters 5-18
 		return Boot::equal($a, $b);
 	}
 
@@ -45,7 +44,7 @@ class Functions {
 	 * @return mixed
 	 */
 	public static function identity ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:443: characters 3-15
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:371: characters 5-17
 		return $value;
 	}
 
@@ -66,7 +65,7 @@ class Functions {
 	 * @return mixed
 	 */
 	public static function passTo ($a, $f) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Functions.hx:465: characters 3-14
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Functions.hx:393: characters 5-16
 		return $f($a);
 	}
 }

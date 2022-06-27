@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\std/DateTools.hx
  */
 
 use \php\Boot;

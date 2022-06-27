@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\std/haxe/ds/Option.hx
  */
 
 namespace haxe\ds;

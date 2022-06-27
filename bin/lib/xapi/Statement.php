@@ -1,13 +1,14 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx
  */
 
 namespace xapi;
 
 use \xapi\types\IObject;
 use \php\Boot;
+use \haxe\Exception;
 use \xapi\types\IActor;
+use \thx\_DateTime\DateTime_Impl_;
 use \thx\_DateTimeUtc\DateTimeUtc_Impl_;
 use \xapi\types\IUnique;
 
@@ -61,8 +62,14 @@ class Statement implements IUnique {
 	public function __construct ($actor, $verb, $object, $result = null, $context = null) {
 		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:24: characters 3-21
 		$this->set_attachments(null);
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:25: characters 3-43
-		$this->timestamp = DateTimeUtc_Impl_::toString(DateTimeUtc_Impl_::now());
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:25: characters 15-29
+		$dateTime = DateTimeUtc_Impl_::now();
+		$this1 = \Array_hx::wrap([
+			$dateTime,
+			DateTime_Impl_::localOffset(),
+		]);
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:25: characters 3-40
+		$this->timestamp = DateTime_Impl_::toString($this1);
 		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:27: characters 3-25
 		$this->set_context($context);
 		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:28: characters 3-23
@@ -73,13 +80,18 @@ class Statement implements IUnique {
 		$this->verb = $verb;
 		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:31: characters 3-21
 		$this->actor = $actor;
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:32: lines 32-35
+		if (($object->get_objectType() === "Agent") && ($context->get_platform() !== null)) {
+			#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:34: characters 4-9
+			throw Exception::thrown("The context's \"platform\" property MUST only be used if the Statement's Object is an Activity objectType=" . ($object->get_objectType()??'null') . " context.platform = " . ($context->get_platform()??'null'));
+		}
 	}
 
 	/**
 	 * @return IActor
 	 */
 	public function get_actor () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:73: characters 3-15
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:77: characters 3-15
 		return $this->actor;
 	}
 
@@ -87,7 +99,7 @@ class Statement implements IUnique {
 	 * @return mixed[]|\Array_hx
 	 */
 	public function get_attachments () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:83: characters 3-21
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:87: characters 3-21
 		return $this->attachments;
 	}
 
@@ -95,7 +107,7 @@ class Statement implements IUnique {
 	 * @return Context
 	 */
 	public function get_context () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:50: characters 3-17
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:54: characters 3-17
 		return $this->context;
 	}
 
@@ -103,7 +115,7 @@ class Statement implements IUnique {
 	 * @return string
 	 */
 	public function get_id () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:45: characters 3-12
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:49: characters 3-12
 		return $this->id;
 	}
 
@@ -111,7 +123,7 @@ class Statement implements IUnique {
 	 * @return IObject
 	 */
 	public function get_object () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:63: characters 3-16
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:67: characters 3-16
 		return $this->object;
 	}
 
@@ -119,7 +131,7 @@ class Statement implements IUnique {
 	 * @return Result
 	 */
 	public function get_result () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:58: characters 3-16
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:62: characters 3-16
 		return $this->result;
 	}
 
@@ -127,7 +139,7 @@ class Statement implements IUnique {
 	 * @return string
 	 */
 	public function get_timestamp () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:78: characters 3-19
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:82: characters 3-19
 		return $this->timestamp;
 	}
 
@@ -135,7 +147,7 @@ class Statement implements IUnique {
 	 * @return Verb
 	 */
 	public function get_verb () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:68: characters 3-14
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:72: characters 3-14
 		return $this->verb;
 	}
 
@@ -151,19 +163,25 @@ class Statement implements IUnique {
 	 * @return void
 	 */
 	public function reset () {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:35: characters 3-21
-		$this->set_attachments(null);
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:36: characters 3-43
-		$this->timestamp = DateTimeUtc_Impl_::toString(DateTimeUtc_Impl_::now());
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:37: characters 3-22
-		$this->set_context(null);
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:38: characters 3-21
-		$this->result = null;
 		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:39: characters 3-21
+		$this->set_attachments(null);
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:40: characters 15-29
+		$dateTime = DateTimeUtc_Impl_::now();
+		$this1 = \Array_hx::wrap([
+			$dateTime,
+			DateTime_Impl_::localOffset(),
+		]);
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:40: characters 3-40
+		$this->timestamp = DateTime_Impl_::toString($this1);
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:41: characters 3-22
+		$this->set_context(null);
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:42: characters 3-21
+		$this->result = null;
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:43: characters 3-21
 		$this->object = null;
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:40: characters 3-19
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:44: characters 3-19
 		$this->verb = null;
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:41: characters 3-20
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:45: characters 3-20
 		$this->actor = null;
 	}
 
@@ -173,12 +191,12 @@ class Statement implements IUnique {
 	 * @return mixed[]|\Array_hx
 	 */
 	public function set_attachments ($value) {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:88: lines 88-89
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:92: lines 92-93
 		if ($this->get_attachments() === null) {
-			#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:89: characters 4-20
+			#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:93: characters 4-20
 			$this->attachments = new \Array_hx();
 		}
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:90: characters 3-29
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:94: characters 3-29
 		return $this->attachments = $value;
 	}
 
@@ -188,7 +206,7 @@ class Statement implements IUnique {
 	 * @return Context
 	 */
 	public function set_context ($ctx) {
-		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:54: characters 3-23
+		#C:\HaxeToolkit\haxe\lib\xapi/git/xapi/Statement.hx:58: characters 3-23
 		return $this->context = $ctx;
 	}
 }

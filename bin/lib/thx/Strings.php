@@ -1,6 +1,5 @@
 <?php
 /**
- * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx
  */
 
 namespace thx;
@@ -68,14 +67,14 @@ class Strings {
 	 * @return string
 	 */
 	public static function after ($value, $searchFor) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:21: characters 3-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:20: characters 5-40
 		$pos = HxString::indexOf($value, $searchFor);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:22: lines 22-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:21: lines 21-24
 		if ($pos < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:23: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:22: characters 7-16
 			return "";
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:25: characters 4-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:24: characters 7-53
 			return HxString::substring($value, $pos + mb_strlen($searchFor));
 		}
 	}
@@ -90,14 +89,14 @@ class Strings {
 	 * @return string
 	 */
 	public static function afterLast ($value, $searchFor) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:34: characters 3-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:33: characters 7-46
 		$pos = HxString::lastIndexOf($value, $searchFor);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:35: lines 35-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:34: lines 34-37
 		if ($pos < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:36: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:35: characters 9-18
 			return "";
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:38: characters 4-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:37: characters 9-55
 			return HxString::substring($value, $pos + mb_strlen($searchFor));
 		}
 	}
@@ -112,14 +111,14 @@ class Strings {
 	 * @return string
 	 */
 	public static function before ($value, $searchFor) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:47: characters 3-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:46: characters 5-40
 		$pos = HxString::indexOf($value, $searchFor);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:48: lines 48-51
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:47: lines 47-50
 		if ($pos < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:49: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:48: characters 7-16
 			return "";
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:51: characters 4-34
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:50: characters 7-37
 			return HxString::substring($value, 0, $pos);
 		}
 	}
@@ -134,14 +133,14 @@ class Strings {
 	 * @return string
 	 */
 	public static function beforeLast ($value, $searchFor) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:60: characters 3-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:59: characters 7-46
 		$pos = HxString::lastIndexOf($value, $searchFor);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:61: lines 61-64
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:60: lines 60-63
 		if ($pos < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:62: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:61: characters 9-18
 			return "";
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:64: characters 4-34
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:63: characters 9-39
 			return HxString::substring($value, 0, $pos);
 		}
 	}
@@ -154,7 +153,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function canonicalizeNewlines ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:97: characters 3-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:96: characters 5-51
 		return Strings::$CANONICALIZE_LINES->replace($value, "\x0A");
 	}
 
@@ -166,7 +165,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function capitalize ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:72: characters 3-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:71: characters 5-54
 		return (\mb_strtoupper(\mb_substr($s, 0, 1))??'null') . (\mb_substr($s, 1, null)??'null');
 	}
 
@@ -180,15 +179,15 @@ class Strings {
 	 * @return string
 	 */
 	public static function capitalizeWords ($value, $whiteSpaceOnly = false) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:80: lines 80-90
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:79: lines 79-89
 		if ($whiteSpaceOnly === null) {
 			$whiteSpaceOnly = false;
 		}
 		if ($whiteSpaceOnly) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:82: characters 4-36
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:81: characters 5-37
 			return \ucwords($value);
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:89: characters 4-53
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:88: characters 7-56
 			return Strings::$UCWORDS->map((\mb_strtoupper(\mb_substr($value, 0, 1))??'null') . (\mb_substr($value, 1, null)??'null'), Boot::getStaticClosure(Strings::class, 'upperMatch'));
 		}
 	}
@@ -202,20 +201,20 @@ class Strings {
 	 * @return int
 	 */
 	public static function caseInsensitiveCompare ($a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:103: lines 103-104
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:102: lines 102-103
 		if ((null === $a) && (null === $b)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:104: characters 4-12
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:103: characters 7-15
 			return 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:105: lines 105-108
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:104: lines 104-107
 		if (null === $a) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:106: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:105: characters 7-16
 			return -1;
 		} else if (null === $b) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:108: characters 4-12
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:107: characters 7-15
 			return 1;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:109: characters 10-51
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:108: characters 12-53
 		$a1 = \mb_strtolower($a);
 		$b1 = \mb_strtolower($b);
 		if (strcmp($a1, $b1) < 0) {
@@ -236,12 +235,12 @@ class Strings {
 	 * @return bool
 	 */
 	public static function caseInsensitiveContains ($s, $test) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:161: characters 10-72
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:160: characters 12-74
 		if ($test !== "") {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:161: characters 24-72
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:160: characters 26-74
 			return HxString::indexOf(\mb_strtolower($s), \mb_strtolower($test)) >= 0;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:161: characters 10-72
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:160: characters 12-74
 			return true;
 		}
 	}
@@ -255,11 +254,11 @@ class Strings {
 	 * @return bool
 	 */
 	public static function caseInsensitiveContainsAll ($s, $tests) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:198: characters 49-50
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:197: characters 51-52
 		$s1 = $s;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:198: characters 3-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:197: characters 5-57
 		return Arrays::all($tests, function ($test) use (&$s1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:198: characters 20-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:197: characters 22-50
 			if ($test !== "") {
 				return HxString::indexOf(\mb_strtolower($s1), \mb_strtolower($test)) >= 0;
 			} else {
@@ -277,11 +276,11 @@ class Strings {
 	 * @return bool
 	 */
 	public static function caseInsensitiveContainsAny ($s, $tests) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:186: characters 49-50
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:185: characters 51-52
 		$s1 = $s;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:186: characters 3-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:185: characters 5-57
 		return Arrays::any($tests, function ($test) use (&$s1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:186: characters 20-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:185: characters 22-50
 			if ($test !== "") {
 				return HxString::indexOf(\mb_strtolower($s1), \mb_strtolower($test)) >= 0;
 			} else {
@@ -299,7 +298,7 @@ class Strings {
 	 * @return bool
 	 */
 	public static function caseInsensitiveEndsWith ($s, $end) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:116: characters 3-66
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:115: characters 5-68
 		return \StringTools::endsWith(\mb_strtolower($s), \mb_strtolower($end));
 	}
 
@@ -312,9 +311,9 @@ class Strings {
 	 * @return bool
 	 */
 	public static function caseInsensitiveEndsWithAny ($s, $values) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:122: characters 22-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:121: characters 24-39
 		$tmp = \mb_strtolower($s);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:122: characters 39-85
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:121: characters 41-87
 		$result = [];
 		$data = $values->arr;
 		$_g_current = 0;
@@ -324,7 +323,7 @@ class Strings {
 			$item = $_g_data[$_g_current++];
 			$result[] = \mb_strtolower($item);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:122: characters 3-86
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:121: characters 5-88
 		return Strings::endsWithAny($tmp, \Array_hx::wrap($result));
 	}
 
@@ -337,7 +336,7 @@ class Strings {
 	 * @return bool
 	 */
 	public static function caseInsensitiveStartsWith ($s, $start) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:128: characters 3-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:127: characters 5-72
 		return \StringTools::startsWith(\mb_strtolower($s), \mb_strtolower($start));
 	}
 
@@ -350,9 +349,9 @@ class Strings {
 	 * @return bool
 	 */
 	public static function caseInsensitiveStartsWithAny ($s, $values) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:134: characters 24-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:133: characters 26-41
 		$tmp = \mb_strtolower($s);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:134: characters 41-87
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:133: characters 43-89
 		$result = [];
 		$data = $values->arr;
 		$_g_current = 0;
@@ -362,7 +361,7 @@ class Strings {
 			$item = $_g_data[$_g_current++];
 			$result[] = \mb_strtolower($item);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:134: characters 3-88
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:133: characters 5-90
 		return Strings::startsWithAny($tmp, \Array_hx::wrap($result));
 	}
 
@@ -377,7 +376,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function collapse ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:145: characters 3-51
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:144: characters 5-53
 		return Strings::$WSG->replace(\trim($value), " ");
 	}
 
@@ -391,15 +390,15 @@ class Strings {
 	 * @return int
 	 */
 	public static function compare ($a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:152: characters 10-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:151: characters 12-40
 		if (strcmp($a, $b) < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:152: characters 18-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:151: characters 20-22
 			return -1;
 		} else if (strcmp($a, $b) > 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:152: characters 32-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:151: characters 34-35
 			return 1;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:152: characters 36-37
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:151: characters 38-39
 			return 0;
 		}
 	}
@@ -413,12 +412,12 @@ class Strings {
 	 * @return bool
 	 */
 	public static function contains ($s, $test) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:171: characters 10-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:170: characters 12-46
 		if ($test !== "") {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:171: characters 24-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:170: characters 26-46
 			return HxString::indexOf($s, $test) >= 0;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:171: characters 10-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:170: characters 12-46
 			return true;
 		}
 	}
@@ -432,11 +431,11 @@ class Strings {
 	 * @return bool
 	 */
 	public static function containsAll ($s, $tests) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:204: characters 34-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:203: characters 36-37
 		$s1 = $s;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:204: characters 3-40
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:203: characters 5-42
 		return Arrays::all($tests, function ($test) use (&$s1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:204: characters 20-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:203: characters 22-35
 			if ($test !== "") {
 				return HxString::indexOf($s1, $test) >= 0;
 			} else {
@@ -454,11 +453,11 @@ class Strings {
 	 * @return bool
 	 */
 	public static function containsAny ($s, $tests) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:192: characters 34-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:191: characters 36-37
 		$s1 = $s;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:192: characters 3-40
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:191: characters 5-42
 		return Arrays::any($tests, function ($test) use (&$s1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:192: characters 20-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:191: characters 22-35
 			if ($test !== "") {
 				return HxString::indexOf($s1, $test) >= 0;
 			} else {
@@ -476,7 +475,7 @@ class Strings {
 	 * @return int
 	 */
 	public static function count ($s, $test) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:180: characters 3-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:179: characters 5-36
 		return HxString::split($s, $test)->length - 1;
 	}
 
@@ -488,7 +487,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function dasherize ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:210: characters 3-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:210: characters 5-31
 		return \StringTools::replace($s, "_", "-");
 	}
 
@@ -504,26 +503,26 @@ class Strings {
 	 * @return int
 	 */
 	public static function diffAt ($a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:220: characters 13-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:220: characters 15-43
 		$a1 = mb_strlen($a);
 		$b1 = mb_strlen($b);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:220: characters 3-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:220: characters 5-44
 		$min = ($a1 < $b1 ? $a1 : $b1);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:221: characters 13-17
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:221: characters 14-18
 		$_g = 0;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:221: characters 17-20
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:221: characters 18-21
 		$_g1 = $min;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:221: lines 221-223
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:221: lines 221-223
 		while ($_g < $_g1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:221: characters 13-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:221: characters 14-21
 			$i = $_g++;
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:222: lines 222-223
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:222: lines 222-223
 			if (HxString::substring($a, $i, $i + 1) !== HxString::substring($b, $i, $i + 1)) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:223: characters 5-13
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:223: characters 9-17
 				return $i;
 			}
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:224: characters 3-13
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:224: characters 5-15
 		return $min;
 	}
 
@@ -541,28 +540,28 @@ class Strings {
 	 * @return string
 	 */
 	public static function ellipsis ($s, $maxlen = 20, $symbol = "…") {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:235: lines 235-247
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:235: lines 235-248
 		if ($maxlen === null) {
 			$maxlen = 20;
 		}
 		if ($symbol === null) {
 			$symbol = "…";
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:238: characters 3-46
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:238: lines 238-239
 		$sl = mb_strlen($s);
 		$symboll = mb_strlen($symbol);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:239: lines 239-246
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:240: lines 240-247
 		if ($sl > $maxlen) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:240: lines 240-244
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:241: lines 241-245
 			if ($maxlen < $symboll) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:241: characters 5-51
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:242: characters 9-55
 				return \mb_substr($symbol, $symboll - $maxlen, $maxlen);
 			} else {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:243: characters 5-50
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:244: characters 9-54
 				return (\mb_substr($s, 0, $maxlen - $symboll)??'null') . ($symbol??'null');
 			}
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:246: characters 4-12
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:247: characters 7-15
 			return $s;
 		}
 	}
@@ -580,30 +579,30 @@ class Strings {
 	 * @return string
 	 */
 	public static function ellipsisMiddle ($s, $maxlen = 20, $symbol = "…") {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:256: lines 256-269
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:257: lines 257-271
 		if ($maxlen === null) {
 			$maxlen = 20;
 		}
 		if ($symbol === null) {
 			$symbol = "…";
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:259: characters 3-46
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:260: lines 260-261
 		$sl = mb_strlen($s);
 		$symboll = mb_strlen($symbol);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:260: lines 260-268
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:262: lines 262-270
 		if ($sl > $maxlen) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:261: lines 261-263
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:263: lines 263-265
 			if ($maxlen <= $symboll) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:262: characters 5-39
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:264: characters 9-43
 				return Strings::ellipsis($s, $maxlen, $symbol);
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:264: lines 264-265
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:266: lines 266-267
 			$hll = (int)(\ceil(($maxlen - $symboll) / 2));
 			$hlr = (int)(\floor(($maxlen - $symboll) / 2));
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:266: characters 4-62
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:268: characters 7-65
 			return (\mb_substr($s, 0, $hll)??'null') . ($symbol??'null') . (\mb_substr($s, $sl - $hlr, $hlr)??'null');
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:268: characters 4-12
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:270: characters 7-15
 			return $s;
 		}
 	}
@@ -617,9 +616,9 @@ class Strings {
 	 * @return bool
 	 */
 	public static function endsWithAny ($s, $values) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:275: characters 3-69
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:277: characters 5-71
 		return Iterables::any($values, function ($end) use (&$s) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:275: characters 46-68
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:277: characters 48-70
 			return \StringTools::endsWith($s, $end);
 		});
 	}
@@ -634,7 +633,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function filter ($s, $predicate) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:282: characters 10-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:284: lines 284-285
 		$_this = Strings::toArray($s);
 		$result = [];
 		$data = $_this->arr;
@@ -647,7 +646,7 @@ class Strings {
 				$result[] = $item;
 			}
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:282: characters 3-47
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:284: lines 284-286
 		return \Array_hx::wrap($result)->join("");
 	}
 
@@ -660,12 +659,12 @@ class Strings {
 	 * @return string
 	 */
 	public static function filterCharcode ($s, $predicate) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:288: characters 26-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:292: characters 30-62
 		$_this = Strings::map($s, function ($s) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:288: characters 26-40
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:292: characters 30-44
 			return HxString::charCodeAt($s, 0);
 		});
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:288: characters 26-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:292: characters 30-62
 		$result = [];
 		$data = $_this->arr;
 		$_g_current = 0;
@@ -677,9 +676,9 @@ class Strings {
 				$result[] = $item;
 			}
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:288: characters 3-59
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:292: characters 5-63
 		$codes = \Array_hx::wrap($result);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:289: characters 10-66
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:293: lines 293-294
 		$result = [];
 		$data = $codes->arr;
 		$_g_current = 0;
@@ -689,7 +688,7 @@ class Strings {
 			$item = $_g_data[$_g_current++];
 			$result[] = \mb_chr($item);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:289: characters 3-75
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:293: lines 293-295
 		return \Array_hx::wrap($result)->join("");
 	}
 
@@ -703,14 +702,14 @@ class Strings {
 	 * @return string
 	 */
 	public static function from ($value, $searchFor) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:298: characters 3-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:304: characters 5-40
 		$pos = HxString::indexOf($value, $searchFor);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:299: lines 299-302
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:305: lines 305-308
 		if ($pos < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:300: characters 4-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:306: characters 7-16
 			return "";
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:302: characters 4-31
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:308: characters 7-34
 			return HxString::substring($value, $pos);
 		}
 	}
@@ -723,12 +722,12 @@ class Strings {
 	 * @return bool
 	 */
 	public static function hasContent ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:321: characters 10-43
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:326: characters 12-45
 		if ($value !== null) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:321: characters 27-43
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:326: characters 29-45
 			return mb_strlen($value) > 0;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:321: characters 10-43
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:326: characters 12-45
 			return false;
 		}
 	}
@@ -739,22 +738,22 @@ class Strings {
 	 * @return int
 	 */
 	public static function hashCode ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:309: characters 3-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:314: characters 5-31
 		$code = 0;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:310: characters 13-17
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:315: characters 14-18
 		$_g = 0;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:310: characters 17-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:315: characters 18-30
 		$_g1 = mb_strlen($value);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:310: lines 310-313
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:315: lines 315-318
 		while ($_g < $_g1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:310: characters 13-29
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:315: characters 14-30
 			$i = $_g++;
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:311: characters 4-43
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:316: characters 7-48
 			$c = HxString::charCodeAt($value, $i);
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:312: characters 4-49
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:317: characters 7-52
 			$code = (((Int32_Impl_::mul(Strings::$HASCODE_MUL, $code) + $c) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits) % Strings::$HASCODE_MAX;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:314: characters 3-22
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:319: characters 5-24
 		return $code;
 	}
 
@@ -766,7 +765,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function humanize ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:327: characters 3-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:332: characters 5-43
 		return \StringTools::replace(Strings::underscore($s), "_", " ");
 	}
 
@@ -779,12 +778,12 @@ class Strings {
 	 * @return string
 	 */
 	public static function ifEmpty ($value, $alt) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:368: characters 10-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:373: characters 12-54
 		if ((null !== $value) && ("" !== $value)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:368: characters 41-46
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:373: characters 43-48
 			return $value;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:368: characters 49-52
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:373: characters 51-54
 			return $alt;
 		}
 	}
@@ -797,12 +796,12 @@ class Strings {
 	 * @return bool
 	 */
 	public static function isAlpha ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:333: characters 10-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:338: characters 12-46
 		if (mb_strlen($s) > 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:333: characters 26-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:338: characters 28-46
 			return !Strings::$IS_ALPHA->match($s);
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:333: characters 10-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:338: characters 12-46
 			return false;
 		}
 	}
@@ -815,7 +814,7 @@ class Strings {
 	 * @return bool
 	 */
 	public static function isAlphaNum ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:340: characters 3-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:345: characters 3-52
 		return ctype_alnum($value);
 	}
 
@@ -825,7 +824,7 @@ class Strings {
 	 * @return bool
 	 */
 	public static function isBreakingWhitespace ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:348: characters 3-45
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:353: characters 5-47
 		return !Strings::$IS_BREAKINGWHITESPACE->match($value);
 	}
 
@@ -837,7 +836,7 @@ class Strings {
 	 * @return bool
 	 */
 	public static function isDigitsOnly ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:375: characters 3-60
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:380: characters 5-61
 		return ctype_digit($value);
 	}
 
@@ -849,12 +848,12 @@ class Strings {
 	 * @return bool
 	 */
 	public static function isEmpty ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:386: characters 10-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:391: characters 12-40
 		if ($value !== null) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:386: characters 27-38
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:391: characters 29-40
 			return $value === "";
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:386: characters 10-38
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:391: characters 12-40
 			return true;
 		}
 	}
@@ -868,7 +867,7 @@ class Strings {
 	 * @return bool
 	 */
 	public static function isLowerCase ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:355: characters 3-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:360: characters 5-40
 		return \mb_strtolower($value) === $value;
 	}
 
@@ -881,7 +880,7 @@ class Strings {
 	 * @return bool
 	 */
 	public static function isUpperCase ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:362: characters 3-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:367: characters 5-40
 		return \mb_strtoupper($value) === $value;
 	}
 
@@ -893,7 +892,7 @@ class Strings {
 	 * @return object
 	 */
 	public static function iterator ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:419: characters 10-31
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:424: characters 12-33
 		return new ArrayIterator(Strings::toArray($s));
 	}
 
@@ -905,7 +904,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function lowerCaseFirst ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:392: characters 3-66
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:397: characters 5-68
 		return (\mb_strtolower(HxString::substring($value, 0, 1))??'null') . (HxString::substring($value, 1)??'null');
 	}
 
@@ -917,14 +916,14 @@ class Strings {
 	 * @return string
 	 */
 	public static function lpad ($s, $char, $length) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:694: characters 3-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:711: characters 5-34
 		$diff = $length - mb_strlen($s);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:695: lines 695-699
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:712: lines 712-716
 		if ($diff > 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:696: characters 4-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:713: characters 7-36
 			return (Strings::repeat($char, $diff)??'null') . ($s??'null');
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:698: characters 4-12
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:715: characters 7-15
 			return $s;
 		}
 	}
@@ -938,7 +937,7 @@ class Strings {
 	 * @return mixed[]|\Array_hx
 	 */
 	public static function map ($value, $callback) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:425: characters 10-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:430: characters 12-40
 		$_this = Strings::toArray($value);
 		$result = [];
 		$data = $_this->arr;
@@ -960,15 +959,15 @@ class Strings {
 	 * @return string
 	 */
 	public static function quote ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:484: lines 484-489
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:489: lines 489-494
 		if (HxString::indexOf($s, "\"") < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:485: characters 4-24
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:490: characters 7-27
 			return "\"" . ($s??'null') . "\"";
 		} else if (HxString::indexOf($s, "'") < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:487: characters 4-24
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:492: characters 7-27
 			return "'" . ($s??'null') . "'";
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:489: characters 4-57
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:494: characters 7-60
 			return "\"" . (\StringTools::replace($s, "\"", "\\\"")??'null') . "\"";
 		}
 	}
@@ -982,7 +981,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function random ($value, $length = 1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:399: characters 10-87
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:404: characters 12-89
 		if ($length === null) {
 			$length = 1;
 		}
@@ -998,7 +997,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function randomSequence ($seed, $length) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:406: characters 10-68
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:411: characters 12-71
 		$_this = Ints::range(0, $length);
 		$result = [];
 		$data = $_this->arr;
@@ -1009,7 +1008,7 @@ class Strings {
 			$item = $_g_data[$_g_current++];
 			$result[] = Strings::random($seed);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:406: characters 3-77
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:411: characters 5-80
 		return \Array_hx::wrap($result)->join("");
 	}
 
@@ -1022,7 +1021,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function randomSequence64 ($length) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:413: characters 3-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:418: characters 5-60
 		return Strings::randomSequence(Base64::$CHARS, $length);
 	}
 
@@ -1035,7 +1034,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function remove ($value, $toremove) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:431: characters 3-50
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:436: characters 5-52
 		return \StringTools::replace($value, $toremove, "");
 	}
 
@@ -1048,12 +1047,12 @@ class Strings {
 	 * @return string
 	 */
 	public static function removeAfter ($value, $toremove) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:437: characters 10-108
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:442: characters 12-110
 		if (\StringTools::endsWith($value, $toremove)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:437: characters 50-100
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:442: characters 52-102
 			return HxString::substring($value, 0, mb_strlen($value) - mb_strlen($toremove));
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:437: characters 103-108
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:442: characters 105-110
 			return $value;
 		}
 	}
@@ -1068,7 +1067,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function removeAt ($value, $index, $length) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:443: characters 3-69
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:448: characters 5-71
 		return (HxString::substring($value, 0, $index)??'null') . (HxString::substring($value, $index + $length)??'null');
 	}
 
@@ -1081,12 +1080,12 @@ class Strings {
 	 * @return string
 	 */
 	public static function removeBefore ($value, $toremove) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:449: characters 10-92
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:454: characters 12-94
 		if (\StringTools::startsWith($value, $toremove)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:449: characters 52-84
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:454: characters 54-86
 			return HxString::substring($value, mb_strlen($toremove));
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:449: characters 87-92
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:454: characters 89-94
 			return $value;
 		}
 	}
@@ -1100,14 +1099,14 @@ class Strings {
 	 * @return string
 	 */
 	public static function removeOne ($value, $toremove) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:455: characters 3-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:460: characters 5-39
 		$pos = HxString::indexOf($value, $toremove);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:456: lines 456-457
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:461: lines 461-462
 		if ($pos < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:457: characters 4-16
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:462: characters 7-19
 			return $value;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:458: characters 3-74
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:463: characters 5-76
 		return (HxString::substring($value, 0, $pos)??'null') . (HxString::substring($value, $pos + mb_strlen($toremove))??'null');
 	}
 
@@ -1123,20 +1122,20 @@ class Strings {
 	 * @return string
 	 */
 	public static function repeat ($s, $times) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:469: characters 10-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:474: characters 12-35
 		$_g = new \Array_hx();
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:469: characters 21-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:474: characters 22-26
 		$_g1 = 0;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:469: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:474: characters 26-31
 		$_g2 = $times;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:469: characters 11-33
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:474: characters 13-34
 		while ($_g1 < $_g2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:469: characters 21-30
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:474: characters 22-31
 			$i = $_g1++;
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:469: characters 32-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:474: characters 33-34
 			$_g->arr[$_g->length++] = $s;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:469: characters 3-43
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:474: characters 5-44
 		return $_g->join("");
 	}
 
@@ -1148,11 +1147,11 @@ class Strings {
 	 * @return string
 	 */
 	public static function reverse ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:475: characters 3-24
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:480: characters 5-26
 		$arr = Strings::toArray($s);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:476: characters 3-16
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:481: characters 5-18
 		$arr->arr = \array_reverse($arr->arr);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:477: characters 3-22
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:482: characters 5-24
 		return $arr->join("");
 	}
 
@@ -1164,14 +1163,14 @@ class Strings {
 	 * @return string
 	 */
 	public static function rpad ($s, $char, $length) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:704: characters 3-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:721: characters 5-34
 		$diff = $length - mb_strlen($s);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:705: lines 705-709
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:722: lines 722-726
 		if ($diff > 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:706: characters 4-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:723: characters 7-36
 			return ($s??'null') . (Strings::repeat($char, $diff)??'null');
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:708: characters 4-12
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:725: characters 7-15
 			return $s;
 		}
 	}
@@ -1185,14 +1184,14 @@ class Strings {
 	 * @return string[]|\Array_hx
 	 */
 	public static function splitOnce ($s, $separator) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:496: characters 3-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:501: characters 5-36
 		$pos = HxString::indexOf($s, $separator);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:497: lines 497-498
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:502: lines 502-503
 		if ($pos < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:498: characters 4-14
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:503: characters 7-17
 			return \Array_hx::wrap([$s]);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:499: characters 3-68
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:504: characters 5-70
 		return \Array_hx::wrap([
 			HxString::substring($s, 0, $pos),
 			HxString::substring($s, $pos + mb_strlen($separator)),
@@ -1208,9 +1207,9 @@ class Strings {
 	 * @return bool
 	 */
 	public static function startsWithAny ($s, $values) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:506: characters 3-75
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:511: characters 5-77
 		return Iterables::any($values, function ($start) use (&$s) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:506: characters 48-74
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:511: characters 50-76
 			return \StringTools::startsWith($s, $start);
 		});
 	}
@@ -1224,7 +1223,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function stripTags ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:514: characters 3-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:519: characters 5-56
 		return strip_tags($s);
 	}
 
@@ -1239,7 +1238,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function surround ($s, $left, $right = null) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:526: characters 3-50
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:531: characters 5-46
 		return "" . ($left??'null') . ($s??'null') . (((null === $right ? $left : $right))??'null');
 	}
 
@@ -1251,7 +1250,7 @@ class Strings {
 	 * @return string[]|\Array_hx
 	 */
 	public static function toArray ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:539: characters 3-21
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:544: characters 5-23
 		return HxString::split($s, "");
 	}
 
@@ -1263,9 +1262,9 @@ class Strings {
 	 * @return int[]|\Array_hx
 	 */
 	public static function toCharcodes ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:547: lines 547-548
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:552: lines 552-556
 		return Strings::map($s, function ($s) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:548: characters 23-45
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:555: characters 28-50
 			return HxString::charCodeAt($s, 0);
 		});
 	}
@@ -1280,17 +1279,17 @@ class Strings {
 	 * @return string[]|\Array_hx
 	 */
 	public static function toChunks ($s, $len) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:555: characters 3-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:563: characters 5-21
 		$chunks = new \Array_hx();
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:557: lines 557-560
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:565: lines 565-568
 		while (mb_strlen($s) > 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:558: characters 4-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:566: characters 7-36
 			$x = \mb_substr($s, 0, $len);
 			$chunks->arr[$chunks->length++] = $x;
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:559: characters 8-37
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:567: characters 11-40
 			$s = \mb_substr($s, $len, mb_strlen($s) - $len);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:561: characters 3-16
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:569: characters 5-18
 		return $chunks;
 	}
 
@@ -1302,7 +1301,7 @@ class Strings {
 	 * @return string[]|\Array_hx
 	 */
 	public static function toLines ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:568: characters 3-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:576: characters 5-32
 		return Strings::$SPLIT_LINES->split($s);
 	}
 
@@ -1315,7 +1314,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function trimChars ($value, $charlist) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:575: characters 3-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:583: characters 5-56
 		return \trim("strip_tags({0})", s);
 	}
 
@@ -1328,7 +1327,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function trimCharsLeft ($value, $charlist) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:587: characters 3-51
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:595: characters 5-52
 		return \ltrim($value, $charlist);
 	}
 
@@ -1341,7 +1340,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function trimCharsRight ($value, $charlist) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:606: characters 3-51
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:614: characters 5-52
 		return \rtrim($value, $charlist);
 	}
 
@@ -1354,15 +1353,15 @@ class Strings {
 	 * @return string
 	 */
 	public static function underscore ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:627: characters 3-31
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:637: characters 5-33
 		$s = (new \EReg("::", "g"))->replace($s, "/");
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:628: characters 3-53
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:638: characters 5-55
 		$s = (new \EReg("([A-Z]+)([A-Z][a-z])", "g"))->replace($s, "\$1_\$2");
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:629: characters 3-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:639: characters 5-51
 		$s = (new \EReg("([a-z\\d])([A-Z])", "g"))->replace($s, "\$1_\$2");
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:630: characters 3-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:640: characters 5-32
 		$s = (new \EReg("-", "g"))->replace($s, "_");
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:631: characters 3-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:641: characters 5-27
 		return \mb_strtolower($s);
 	}
 
@@ -1376,14 +1375,14 @@ class Strings {
 	 * @return string
 	 */
 	public static function upTo ($value, $searchFor) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:646: characters 3-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:656: characters 5-40
 		$pos = HxString::indexOf($value, $searchFor);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:647: lines 647-650
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:657: lines 657-660
 		if ($pos < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:648: characters 4-16
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:658: characters 7-19
 			return $value;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:650: characters 4-34
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:660: characters 7-37
 			return HxString::substring($value, 0, $pos);
 		}
 	}
@@ -1396,7 +1395,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function upperCaseFirst ($value) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:638: characters 3-66
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:648: characters 5-68
 		return (\mb_strtoupper(HxString::substring($value, 0, 1))??'null') . (HxString::substring($value, 1)??'null');
 	}
 
@@ -1406,7 +1405,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function upperMatch ($re) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:662: characters 10-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:676: characters 12-39
 		return \mb_strtoupper($re->matched(0));
 	}
 
@@ -1422,7 +1421,7 @@ class Strings {
 	 * @return string
 	 */
 	public static function wrapColumns ($s, $columns = 78, $indent = "", $newline = "\x0A") {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:659: characters 3-148
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:669: lines 669-673
 		if ($columns === null) {
 			$columns = 78;
 		}
@@ -1432,7 +1431,6 @@ class Strings {
 		if ($newline === null) {
 			$newline = "\x0A";
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:659: characters 10-134
 		$_this = Strings::$SPLIT_LINES->split($s);
 		$result = [];
 		$data = $_this->arr;
@@ -1443,7 +1441,6 @@ class Strings {
 			$item = $_g_data[$_g_current++];
 			$result[] = Strings::wrapLine(\trim(Strings::$WSG->replace($item, " ")), $columns, $indent, $newline);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:659: characters 3-148
 		return \Array_hx::wrap($result)->join($newline);
 	}
 
@@ -1456,53 +1453,53 @@ class Strings {
 	 * @return string
 	 */
 	public static function wrapLine ($s, $columns, $indent, $newline) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:665: characters 3-65
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:679: lines 679-682
 		$parts = new \Array_hx();
 		$pos = 0;
 		$len = mb_strlen($s);
 		$ilen = mb_strlen($indent);
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:666: characters 3-18
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:683: characters 5-20
 		$columns -= $ilen;
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:667: lines 667-687
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:684: lines 684-704
 		while (true) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:668: lines 668-671
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:685: lines 685-688
 			if (($pos + $columns) >= ($len - $ilen)) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:669: characters 5-33
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:686: characters 9-37
 				$x = HxString::substring($s, $pos);
 				$parts->arr[$parts->length++] = $x;
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:670: characters 5-10
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:687: characters 9-14
 				break;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:673: characters 4-14
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:690: characters 7-17
 			$i = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:674: lines 674-675
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:691: lines 691-692
 			while (!\StringTools::isSpace($s, $pos + $columns - $i) && ($i < $columns)) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:675: characters 5-8
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:692: characters 9-12
 				++$i;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:676: lines 676-686
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:693: lines 693-703
 			if ($i === $columns) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:678: characters 5-10
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:695: characters 9-14
 				$i = 0;
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:679: lines 679-680
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:696: lines 696-697
 				while (!\StringTools::isSpace($s, $pos + $columns + $i) && (($pos + $columns + $i) < $len)) {
-					#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:680: characters 6-9
+					#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:697: characters 11-14
 					++$i;
 				}
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:681: characters 5-52
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:698: characters 9-56
 				$x1 = HxString::substring($s, $pos, $pos + $columns + $i);
 				$parts->arr[$parts->length++] = $x1;
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:682: characters 5-27
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:699: characters 9-31
 				$pos += $columns + $i + 1;
 			} else {
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:684: characters 5-52
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:701: characters 9-56
 				$x2 = HxString::substring($s, $pos, $pos + $columns - $i);
 				$parts->arr[$parts->length++] = $x2;
-				#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:685: characters 5-27
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:702: characters 9-31
 				$pos += $columns - $i + 1;
 			}
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:689: characters 3-47
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:706: characters 5-49
 		return ($indent??'null') . ($parts->join(($newline??'null') . ($indent??'null'))??'null');
 	}
 
@@ -1521,7 +1518,7 @@ class Strings {
 		self::$HASCODE_MAX = 2147483647;
 		self::$HASCODE_MUL = 31;
 		self::$monoid = new _HxAnon_Strings0("", function ($a, $b) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/git/src/thx/Strings.hx:712: characters 108-120
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Strings.hx:730: characters 56-68
 			return ($a??'null') . ($b??'null');
 		});
 		self::$UCWORDS = new \EReg("[^a-zA-Z]([a-z])", "g");
