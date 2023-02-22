@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\std/Lambda.hx
  */
 
 use \php\Boot;

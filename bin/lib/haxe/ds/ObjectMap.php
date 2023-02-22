@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\std/php/_std/haxe/ds/ObjectMap.hx
  */
 
 namespace haxe\ds;

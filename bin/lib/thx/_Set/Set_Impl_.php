@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/Set.hx
  */
 
 namespace thx\_Set;

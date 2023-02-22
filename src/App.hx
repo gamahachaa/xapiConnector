@@ -51,7 +51,7 @@ class App
 		{
 			lrs = if (_maindebug)
 			{
-				new LearninLocker("TM_TEST","https://qast.test.salt.ch/data/xAPI/","", "", "Basic NDdlYTQ5M2MyYjk5YTU0NjhmODEzYzliYWY1ODI1NWNmMmNiMThkZDo2MjMyNDFiZDg5MjNhYzAxYzFhMzI4NDcyYzU1YTA0YTBiZmU2ODI1");
+				new LearninLocker("TM_TEST","https://qast.test.salt.ch/data/xAPI/","8969eecb6b6f91febf7d744ea21982dc368f878d", "f2a85c95baa6c1602a8cfab698aac7e51e7b539c");
 			}
 			else
 			{

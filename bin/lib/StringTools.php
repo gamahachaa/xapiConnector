@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\std/php/_std/StringTools.hx
  */
 
 use \php\Boot;

@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\std/haxe/io/Eof.hx
  */
 
 namespace haxe\io;

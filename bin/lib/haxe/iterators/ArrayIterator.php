@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\std/haxe/iterators/ArrayIterator.hx
  */
 
 namespace haxe\iterators;

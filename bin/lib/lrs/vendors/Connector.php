@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\lib\lrs/git/lrs/vendors/Connector.hx
  */
 
 namespace lrs\vendors;

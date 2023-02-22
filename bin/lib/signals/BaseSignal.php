@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\lib\signals/1,3,2/src/signals/Signal.hx
  */
 
 namespace signals;

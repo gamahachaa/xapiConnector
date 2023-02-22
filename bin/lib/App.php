@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: src/App.hx
  */
 
 use \lrs\vendors\LearninLocker;
@@ -60,7 +61,7 @@ class App {
 		#src/App.hx:50: lines 50-64
 		if (!array_key_exists("lrs", $this->params->data)) {
 			#src/App.hx:52: lines 52-59
-			$this->lrs = ($this->_maindebug ? new LearninLocker("TM_TEST", "https://qast.test.salt.ch/data/xAPI/", "", "", "Basic NDdlYTQ5M2MyYjk5YTU0NjhmODEzYzliYWY1ODI1NWNmMmNiMThkZDo2MjMyNDFiZDg5MjNhYzAxYzFhMzI4NDcyYzU1YTA0YTBiZmU2ODI1") : new LearninLocker("tm", "https://qast.salt.ch/data/xAPI/", "a36cc73da2a8a79f20b36e7502c10ed7eebee98b", "c2d3b79c52e94a99c4e239a3de529ffd6a60d2b0"));
+			$this->lrs = ($this->_maindebug ? new LearninLocker("TM_TEST", "https://qast.test.salt.ch/data/xAPI/", "8969eecb6b6f91febf7d744ea21982dc368f878d", "f2a85c95baa6c1602a8cfab698aac7e51e7b539c") : new LearninLocker("tm", "https://qast.salt.ch/data/xAPI/", "a36cc73da2a8a79f20b36e7502c10ed7eebee98b", "c2d3b79c52e94a99c4e239a3de529ffd6a60d2b0"));
 		} else {
 			#src/App.hx:63: characters 4-71
 			$this->lrs = Boot::typedCast(Boot::getClass(LearninLocker::class), Unserializer::run(($this->params->data["lrs"] ?? null)));

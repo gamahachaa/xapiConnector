@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\lib\xapi/git/xapi/types/Score.hx
  */
 
 namespace xapi\types;

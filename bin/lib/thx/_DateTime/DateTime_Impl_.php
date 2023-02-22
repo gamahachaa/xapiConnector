@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx
  */
 
 namespace thx\_DateTime;
@@ -34,7 +35,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function _new ($dateTime, $offset) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:198: character 3
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:199: character 3
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$offset,
@@ -49,9 +50,9 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function add ($this1, $time) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:536: characters 47-56
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:537: characters 47-56
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:536: characters 47-69
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:537: characters 47-69
 		$a = $this2;
 		$b = $time;
 		$high = (($a->high + $b->high) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
@@ -61,11 +62,11 @@ final class DateTime_Impl_ {
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
 		$this2 = new ___Int64($high, $low);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:536: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:537: characters 12-79
 		$dateTime = DateTimeUtc_Impl_::fromInt64($this2);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:536: characters 72-78
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:537: characters 72-78
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:536: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:537: characters 12-79
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$this2,
@@ -80,13 +81,13 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function addDays ($this1, $days) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:551: characters 25-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:552: characters 25-36
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:551: characters 12-51
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:552: characters 12-51
 		$dateTime = DateTimeUtc_Impl_::addScaled($this2, $days, DateTimeUtc_Impl_::$millisPerDay);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:551: characters 44-50
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:552: characters 44-50
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:551: characters 12-51
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:552: characters 12-51
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$this2,
@@ -101,13 +102,13 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function addHours ($this1, $hours) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:554: characters 25-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:555: characters 25-37
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:554: characters 12-53
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:555: characters 12-53
 		$dateTime = DateTimeUtc_Impl_::addScaled($this2, $hours, DateTimeUtc_Impl_::$millisPerHour);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:554: characters 46-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:555: characters 46-52
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:554: characters 12-53
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:555: characters 12-53
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$this2,
@@ -122,13 +123,13 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function addMilliseconds ($this1, $milliseconds) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:557: characters 25-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:558: characters 25-44
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:557: characters 12-67
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:558: characters 12-67
 		$dateTime = DateTimeUtc_Impl_::addScaled($this2, $milliseconds, 1);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:557: characters 60-66
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:558: characters 60-66
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:557: characters 12-67
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:558: characters 12-67
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$this2,
@@ -143,13 +144,13 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function addMinutes ($this1, $minutes) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:560: characters 25-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:561: characters 25-39
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:560: characters 12-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:561: characters 12-57
 		$dateTime = DateTimeUtc_Impl_::addScaled($this2, $minutes, DateTimeUtc_Impl_::$millisPerMinute);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:560: characters 50-56
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:561: characters 50-56
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:560: characters 12-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:561: characters 12-57
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$this2,
@@ -164,13 +165,13 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function addMonths ($this1, $months) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:563: characters 25-38
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:564: characters 25-38
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:563: characters 12-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:564: characters 12-55
 		$dateTime = DateTimeUtc_Impl_::addMonths($this2, $months);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:563: characters 48-54
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:564: characters 48-54
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:563: characters 12-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:564: characters 12-55
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$this2,
@@ -185,13 +186,13 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function addSeconds ($this1, $seconds) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:566: characters 25-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:567: characters 25-39
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:566: characters 12-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:567: characters 12-57
 		$dateTime = DateTimeUtc_Impl_::addScaled($this2, $seconds, DateTimeUtc_Impl_::$millisPerSecond);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:566: characters 50-56
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:567: characters 50-56
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:566: characters 12-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:567: characters 12-57
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$this2,
@@ -206,9 +207,9 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function addTicks ($this1, $ticks) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:539: characters 47-56
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:540: characters 47-56
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:539: characters 47-64
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:540: characters 47-64
 		$a = $this2;
 		$high = (($a->high + $ticks->high) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		$low = (($a->low + $ticks->low) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
@@ -217,11 +218,11 @@ final class DateTime_Impl_ {
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
 		$this2 = new ___Int64($high, $low);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:539: characters 12-74
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:540: characters 12-74
 		$dateTime = DateTimeUtc_Impl_::fromInt64($this2);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:539: characters 67-73
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:540: characters 67-73
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:539: characters 12-74
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:540: characters 12-74
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$this2,
@@ -236,13 +237,13 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function addYears ($this1, $years) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:569: characters 25-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:570: characters 25-37
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:569: characters 12-53
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:570: characters 12-53
 		$dateTime = DateTimeUtc_Impl_::addMonths($this2, $years * 12);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:569: characters 46-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:570: characters 46-52
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:569: characters 12-53
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:570: characters 12-53
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$this2,
@@ -257,7 +258,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function changeOffset ($this1, $newoffset) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:629: characters 25-40
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:630: characters 25-40
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -269,10 +270,10 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:629: characters 25-40
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:630: characters 25-40
 		$a_high = $high;
 		$a_low = $low;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:629: characters 25-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:630: characters 25-52
 		$b = $newoffset;
 		$high = (($a_high - $b->high) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		$low = (($a_low - $b->low) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
@@ -281,10 +282,10 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:629: characters 25-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:630: characters 25-52
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:629: characters 12-64
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:630: characters 12-64
 		$this1 = \Array_hx::wrap([
 			$this2,
 			$newoffset,
@@ -298,13 +299,13 @@ final class DateTime_Impl_ {
 	 * @return ___Int64
 	 */
 	public static function clockDateTime ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:635: characters 28-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:636: characters 28-37
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:635: characters 28-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:636: characters 28-52
 		$a = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:635: characters 40-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:636: characters 40-52
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:635: characters 28-52
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:636: characters 28-52
 		$b = $this2;
 		$high = (($a->high + $b->high) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		$low = (($a->low + $b->low) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
@@ -313,7 +314,7 @@ final class DateTime_Impl_ {
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
 		$this1 = new ___Int64($high, $low);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:635: characters 12-53
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:636: characters 12-53
 		$this2 = $this1;
 		return $this2;
 	}
@@ -325,7 +326,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function compare ($a, $b) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:178: characters 5-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:179: characters 5-26
 		return DateTime_Impl_::compareTo($a, $b);
 	}
 
@@ -336,24 +337,24 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function compareTo ($this1, $other) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:573: characters 5-47
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:574: characters 5-47
 		if ((null === $other) && ($this1 === null)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:573: characters 39-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:574: characters 39-47
 			return 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:574: lines 574-575
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:575: lines 575-576
 		if (null === $this1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:574: characters 22-31
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:575: characters 22-31
 			return -1;
 		} else if (null === $other) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:575: characters 28-36
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:576: characters 28-36
 			return 1;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:576: characters 27-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:577: characters 27-36
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:576: characters 38-53
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:577: characters 38-53
 		$this1 = ($other->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:576: characters 5-54
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:577: characters 5-54
 		return Int64s::compare($this2, $this1);
 	}
 
@@ -374,7 +375,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function create ($year, $month, $day, $hour, $minute, $second, $millisecond, $offset) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:190: lines 190-193
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:191: lines 191-194
 		if ($hour === null) {
 			$hour = 0;
 		}
@@ -399,7 +400,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:190: lines 190-193
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:191: lines 191-194
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this3 = \Array_hx::wrap([
@@ -418,7 +419,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function daysInThisMonth ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:262: characters 24-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:263: characters 24-28
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -432,7 +433,7 @@ final class DateTime_Impl_ {
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
 		$tmp = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:262: characters 30-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:263: characters 30-35
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -445,7 +446,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:262: characters 5-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:263: characters 5-36
 		return DateTimeUtc_Impl_::daysInMonth($tmp, DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_MONTH));
 	}
 
@@ -460,23 +461,23 @@ final class DateTime_Impl_ {
 	 * @return \Array_hx[]|\Array_hx
 	 */
 	public static function daysRange ($start, $end) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:167: characters 5-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:168: characters 5-35
 		if (DateTime_Impl_::compareTo($end, $start) < 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:167: characters 26-35
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:168: characters 26-35
 			return new \Array_hx();
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:168: characters 5-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:169: characters 5-19
 		$days = new \Array_hx();
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:169: lines 169-172
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:170: lines 170-173
 		while (!DateTime_Impl_::sameDay($start, $end)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:170: characters 7-23
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:171: characters 7-23
 			$days->arr[$days->length++] = $start;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:171: characters 7-30
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:172: characters 7-30
 			$start = DateTime_Impl_::jump($start, TimePeriod::Day(), 1);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:173: characters 5-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:174: characters 5-19
 		$days->arr[$days->length++] = $end;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:174: characters 5-16
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:175: characters 5-16
 		return $days;
 	}
 
@@ -487,13 +488,13 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function equals ($self, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:584: characters 12-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:585: characters 12-26
 		$this1 = ($self->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:584: characters 12-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:585: characters 12-44
 		$a = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:584: characters 30-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:585: characters 30-44
 		$this1 = ($that->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:584: characters 12-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:585: characters 12-44
 		$b = $this1;
 		if ($a->high === $b->high) {
 			return $a->low === $b->low;
@@ -509,13 +510,13 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function equalsTo ($this1, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:580: characters 12-21
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:581: characters 12-21
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:580: characters 12-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:581: characters 12-39
 		$a = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:580: characters 25-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:581: characters 25-39
 		$this1 = ($that->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:580: characters 12-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:581: characters 12-39
 		$b = $this1;
 		if ($a->high === $b->high) {
 			return $a->low === $b->low;
@@ -533,7 +534,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function fromDate ($date) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:63: characters 12-77
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:64: characters 12-77
 		$dateTime = DateTimeUtc_Impl_::fromTime($date->getTime());
 		$this1 = \Array_hx::wrap([
 			$dateTime,
@@ -551,7 +552,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function fromDateWithOffset ($date, $offset) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:69: characters 12-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:70: characters 12-70
 		$this1 = \Array_hx::wrap([
 			DateTimeUtc_Impl_::fromTime($date->getTime()),
 			$offset,
@@ -577,44 +578,44 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function fromString ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:96: lines 96-97
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:97: lines 97-98
 		if ($s === null) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:97: characters 7-12
-			throw Exception::thrown(new Error("null String cannot be parsed to DateTime", null, new _HxAnon_DateTime_Impl_0("thx/DateTime.hx", 97, "thx._DateTime.DateTime_Impl_", "fromString")));
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:98: characters 7-12
+			throw Exception::thrown(new Error("null String cannot be parsed to DateTime", null, new _HxAnon_DateTime_Impl_0("thx/DateTime.hx", 98, "thx._DateTime.DateTime_Impl_", "fromString")));
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:98: characters 5-130
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:99: characters 5-130
 		$pattern = new \EReg("^([-])?(\\d+)[-](\\d{2})[-](\\d{2})(?:[T ](\\d{2})[:](\\d{2})[:](\\d{2})(?:\\.(\\d+))?(Z|([+-]\\d{2})[:](\\d{2}))?)?\$", "");
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:99: lines 99-100
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:100: lines 100-101
 		if (!$pattern->match($s)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:100: characters 7-12
-			throw Exception::thrown(new Error("unable to parse DateTime string: \"" . ($s??'null') . "\"", null, new _HxAnon_DateTime_Impl_0("thx/DateTime.hx", 100, "thx._DateTime.DateTime_Impl_", "fromString")));
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:101: characters 7-12
+			throw Exception::thrown(new Error("unable to parse DateTime string: \"" . ($s??'null') . "\"", null, new _HxAnon_DateTime_Impl_0("thx/DateTime.hx", 101, "thx._DateTime.DateTime_Impl_", "fromString")));
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:102: lines 102-103
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:103: lines 103-104
 		$smticks = $pattern->matched(8);
 		$mticks = 0;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:104: lines 104-107
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:105: lines 105-108
 		if (null !== $smticks) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:105: characters 7-14
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:106: characters 7-14
 			$smticks = "1" . (HxString::substring(Strings::rpad($smticks, "0", 7), 0, 7)??'null');
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:106: characters 7-13
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:107: characters 7-13
 			$mticks = \Std::parseInt($smticks) - 10000000;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:109: lines 109-110
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:110: lines 110-111
 		$time = Time_Impl_::$zero;
 		$timepart = $pattern->matched(9);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:111: lines 111-120
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:112: lines 112-121
 		if ((null !== $timepart) && ("Z" !== $timepart)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:112: characters 7-39
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:113: characters 7-39
 			$hours = $pattern->matched(10);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:113: lines 113-114
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:114: lines 114-115
 			if (HxString::substring($hours, 0, 1) === "+") {
-				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:114: characters 9-14
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:115: characters 9-14
 				$hours = HxString::substring($hours, 1);
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:115: characters 7-11
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:116: characters 7-11
 			$time = Time_Impl_::create(\Std::parseInt($hours), \Std::parseInt($pattern->matched(11)), 0);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:122: lines 122-131
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:123: lines 123-132
 		$year = \Std::parseInt($pattern->matched(2));
 		$month = \Std::parseInt($pattern->matched(3));
 		$day = \Std::parseInt($pattern->matched(4));
@@ -622,23 +623,23 @@ final class DateTime_Impl_ {
 		$minute = \Std::parseInt($pattern->matched(6));
 		$second = \Std::parseInt($pattern->matched(7));
 		$millisecond = 0;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:129: characters 9-10
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:130: characters 9-10
 		if ($millisecond === null) {
 			$millisecond = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:128: characters 9-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:129: characters 9-41
 		if ($second === null) {
 			$second = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:127: characters 9-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:128: characters 9-41
 		if ($minute === null) {
 			$minute = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:126: characters 9-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:127: characters 9-41
 		if ($hour === null) {
 			$hour = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:122: lines 122-131
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:123: lines 123-132
 		$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, $millisecond);
 		$this_1 = $time;
 		$this1 = $this_0;
@@ -651,7 +652,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:122: lines 122-131
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:123: lines 123-132
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this_0 = DateTimeUtc_Impl_::fromInt64($this1);
@@ -667,7 +668,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:122: lines 122-131
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:123: lines 123-132
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this3 = \Array_hx::wrap([
@@ -675,11 +676,11 @@ final class DateTime_Impl_ {
 			$this2,
 		]);
 		$date = $this3;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:132: lines 132-133
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:133: lines 133-134
 		if ($pattern->matched(1) === "-") {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:133: characters 50-64
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:134: characters 50-64
 			$this1 = ($date->arr[0] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:133: characters 49-64
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:134: characters 49-64
 			$x = $this1;
 			$high = (~$x->high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			$low = ((~$x->low + 1) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
@@ -688,16 +689,16 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:225: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:133: characters 49-64
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:134: characters 49-64
 			$this1 = new ___Int64($high, $low);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:133: characters 14-72
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:134: characters 14-72
 			$this2 = \Array_hx::wrap([
 				DateTimeUtc_Impl_::fromInt64($this1),
 				$time,
 			]);
 			return $this2;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:134: characters 5-16
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:135: characters 5-16
 		return $date;
 	}
 
@@ -710,7 +711,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function fromTime ($timestamp) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:76: characters 12-68
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:77: characters 12-68
 		$dateTime = DateTimeUtc_Impl_::fromTime($timestamp);
 		$this1 = \Array_hx::wrap([
 			$dateTime,
@@ -725,7 +726,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_day ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:660: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:661: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -738,7 +739,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:660: characters 12-31
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:661: characters 12-31
 		return DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_DAY);
 	}
 
@@ -748,7 +749,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_dayOfWeek ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:669: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:670: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -761,7 +762,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:669: characters 5-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:670: characters 5-37
 		return DateTimeUtc_Impl_::get_dayOfWeek($this2);
 	}
 
@@ -771,7 +772,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_dayOfYear ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:672: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:673: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -784,7 +785,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:672: characters 12-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:673: characters 12-37
 		return DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_DAY_OF_YEAR);
 	}
 
@@ -794,7 +795,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_hour ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:663: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:664: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -807,7 +808,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:663: characters 5-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:664: characters 5-32
 		return DateTimeUtc_Impl_::get_hour($this2);
 	}
 
@@ -817,7 +818,7 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function get_isInLeapYear ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:690: characters 23-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:691: characters 23-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -830,7 +831,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:690: characters 5-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:691: characters 5-28
 		return DateTimeUtc_Impl_::isLeapYear(DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_YEAR));
 	}
 
@@ -840,7 +841,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_microsecond ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:678: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:679: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -853,7 +854,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:678: characters 5-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:679: characters 5-39
 		return DateTimeUtc_Impl_::get_microsecond($this2);
 	}
 
@@ -863,7 +864,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_millisecond ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:675: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:676: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -876,7 +877,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:675: characters 5-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:676: characters 5-39
 		return DateTimeUtc_Impl_::get_millisecond($this2);
 	}
 
@@ -886,7 +887,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_minute ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:666: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:667: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -899,7 +900,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:666: characters 5-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:667: characters 5-34
 		return DateTimeUtc_Impl_::get_minute($this2);
 	}
 
@@ -909,7 +910,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_month ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:657: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:658: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -922,7 +923,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:657: characters 12-33
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:658: characters 12-33
 		return DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_MONTH);
 	}
 
@@ -932,7 +933,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_monthDays ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:693: characters 24-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:694: characters 24-28
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -946,7 +947,7 @@ final class DateTime_Impl_ {
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
 		$tmp = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:693: characters 30-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:694: characters 30-35
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -959,7 +960,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:693: characters 5-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:694: characters 5-36
 		return DateTimeUtc_Impl_::daysInMonth($tmp, DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_MONTH));
 	}
 
@@ -969,7 +970,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64
 	 */
 	public static function get_offset ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:651: characters 12-29
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:652: characters 12-29
 		$this2 = ($this1->arr[1] ?? null);
 		return $this2;
 	}
@@ -980,7 +981,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_second ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:684: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:685: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -993,7 +994,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:684: characters 5-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:685: characters 5-34
 		return DateTimeUtc_Impl_::get_second($this2);
 	}
 
@@ -1003,7 +1004,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_tickInSecond ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:681: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:682: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -1016,7 +1017,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:681: characters 5-40
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:682: characters 5-40
 		return DateTimeUtc_Impl_::get_tickInSecond($this2);
 	}
 
@@ -1026,7 +1027,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64
 	 */
 	public static function get_timeOfDay ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:687: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:688: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -1039,7 +1040,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:687: characters 12-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:688: characters 12-37
 		$this1 = Int64_Impl_::divMod($this2, DateTimeUtc_Impl_::$ticksPerDayI64)->modulus;
 		return $this1;
 	}
@@ -1050,7 +1051,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64
 	 */
 	public static function get_utc ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:648: characters 12-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:649: characters 12-36
 		$this2 = ($this1->arr[0] ?? null);
 		return $this2;
 	}
@@ -1061,7 +1062,7 @@ final class DateTime_Impl_ {
 	 * @return int
 	 */
 	public static function get_year ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:654: characters 12-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:655: characters 12-27
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -1074,7 +1075,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:654: characters 12-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:655: characters 12-32
 		return DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_YEAR);
 	}
 
@@ -1085,7 +1086,7 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function greater ($self, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:605: characters 5-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:606: characters 5-36
 		return DateTime_Impl_::compareTo($self, $that) > 0;
 	}
 
@@ -1096,7 +1097,7 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function greaterEquals ($self, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:612: characters 5-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:613: characters 5-37
 		return DateTime_Impl_::compareTo($self, $that) >= 0;
 	}
 
@@ -1107,7 +1108,7 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function greaterEqualsTo ($this1, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:608: characters 5-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:609: characters 5-32
 		return DateTime_Impl_::compareTo($this1, $that) >= 0;
 	}
 
@@ -1118,7 +1119,7 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function greaterThan ($this1, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:601: characters 5-31
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:602: characters 5-31
 		return DateTime_Impl_::compareTo($this1, $that) > 0;
 	}
 
@@ -1131,24 +1132,24 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function is ($v) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:142: characters 5-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:143: characters 5-32
 		if ($v === null) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:142: characters 20-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:143: characters 20-32
 			return false;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:143: characters 5-40
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:144: characters 5-40
 		if (!($v instanceof \Array_hx)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:143: characters 28-40
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:144: characters 28-40
 			return false;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:144: characters 5-33
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:145: characters 5-33
 		$vs = $v;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:145: characters 5-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:146: characters 5-37
 		if ($vs->length !== 2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:145: characters 25-37
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:146: characters 25-37
 			return false;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:146: characters 5-50
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:147: characters 5-50
 		return Arrays::all($vs, Boot::getStaticClosure(Int64_Impl_::class, 'isInt64'));
 	}
 
@@ -1167,7 +1168,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function jump ($this1, $period, $amount) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:236: characters 15-21
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:237: characters 15-21
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -1179,12 +1180,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:236: characters 15-21
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:237: characters 15-21
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:236: lines 236-241
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:237: lines 237-242
 		$sec = DateTimeUtc_Impl_::get_second($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:237: characters 15-21
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:238: characters 15-21
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -1196,12 +1197,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:237: characters 15-21
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:238: characters 15-21
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:236: lines 236-241
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:237: lines 237-242
 		$min = DateTimeUtc_Impl_::get_minute($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:238: characters 15-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:239: characters 15-19
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -1213,12 +1214,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:238: characters 15-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:239: characters 15-19
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:236: lines 236-241
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:237: lines 237-242
 		$hr = DateTimeUtc_Impl_::get_hour($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:239: characters 15-18
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:240: characters 15-18
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -1230,12 +1231,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:239: characters 15-18
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:240: characters 15-18
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:236: lines 236-241
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:237: lines 237-242
 		$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:240: characters 21-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:241: characters 21-26
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -1247,12 +1248,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:240: characters 21-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:241: characters 21-26
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:236: lines 236-241
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:237: lines 237-242
 		$mon = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:241: characters 15-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:242: characters 15-19
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -1264,40 +1265,40 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:241: characters 15-19
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:242: characters 15-19
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:236: lines 236-241
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:237: lines 237-242
 		$yr = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:243: lines 243-251
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:244: lines 244-252
 		$__hx__switch = ($period->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:244: characters 20-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:245: characters 20-33
 			$sec += $amount;
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:245: characters 20-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:246: characters 20-33
 			$min += $amount;
 		} else if ($__hx__switch === 2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:246: characters 20-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:247: characters 20-33
 			$hr += $amount;
 		} else if ($__hx__switch === 3) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:247: characters 20-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:248: characters 20-33
 			$day += $amount;
 		} else if ($__hx__switch === 4) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:248: characters 20-37
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:249: characters 20-37
 			$day += $amount * 7;
 		} else if ($__hx__switch === 5) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:249: characters 20-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:250: characters 20-33
 			$mon += $amount;
 		} else if ($__hx__switch === 6) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:250: characters 20-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:251: characters 20-33
 			$yr += $amount;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 12-67
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 12-67
 		$hour = $hr;
 		$minute = $min;
 		$second = $sec;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 47-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 47-58
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -1309,32 +1310,32 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 47-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 47-58
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 12-67
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 12-67
 		$millisecond = DateTimeUtc_Impl_::get_millisecond($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 60-66
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 60-66
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 12-67
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 12-67
 		$offset = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 47-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 47-58
 		if ($millisecond === null) {
 			$millisecond = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 42-45
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 42-45
 		if ($second === null) {
 			$second = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 37-40
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 37-40
 		if ($minute === null) {
 			$minute = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 33-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 33-35
 		if ($hour === null) {
 			$hour = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 12-67
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 12-67
 		$this_0 = DateTimeUtc_Impl_::create($yr, $mon, $day, $hour, $minute, $second, $millisecond);
 		$this_1 = $offset;
 		$this1 = $this_0;
@@ -1347,7 +1348,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:253: characters 12-67
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:254: characters 12-67
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this3 = \Array_hx::wrap([
@@ -1364,7 +1365,7 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function less ($self, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:619: characters 5-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:620: characters 5-36
 		return DateTime_Impl_::compareTo($self, $that) < 0;
 	}
 
@@ -1375,7 +1376,7 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function lessEquals ($self, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:626: characters 5-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:627: characters 5-37
 		return DateTime_Impl_::compareTo($self, $that) <= 0;
 	}
 
@@ -1386,7 +1387,7 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function lessEqualsTo ($this1, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:622: characters 5-32
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:623: characters 5-32
 		return DateTime_Impl_::compareTo($this1, $that) <= 0;
 	}
 
@@ -1397,7 +1398,7 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function lessTo ($this1, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:615: characters 5-31
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:616: characters 5-31
 		return DateTime_Impl_::compareTo($this1, $that) < 0;
 	}
 
@@ -1405,21 +1406,21 @@ final class DateTime_Impl_ {
 	 * @return ___Int64
 	 */
 	public static function localOffset () {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:33: lines 33-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:34: lines 34-36
 		$now = DateTimeUtc_Impl_::now();
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:34: characters 26-34
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:35: characters 26-34
 		$local = DateTimeUtc_Impl_::getDatePart($now, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:34: characters 36-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:35: characters 36-49
 		$local1 = DateTimeUtc_Impl_::getDatePart($now, DateTimeUtc_Impl_::$DATE_PART_MONTH) - 1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:34: characters 51-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:35: characters 51-58
 		$local2 = DateTimeUtc_Impl_::getDatePart($now, DateTimeUtc_Impl_::$DATE_PART_DAY);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:34: characters 60-68
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:35: characters 60-68
 		$local3 = DateTimeUtc_Impl_::get_hour($now);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:34: characters 70-80
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:35: characters 70-80
 		$local4 = DateTimeUtc_Impl_::get_minute($now);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:33: lines 33-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:34: lines 34-36
 		$local5 = new \Date($local, $local1, $local2, $local3, $local4, DateTimeUtc_Impl_::get_second($now));
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:35: characters 29-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:36: characters 29-41
 		$a = $now;
 		$b = DateTimeUtc_Impl_::$unixEpochTicks;
 		$high = (($a->high - $b->high) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
@@ -1429,9 +1430,9 @@ final class DateTime_Impl_ {
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
 		$this1 = new ___Int64($high, $low);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:33: lines 33-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:34: lines 34-36
 		$delta = \floor(Int64s::toFloat(Int64_Impl_::divMod($this1, DateTimeUtc_Impl_::$ticksPerMillisecondI64)->quotient) / 1000) * 1000 - $local5->getTime();
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:36: characters 21-69
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:37: characters 21-69
 		$a = Int64s::fromFloat($delta);
 		$b = DateTimeUtc_Impl_::$ticksPerMillisecondI64;
 		$mask = 65535;
@@ -1459,7 +1460,7 @@ final class DateTime_Impl_ {
 		}
 		$high = (($high + (((Int32_Impl_::mul($a->low, $b->high) + Int32_Impl_::mul($a->high, $b->low)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		$this1 = new ___Int64($high, $low);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:36: characters 12-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:37: characters 12-70
 		$this2 = $this1;
 		return $this2;
 	}
@@ -1471,16 +1472,16 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function max ($this1, $other) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:225: characters 12-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:226: characters 12-25
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:225: characters 26-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:226: characters 26-35
 		$this3 = ($other->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:225: characters 12-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:226: characters 12-58
 		if (DateTimeUtc_Impl_::compareTo($this2, $this3) >= 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:225: characters 44-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:226: characters 44-50
 			return $this1;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:225: characters 53-58
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:226: characters 53-58
 			return $other;
 		}
 	}
@@ -1492,16 +1493,16 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function min ($this1, $other) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:222: characters 12-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:223: characters 12-25
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:222: characters 26-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:223: characters 26-35
 		$this3 = ($other->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:222: characters 12-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:223: characters 12-58
 		if (DateTimeUtc_Impl_::compareTo($this2, $this3) <= 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:222: characters 44-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:223: characters 44-50
 			return $this1;
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:222: characters 53-58
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:223: characters 53-58
 			return $other;
 		}
 	}
@@ -1514,13 +1515,13 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function nearEqualsTo ($this1, $other, $span) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:596: characters 28-43
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:597: characters 28-43
 		$this2 = ($other->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:596: characters 28-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:597: characters 28-55
 		$a = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:596: characters 46-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:597: characters 46-55
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:596: characters 28-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:597: characters 28-55
 		$b = $this2;
 		$high = (($a->high - $b->high) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		$low = (($a->low - $b->low) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
@@ -1529,9 +1530,9 @@ final class DateTime_Impl_ {
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
 		$this1 = new ___Int64($high, $low);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:596: characters 5-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:597: characters 5-57
 		$ticks = Int64s::abs($this1);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:597: characters 12-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:598: characters 12-37
 		$b = Time_Impl_::abs($span);
 		$v = (($ticks->high - $b->high) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		if ($v === 0) {
@@ -1548,7 +1549,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function nextDay ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:310: characters 5-24
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:311: characters 5-24
 		return DateTime_Impl_::jump($this1, TimePeriod::Day(), 1);
 	}
 
@@ -1560,7 +1561,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function nextHour ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:322: characters 5-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:323: characters 5-25
 		return DateTime_Impl_::jump($this1, TimePeriod::Hour(), 1);
 	}
 
@@ -1572,7 +1573,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function nextMinute ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:334: characters 5-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:335: characters 5-27
 		return DateTime_Impl_::jump($this1, TimePeriod::Minute(), 1);
 	}
 
@@ -1584,7 +1585,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function nextMonth ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:286: characters 5-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:287: characters 5-26
 		return DateTime_Impl_::jump($this1, TimePeriod::Month(), 1);
 	}
 
@@ -1596,7 +1597,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function nextSecond ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:346: characters 5-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:347: characters 5-27
 		return DateTime_Impl_::jump($this1, TimePeriod::Second(), 1);
 	}
 
@@ -1608,7 +1609,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function nextWeek ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:298: characters 5-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:299: characters 5-25
 		return DateTime_Impl_::jump($this1, TimePeriod::Week(), 1);
 	}
 
@@ -1620,7 +1621,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function nextYear ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:274: characters 5-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:275: characters 5-25
 		return DateTime_Impl_::jump($this1, TimePeriod::Year(), 1);
 	}
 
@@ -1631,13 +1632,13 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function notEquals ($self, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:592: characters 12-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:593: characters 12-26
 		$this1 = ($self->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:592: characters 12-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:593: characters 12-44
 		$a = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:592: characters 30-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:593: characters 30-44
 		$this1 = ($that->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:592: characters 12-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:593: characters 12-44
 		$b = $this1;
 		if ($a->high === $b->high) {
 			return $a->low !== $b->low;
@@ -1653,13 +1654,13 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function notEqualsTo ($this1, $that) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:588: characters 12-21
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:589: characters 12-21
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:588: characters 12-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:589: characters 12-39
 		$a = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:588: characters 25-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:589: characters 25-39
 		$this1 = ($that->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:588: characters 12-39
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:589: characters 12-39
 		$b = $this1;
 		if ($a->high === $b->high) {
 			return $a->low !== $b->low;
@@ -1677,7 +1678,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function now () {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:48: characters 12-58
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:49: characters 12-58
 		$dateTime = DateTimeUtc_Impl_::now();
 		$this1 = \Array_hx::wrap([
 			$dateTime,
@@ -1693,7 +1694,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function nowUtc () {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:55: characters 12-54
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:56: characters 12-54
 		$dateTime = DateTimeUtc_Impl_::now();
 		$this1 = \Array_hx::wrap([
 			$dateTime,
@@ -1706,7 +1707,7 @@ final class DateTime_Impl_ {
 	 * @return \Closure
 	 */
 	public static function ord () {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:181: characters 5-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:182: characters 5-42
 		return Ord_Impl_::fromIntComparison(Boot::getStaticClosure(DateTime_Impl_::class, 'compare'));
 	}
 
@@ -1719,16 +1720,16 @@ final class DateTime_Impl_ {
 	 * @return Either
 	 */
 	public static function parse ($s) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:154: lines 154-158
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:155: lines 155-159
 		try {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:155: characters 7-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:156: characters 7-27
 			return Either::Right(DateTime_Impl_::fromString($s));
 		} catch(\Throwable $_g) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:156: characters 14-15
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:157: characters 14-15
 			NativeStackTrace::saveStack($_g);
 			$e = Exception::caught($_g)->unwrap();
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:157: characters 7-45
-			return Either::Left(Error::fromDynamic($e, new _HxAnon_DateTime_Impl_0("thx/DateTime.hx", 157, "thx._DateTime.DateTime_Impl_", "parse"))->message);
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:158: characters 7-45
+			return Either::Left(Error::fromDynamic($e, new _HxAnon_DateTime_Impl_0("thx/DateTime.hx", 158, "thx._DateTime.DateTime_Impl_", "parse"))->message);
 		}
 	}
 
@@ -1740,7 +1741,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function prevDay ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:304: characters 5-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:305: characters 5-25
 		return DateTime_Impl_::jump($this1, TimePeriod::Day(), -1);
 	}
 
@@ -1752,7 +1753,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function prevHour ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:316: characters 5-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:317: characters 5-26
 		return DateTime_Impl_::jump($this1, TimePeriod::Hour(), -1);
 	}
 
@@ -1764,7 +1765,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function prevMinute ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:328: characters 5-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:329: characters 5-28
 		return DateTime_Impl_::jump($this1, TimePeriod::Minute(), -1);
 	}
 
@@ -1776,7 +1777,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function prevMonth ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:280: characters 5-27
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:281: characters 5-27
 		return DateTime_Impl_::jump($this1, TimePeriod::Month(), -1);
 	}
 
@@ -1788,7 +1789,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function prevSecond ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:340: characters 5-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:341: characters 5-28
 		return DateTime_Impl_::jump($this1, TimePeriod::Second(), -1);
 	}
 
@@ -1800,7 +1801,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function prevWeek ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:292: characters 5-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:293: characters 5-26
 		return DateTime_Impl_::jump($this1, TimePeriod::Week(), -1);
 	}
 
@@ -1812,7 +1813,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function prevYear ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:268: characters 5-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:269: characters 5-26
 		return DateTime_Impl_::jump($this1, TimePeriod::Year(), -1);
 	}
 
@@ -1825,9 +1826,9 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function sameDay ($this1, $other) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:491: characters 12-48
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:492: characters 12-48
 		if (DateTime_Impl_::sameMonth($this1, $other)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:491: characters 32-35
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:492: characters 32-35
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -1841,7 +1842,7 @@ final class DateTime_Impl_ {
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this1;
 			$tmp = DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_DAY);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:491: characters 39-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:492: characters 39-48
 			$this1 = ($other->arr[0] ?? null);
 			$a = $this1;
 			$this1 = ($other->arr[1] ?? null);
@@ -1854,10 +1855,10 @@ final class DateTime_Impl_ {
 			}
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this1;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:491: characters 32-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:492: characters 32-48
 			return $tmp === DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_DAY);
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:491: characters 12-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:492: characters 12-48
 			return false;
 		}
 	}
@@ -1871,9 +1872,9 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function sameHour ($this1, $other) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:497: characters 12-48
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:498: characters 12-48
 		if (DateTime_Impl_::sameDay($this1, $other)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:497: characters 30-34
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:498: characters 30-34
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -1887,7 +1888,7 @@ final class DateTime_Impl_ {
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this1;
 			$tmp = DateTimeUtc_Impl_::get_hour($this2);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:497: characters 38-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:498: characters 38-48
 			$this1 = ($other->arr[0] ?? null);
 			$a = $this1;
 			$this1 = ($other->arr[1] ?? null);
@@ -1900,10 +1901,10 @@ final class DateTime_Impl_ {
 			}
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this1;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:497: characters 30-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:498: characters 30-48
 			return $tmp === DateTimeUtc_Impl_::get_hour($this2);
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:497: characters 12-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:498: characters 12-48
 			return false;
 		}
 	}
@@ -1917,9 +1918,9 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function sameMinute ($this1, $other) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:503: characters 12-53
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:504: characters 12-53
 		if (DateTime_Impl_::sameHour($this1, $other)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:503: characters 31-37
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:504: characters 31-37
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -1933,7 +1934,7 @@ final class DateTime_Impl_ {
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this1;
 			$tmp = DateTimeUtc_Impl_::get_minute($this2);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:503: characters 41-53
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:504: characters 41-53
 			$this1 = ($other->arr[0] ?? null);
 			$a = $this1;
 			$this1 = ($other->arr[1] ?? null);
@@ -1946,10 +1947,10 @@ final class DateTime_Impl_ {
 			}
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this1;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:503: characters 31-53
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:504: characters 31-53
 			return $tmp === DateTimeUtc_Impl_::get_minute($this2);
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:503: characters 12-53
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:504: characters 12-53
 			return false;
 		}
 	}
@@ -1963,9 +1964,9 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function sameMonth ($this1, $other) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:485: characters 12-51
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:486: characters 12-51
 		if (DateTime_Impl_::sameYear($this1, $other)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:485: characters 31-36
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:486: characters 31-36
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -1979,7 +1980,7 @@ final class DateTime_Impl_ {
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this1;
 			$tmp = DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:485: characters 40-51
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:486: characters 40-51
 			$this1 = ($other->arr[0] ?? null);
 			$a = $this1;
 			$this1 = ($other->arr[1] ?? null);
@@ -1992,10 +1993,10 @@ final class DateTime_Impl_ {
 			}
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this1;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:485: characters 31-51
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:486: characters 31-51
 			return $tmp === DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_MONTH);
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:485: characters 12-51
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:486: characters 12-51
 			return false;
 		}
 	}
@@ -2009,9 +2010,9 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function sameSecond ($this1, $other) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:509: characters 12-55
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:510: characters 12-55
 		if (DateTime_Impl_::sameMinute($this1, $other)) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:509: characters 33-39
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:510: characters 33-39
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2025,7 +2026,7 @@ final class DateTime_Impl_ {
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this1;
 			$tmp = DateTimeUtc_Impl_::get_second($this2);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:509: characters 43-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:510: characters 43-55
 			$this1 = ($other->arr[0] ?? null);
 			$a = $this1;
 			$this1 = ($other->arr[1] ?? null);
@@ -2038,10 +2039,10 @@ final class DateTime_Impl_ {
 			}
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this1;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:509: characters 33-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:510: characters 33-55
 			return $tmp === DateTimeUtc_Impl_::get_second($this2);
 		} else {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:509: characters 12-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:510: characters 12-55
 			return false;
 		}
 	}
@@ -2055,7 +2056,7 @@ final class DateTime_Impl_ {
 	 * @return bool
 	 */
 	public static function sameYear ($this1, $other) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:479: characters 12-16
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:480: characters 12-16
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -2069,7 +2070,7 @@ final class DateTime_Impl_ {
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
 		$tmp = DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:479: characters 20-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:480: characters 20-30
 		$this1 = ($other->arr[0] ?? null);
 		$a = $this1;
 		$this1 = ($other->arr[1] ?? null);
@@ -2082,7 +2083,7 @@ final class DateTime_Impl_ {
 		}
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this1;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:479: characters 5-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:480: characters 5-30
 		return $tmp === DateTimeUtc_Impl_::getDatePart($this2, DateTimeUtc_Impl_::$DATE_PART_YEAR);
 	}
 
@@ -2092,7 +2093,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function self ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:696: characters 5-21
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:697: characters 5-21
 		return $this1;
 	}
 
@@ -2106,12 +2107,12 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function snapNext ($this1, $period) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:404: lines 404-420
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:405: lines 405-421
 		$__hx__switch = ($period->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:406: characters 38-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:407: characters 38-47
 			$this2 = ($this1->arr[0] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:406: characters 38-94
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:407: characters 38-94
 			$a = Int64s::divCeil($this2, DateTimeUtc_Impl_::$ticksPerSecondI64);
 			$b = DateTimeUtc_Impl_::$ticksPerSecondI64;
 			$mask = 65535;
@@ -2129,7 +2130,7 @@ final class DateTime_Impl_ {
 			$p01 = ($p01 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:303: characters 3-6
 			$low = (($low + $p01) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:406: characters 38-94
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:407: characters 38-94
 			if (Int32_Impl_::ucompare($low, $p01) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:305: characters 4-8
@@ -2139,29 +2140,29 @@ final class DateTime_Impl_ {
 			$p10 = ($p10 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:307: characters 3-6
 			$low = (($low + $p10) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:406: characters 38-94
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:407: characters 38-94
 			if (Int32_Impl_::ucompare($low, $p10) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:309: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:406: characters 38-94
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:407: characters 38-94
 			$high = (($high + (((Int32_Impl_::mul($a->low, $b->high) + Int32_Impl_::mul($a->high, $b->low)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			$this2 = new ___Int64($high, $low);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:406: characters 22-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:407: characters 22-95
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:406: characters 97-103
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:407: characters 97-103
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:406: characters 9-104
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:407: characters 9-104
 			$this4 = \Array_hx::wrap([
 				$this3,
 				$this2,
 			]);
 			return $this4;
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:408: characters 38-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:409: characters 38-47
 			$this2 = ($this1->arr[0] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:408: characters 38-94
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:409: characters 38-94
 			$a = Int64s::divCeil($this2, DateTimeUtc_Impl_::$ticksPerMinuteI64);
 			$b = DateTimeUtc_Impl_::$ticksPerMinuteI64;
 			$mask = 65535;
@@ -2179,7 +2180,7 @@ final class DateTime_Impl_ {
 			$p01 = ($p01 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:303: characters 3-6
 			$low = (($low + $p01) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:408: characters 38-94
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:409: characters 38-94
 			if (Int32_Impl_::ucompare($low, $p01) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:305: characters 4-8
@@ -2189,29 +2190,29 @@ final class DateTime_Impl_ {
 			$p10 = ($p10 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:307: characters 3-6
 			$low = (($low + $p10) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:408: characters 38-94
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:409: characters 38-94
 			if (Int32_Impl_::ucompare($low, $p10) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:309: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:408: characters 38-94
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:409: characters 38-94
 			$high = (($high + (((Int32_Impl_::mul($a->low, $b->high) + Int32_Impl_::mul($a->high, $b->low)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			$this2 = new ___Int64($high, $low);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:408: characters 22-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:409: characters 22-95
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:408: characters 97-103
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:409: characters 97-103
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:408: characters 9-104
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:409: characters 9-104
 			$this4 = \Array_hx::wrap([
 				$this3,
 				$this2,
 			]);
 			return $this4;
 		} else if ($__hx__switch === 2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:410: characters 38-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:411: characters 38-47
 			$this2 = ($this1->arr[0] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:410: characters 38-90
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:411: characters 38-90
 			$a = Int64s::divCeil($this2, DateTimeUtc_Impl_::$ticksPerHourI64);
 			$b = DateTimeUtc_Impl_::$ticksPerHourI64;
 			$mask = 65535;
@@ -2229,7 +2230,7 @@ final class DateTime_Impl_ {
 			$p01 = ($p01 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:303: characters 3-6
 			$low = (($low + $p01) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:410: characters 38-90
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:411: characters 38-90
 			if (Int32_Impl_::ucompare($low, $p01) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:305: characters 4-8
@@ -2239,27 +2240,27 @@ final class DateTime_Impl_ {
 			$p10 = ($p10 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:307: characters 3-6
 			$low = (($low + $p10) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:410: characters 38-90
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:411: characters 38-90
 			if (Int32_Impl_::ucompare($low, $p10) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:309: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:410: characters 38-90
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:411: characters 38-90
 			$high = (($high + (((Int32_Impl_::mul($a->low, $b->high) + Int32_Impl_::mul($a->high, $b->low)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			$this2 = new ___Int64($high, $low);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:410: characters 22-91
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:411: characters 22-91
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:410: characters 93-99
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:411: characters 93-99
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:410: characters 9-100
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:411: characters 9-100
 			$this4 = \Array_hx::wrap([
 				$this3,
 				$this2,
 			]);
 			return $this4;
 		} else if ($__hx__switch === 3) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2271,12 +2272,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 9-54
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 22-27
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2288,12 +2289,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 22-27
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 9-54
 			$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 29-32
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2305,31 +2306,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 29-32
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 9-54
 			$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY) + 1;
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 47-53
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 47-53
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 9-54
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 44-45
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 44-45
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 41-42
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 41-42
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 38-39
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 38-39
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 9-54
 			$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this2 = $this_0;
@@ -2342,7 +2343,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:412: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:413: characters 9-54
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this_1;
 			$this4 = \Array_hx::wrap([
@@ -2351,7 +2352,7 @@ final class DateTime_Impl_ {
 			]);
 			return $this4;
 		} else if ($__hx__switch === 4) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:414: characters 24-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 24-33
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2363,12 +2364,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:414: characters 24-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 24-33
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:414: characters 9-34
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 9-34
 			$wd = DateTimeUtc_Impl_::get_dayOfWeek($this3);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2380,12 +2381,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 9-59
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 9-59
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 22-27
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2397,12 +2398,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 22-27
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 9-59
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 9-59
 			$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 29-32
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2414,31 +2415,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 29-32
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 9-59
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 9-59
 			$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY) + 7 - $wd;
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 52-58
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 52-58
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 9-59
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 9-59
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 49-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 49-50
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 46-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 46-47
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 43-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 43-44
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 9-59
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 9-59
 			$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this2 = $this_0;
@@ -2451,7 +2452,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:415: characters 9-59
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:416: characters 9-59
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this_1;
 			$this4 = \Array_hx::wrap([
@@ -2460,7 +2461,7 @@ final class DateTime_Impl_ {
 			]);
 			return $this4;
 		} else if ($__hx__switch === 5) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2472,12 +2473,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 9-52
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 9-52
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 22-27
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2489,31 +2490,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 22-27
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 9-52
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 9-52
 			$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH) + 1;
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 45-51
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 45-51
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 9-52
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 9-52
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 42-43
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 42-43
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 39-40
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 39-40
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 36-37
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 36-37
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 9-52
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 9-52
 			$this_0 = DateTimeUtc_Impl_::create($year, $month, 1, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this2 = $this_0;
@@ -2526,7 +2527,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:417: characters 9-52
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:418: characters 9-52
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this_1;
 			$this4 = \Array_hx::wrap([
@@ -2535,7 +2536,7 @@ final class DateTime_Impl_ {
 			]);
 			return $this4;
 		} else if ($__hx__switch === 6) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:419: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:420: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2547,31 +2548,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:419: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:420: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:419: characters 9-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:420: characters 9-48
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR) + 1;
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:419: characters 41-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:420: characters 41-47
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:419: characters 9-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:420: characters 9-48
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:419: characters 38-39
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:420: characters 38-39
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:419: characters 35-36
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:420: characters 35-36
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:419: characters 32-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:420: characters 32-33
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:419: characters 9-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:420: characters 9-48
 			$this_0 = DateTimeUtc_Impl_::create($year, 1, 1, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this1 = $this_0;
@@ -2584,7 +2585,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:419: characters 9-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:420: characters 9-48
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this_1;
 			$this3 = \Array_hx::wrap([
@@ -2608,7 +2609,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function snapNextWeekDay ($this1, $weekday) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:374: characters 19-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:375: characters 19-28
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -2621,15 +2622,15 @@ final class DateTime_Impl_ {
 		}
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:374: lines 374-375
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:375: lines 375-376
 		$d = DateTimeUtc_Impl_::get_dayOfWeek($this3);
 		$s = $weekday;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:378: characters 5-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:379: characters 5-25
 		if ($s < $d) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:378: characters 16-25
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:379: characters 16-25
 			$s += 7;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:379: characters 5-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:380: characters 5-28
 		return DateTime_Impl_::jump($this1, TimePeriod::Day(), $s - $d);
 	}
 
@@ -2643,12 +2644,12 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function snapPrev ($this1, $period) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:428: lines 428-444
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:429: lines 429-445
 		$__hx__switch = ($period->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:430: characters 38-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:431: characters 38-47
 			$this2 = ($this1->arr[0] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:430: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:431: characters 38-95
 			$a = Int64s::divFloor($this2, DateTimeUtc_Impl_::$ticksPerSecondI64);
 			$b = DateTimeUtc_Impl_::$ticksPerSecondI64;
 			$mask = 65535;
@@ -2666,7 +2667,7 @@ final class DateTime_Impl_ {
 			$p01 = ($p01 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:303: characters 3-6
 			$low = (($low + $p01) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:430: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:431: characters 38-95
 			if (Int32_Impl_::ucompare($low, $p01) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:305: characters 4-8
@@ -2676,29 +2677,29 @@ final class DateTime_Impl_ {
 			$p10 = ($p10 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:307: characters 3-6
 			$low = (($low + $p10) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:430: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:431: characters 38-95
 			if (Int32_Impl_::ucompare($low, $p10) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:309: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:430: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:431: characters 38-95
 			$high = (($high + (((Int32_Impl_::mul($a->low, $b->high) + Int32_Impl_::mul($a->high, $b->low)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			$this2 = new ___Int64($high, $low);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:430: characters 22-96
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:431: characters 22-96
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:430: characters 98-104
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:431: characters 98-104
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:430: characters 9-105
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:431: characters 9-105
 			$this4 = \Array_hx::wrap([
 				$this3,
 				$this2,
 			]);
 			return $this4;
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:432: characters 38-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:433: characters 38-47
 			$this2 = ($this1->arr[0] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:432: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:433: characters 38-95
 			$a = Int64s::divFloor($this2, DateTimeUtc_Impl_::$ticksPerMinuteI64);
 			$b = DateTimeUtc_Impl_::$ticksPerMinuteI64;
 			$mask = 65535;
@@ -2716,7 +2717,7 @@ final class DateTime_Impl_ {
 			$p01 = ($p01 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:303: characters 3-6
 			$low = (($low + $p01) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:432: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:433: characters 38-95
 			if (Int32_Impl_::ucompare($low, $p01) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:305: characters 4-8
@@ -2726,29 +2727,29 @@ final class DateTime_Impl_ {
 			$p10 = ($p10 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:307: characters 3-6
 			$low = (($low + $p10) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:432: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:433: characters 38-95
 			if (Int32_Impl_::ucompare($low, $p10) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:309: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:432: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:433: characters 38-95
 			$high = (($high + (((Int32_Impl_::mul($a->low, $b->high) + Int32_Impl_::mul($a->high, $b->low)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			$this2 = new ___Int64($high, $low);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:432: characters 22-96
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:433: characters 22-96
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:432: characters 98-104
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:433: characters 98-104
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:432: characters 9-105
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:433: characters 9-105
 			$this4 = \Array_hx::wrap([
 				$this3,
 				$this2,
 			]);
 			return $this4;
 		} else if ($__hx__switch === 2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:434: characters 38-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:435: characters 38-47
 			$this2 = ($this1->arr[0] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:434: characters 38-91
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:435: characters 38-91
 			$a = Int64s::divFloor($this2, DateTimeUtc_Impl_::$ticksPerHourI64);
 			$b = DateTimeUtc_Impl_::$ticksPerHourI64;
 			$mask = 65535;
@@ -2766,7 +2767,7 @@ final class DateTime_Impl_ {
 			$p01 = ($p01 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:303: characters 3-6
 			$low = (($low + $p01) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:434: characters 38-91
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:435: characters 38-91
 			if (Int32_Impl_::ucompare($low, $p01) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:305: characters 4-8
@@ -2776,27 +2777,27 @@ final class DateTime_Impl_ {
 			$p10 = ($p10 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:307: characters 3-6
 			$low = (($low + $p10) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:434: characters 38-91
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:435: characters 38-91
 			if (Int32_Impl_::ucompare($low, $p10) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:309: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:434: characters 38-91
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:435: characters 38-91
 			$high = (($high + (((Int32_Impl_::mul($a->low, $b->high) + Int32_Impl_::mul($a->high, $b->low)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			$this2 = new ___Int64($high, $low);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:434: characters 22-92
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:435: characters 22-92
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:434: characters 94-100
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:435: characters 94-100
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:434: characters 9-101
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:435: characters 9-101
 			$this4 = \Array_hx::wrap([
 				$this3,
 				$this2,
 			]);
 			return $this4;
 		} else if ($__hx__switch === 3) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2808,12 +2809,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 9-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 9-50
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 22-27
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2825,12 +2826,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 22-27
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 9-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 9-50
 			$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 29-32
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2842,31 +2843,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 29-32
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 9-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 9-50
 			$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY);
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 43-49
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 43-49
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 9-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 9-50
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 40-41
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 40-41
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 37-38
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 37-38
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 34-35
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 34-35
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 9-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 9-50
 			$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this2 = $this_0;
@@ -2879,7 +2880,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:436: characters 9-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:437: characters 9-50
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this_1;
 			$this4 = \Array_hx::wrap([
@@ -2888,7 +2889,7 @@ final class DateTime_Impl_ {
 			]);
 			return $this4;
 		} else if ($__hx__switch === 4) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:438: characters 24-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 24-33
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2900,12 +2901,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:438: characters 24-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 24-33
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:438: characters 9-34
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 9-34
 			$wd = DateTimeUtc_Impl_::get_dayOfWeek($this3);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2917,12 +2918,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 9-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 9-55
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 22-27
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2934,12 +2935,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 22-27
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 9-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 9-55
 			$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 29-32
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -2951,31 +2952,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 29-32
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 9-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 9-55
 			$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY) - $wd;
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 48-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 48-54
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 9-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 9-55
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 45-46
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 45-46
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 42-43
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 42-43
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 39-40
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 39-40
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 9-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 9-55
 			$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this2 = $this_0;
@@ -2988,7 +2989,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:439: characters 9-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:440: characters 9-55
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this_1;
 			$this4 = \Array_hx::wrap([
@@ -2997,7 +2998,7 @@ final class DateTime_Impl_ {
 			]);
 			return $this4;
 		} else if ($__hx__switch === 5) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3009,12 +3010,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 9-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 9-48
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 22-27
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3026,31 +3027,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 22-27
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 9-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 9-48
 			$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 41-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 41-47
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 9-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 9-48
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 38-39
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 38-39
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 35-36
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 35-36
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 32-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 32-33
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 9-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 9-48
 			$this_0 = DateTimeUtc_Impl_::create($year, $month, 1, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this2 = $this_0;
@@ -3063,7 +3064,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:441: characters 9-48
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:442: characters 9-48
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this_1;
 			$this4 = \Array_hx::wrap([
@@ -3072,7 +3073,7 @@ final class DateTime_Impl_ {
 			]);
 			return $this4;
 		} else if ($__hx__switch === 6) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:443: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:444: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3084,31 +3085,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:443: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:444: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:443: characters 9-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:444: characters 9-44
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:443: characters 37-43
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:444: characters 37-43
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:443: characters 9-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:444: characters 9-44
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:443: characters 34-35
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:444: characters 34-35
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:443: characters 31-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:444: characters 31-32
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:443: characters 28-29
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:444: characters 28-29
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:443: characters 9-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:444: characters 9-44
 			$this_0 = DateTimeUtc_Impl_::create($year, 1, 1, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this1 = $this_0;
@@ -3121,7 +3122,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:443: characters 9-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:444: characters 9-44
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this_1;
 			$this3 = \Array_hx::wrap([
@@ -3145,7 +3146,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function snapPrevWeekDay ($this1, $weekday) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:390: characters 19-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:391: characters 19-28
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -3158,15 +3159,15 @@ final class DateTime_Impl_ {
 		}
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:390: lines 390-391
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:391: lines 391-392
 		$d = DateTimeUtc_Impl_::get_dayOfWeek($this3);
 		$s = $weekday;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:394: characters 5-25
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:395: characters 5-25
 		if ($s > $d) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:394: characters 16-25
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:395: characters 16-25
 			$s -= 7;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:395: characters 5-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:396: characters 5-28
 		return DateTime_Impl_::jump($this1, TimePeriod::Day(), $s - $d);
 	}
 
@@ -3180,12 +3181,12 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function snapTo ($this1, $period) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:452: lines 452-473
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:453: lines 453-474
 		$__hx__switch = ($period->index);
 		if ($__hx__switch === 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:454: characters 38-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:455: characters 38-47
 			$this2 = ($this1->arr[0] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:454: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:455: characters 38-95
 			$a = Int64s::divRound($this2, DateTimeUtc_Impl_::$ticksPerSecondI64);
 			$b = DateTimeUtc_Impl_::$ticksPerSecondI64;
 			$mask = 65535;
@@ -3203,7 +3204,7 @@ final class DateTime_Impl_ {
 			$p01 = ($p01 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:303: characters 3-6
 			$low = (($low + $p01) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:454: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:455: characters 38-95
 			if (Int32_Impl_::ucompare($low, $p01) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:305: characters 4-8
@@ -3213,29 +3214,29 @@ final class DateTime_Impl_ {
 			$p10 = ($p10 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:307: characters 3-6
 			$low = (($low + $p10) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:454: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:455: characters 38-95
 			if (Int32_Impl_::ucompare($low, $p10) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:309: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:454: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:455: characters 38-95
 			$high = (($high + (((Int32_Impl_::mul($a->low, $b->high) + Int32_Impl_::mul($a->high, $b->low)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			$this2 = new ___Int64($high, $low);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:454: characters 22-96
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:455: characters 22-96
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:454: characters 98-104
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:455: characters 98-104
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:454: characters 9-105
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:455: characters 9-105
 			$this4 = \Array_hx::wrap([
 				$this3,
 				$this2,
 			]);
 			return $this4;
 		} else if ($__hx__switch === 1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:456: characters 38-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:457: characters 38-47
 			$this2 = ($this1->arr[0] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:456: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:457: characters 38-95
 			$a = Int64s::divRound($this2, DateTimeUtc_Impl_::$ticksPerMinuteI64);
 			$b = DateTimeUtc_Impl_::$ticksPerMinuteI64;
 			$mask = 65535;
@@ -3253,7 +3254,7 @@ final class DateTime_Impl_ {
 			$p01 = ($p01 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:303: characters 3-6
 			$low = (($low + $p01) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:456: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:457: characters 38-95
 			if (Int32_Impl_::ucompare($low, $p01) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:305: characters 4-8
@@ -3263,29 +3264,29 @@ final class DateTime_Impl_ {
 			$p10 = ($p10 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:307: characters 3-6
 			$low = (($low + $p10) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:456: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:457: characters 38-95
 			if (Int32_Impl_::ucompare($low, $p10) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:309: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:456: characters 38-95
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:457: characters 38-95
 			$high = (($high + (((Int32_Impl_::mul($a->low, $b->high) + Int32_Impl_::mul($a->high, $b->low)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			$this2 = new ___Int64($high, $low);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:456: characters 22-96
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:457: characters 22-96
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:456: characters 98-104
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:457: characters 98-104
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:456: characters 9-105
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:457: characters 9-105
 			$this4 = \Array_hx::wrap([
 				$this3,
 				$this2,
 			]);
 			return $this4;
 		} else if ($__hx__switch === 2) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:458: characters 38-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:459: characters 38-47
 			$this2 = ($this1->arr[0] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:458: characters 38-91
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:459: characters 38-91
 			$a = Int64s::divRound($this2, DateTimeUtc_Impl_::$ticksPerHourI64);
 			$b = DateTimeUtc_Impl_::$ticksPerHourI64;
 			$mask = 65535;
@@ -3303,7 +3304,7 @@ final class DateTime_Impl_ {
 			$p01 = ($p01 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:303: characters 3-6
 			$low = (($low + $p01) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:458: characters 38-91
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:459: characters 38-91
 			if (Int32_Impl_::ucompare($low, $p01) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:305: characters 4-8
@@ -3313,27 +3314,27 @@ final class DateTime_Impl_ {
 			$p10 = ($p10 << 16 << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:307: characters 3-6
 			$low = (($low + $p10) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:458: characters 38-91
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:459: characters 38-91
 			if (Int32_Impl_::ucompare($low, $p10) < 0) {
 				$ret = $high++;
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:309: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:458: characters 38-91
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:459: characters 38-91
 			$high = (($high + (((Int32_Impl_::mul($a->low, $b->high) + Int32_Impl_::mul($a->high, $b->low)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits)) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			$this2 = new ___Int64($high, $low);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:458: characters 22-92
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:459: characters 22-92
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:458: characters 94-100
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:459: characters 94-100
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:458: characters 9-101
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:459: characters 9-101
 			$this4 = \Array_hx::wrap([
 				$this3,
 				$this2,
 			]);
 			return $this4;
 		} else if ($__hx__switch === 3) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:460: characters 20-24
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 20-24
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3345,12 +3346,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:460: characters 20-24
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 20-24
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:460: characters 9-40
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 9-40
 			$mod = (DateTimeUtc_Impl_::get_hour($this3) >= 12 ? 1 : 0);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3362,12 +3363,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 9-56
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 22-27
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3379,12 +3380,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 22-27
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 9-56
 			$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 29-32
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3396,31 +3397,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 29-32
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 9-56
 			$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY) + $mod;
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 49-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 49-55
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 9-56
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 46-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 46-47
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 43-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 43-44
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 40-41
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 40-41
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 9-56
 			$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this2 = $this_0;
@@ -3433,7 +3434,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:461: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:462: characters 9-56
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this_1;
 			$this4 = \Array_hx::wrap([
@@ -3442,7 +3443,7 @@ final class DateTime_Impl_ {
 			]);
 			return $this4;
 		} else if ($__hx__switch === 4) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:463: characters 24-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:464: characters 24-33
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3454,20 +3455,20 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:463: characters 24-33
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:464: characters 24-33
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:463: lines 463-464
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:464: lines 464-465
 			$wd = DateTimeUtc_Impl_::get_dayOfWeek($this3);
 			$mod = null;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:464: characters 19-78
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 19-78
 			if ($wd < 3) {
-				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:463: lines 463-464
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:464: lines 464-465
 				$mod = -$wd;
 			} else if ($wd > 3) {
 				$mod = 7 - $wd;
 			} else {
-				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:464: characters 53-57
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 53-57
 				$this2 = ($this1->arr[0] ?? null);
 				$a = $this2;
 				$this2 = ($this1->arr[1] ?? null);
@@ -3479,13 +3480,13 @@ final class DateTime_Impl_ {
 					#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 					$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 				}
-				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:464: characters 53-57
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 53-57
 				$this2 = new ___Int64($high, $low);
 				$this3 = $this2;
-				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:463: lines 463-464
+				#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:464: lines 464-465
 				$mod = (DateTimeUtc_Impl_::get_hour($this3) < 12 ? -$wd : 7 - $wd);
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3497,12 +3498,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 9-56
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 22-27
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3514,12 +3515,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 22-27
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 9-56
 			$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 29-32
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3531,31 +3532,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 29-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 29-32
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 9-56
 			$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY) + $mod;
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 49-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 49-55
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 9-56
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 46-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 46-47
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 43-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 43-44
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 40-41
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 40-41
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 9-56
 			$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this2 = $this_0;
@@ -3568,7 +3569,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:465: characters 9-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:466: characters 9-56
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this_1;
 			$this4 = \Array_hx::wrap([
@@ -3577,7 +3578,7 @@ final class DateTime_Impl_ {
 			]);
 			return $this4;
 		} else if ($__hx__switch === 5) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:467: characters 19-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 19-22
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3589,11 +3590,11 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:467: characters 19-22
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 19-22
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
 			$mod = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:467: characters 48-52
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 48-52
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3605,11 +3606,11 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:467: characters 48-52
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 48-52
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
 			$v = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:467: characters 54-59
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 54-59
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3621,12 +3622,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:467: characters 54-59
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 54-59
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:467: characters 9-74
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 9-74
 			$mod1 = ($mod > (int)(\floor(DateTimeUtc_Impl_::daysInMonth($v, DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH)) / 2 + 0.5)) ? 1 : 0);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3638,12 +3639,12 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 9-54
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 22-27
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3655,31 +3656,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 22-27
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 22-27
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 9-54
 			$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH) + $mod1;
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 47-53
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 47-53
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 9-54
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 44-45
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 44-45
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 41-42
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 41-42
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 38-39
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 38-39
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 9-54
 			$this_0 = DateTimeUtc_Impl_::create($year, $month, 1, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this2 = $this_0;
@@ -3692,7 +3693,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:468: characters 9-54
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:469: characters 9-54
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this_1;
 			$this4 = \Array_hx::wrap([
@@ -3701,7 +3702,7 @@ final class DateTime_Impl_ {
 			]);
 			return $this4;
 		} else if ($__hx__switch === 6) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: characters 28-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: characters 28-32
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3713,31 +3714,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: characters 28-32
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: characters 28-32
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: characters 21-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: characters 21-56
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: characters 49-55
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: characters 49-55
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: characters 21-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: characters 21-56
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: characters 46-47
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: characters 46-47
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: characters 43-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: characters 43-44
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: characters 40-41
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: characters 40-41
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: characters 21-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: characters 21-56
 			$this_0 = DateTimeUtc_Impl_::create($year, 6, 2, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this2 = $this_0;
@@ -3750,17 +3751,17 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: characters 21-56
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: characters 21-56
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this_1;
 			$this4 = \Array_hx::wrap([
 				DateTimeUtc_Impl_::fromInt64($this2),
 				$this3,
 			]);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:470: lines 470-471
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:471: lines 471-472
 			$other = $this4;
 			$mod = (DateTime_Impl_::compareTo($this1, $other) > 0 ? 1 : 0);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:472: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:473: characters 16-20
 			$this2 = ($this1->arr[0] ?? null);
 			$a = $this2;
 			$this2 = ($this1->arr[1] ?? null);
@@ -3772,31 +3773,31 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:472: characters 16-20
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:473: characters 16-20
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:472: characters 9-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:473: characters 9-50
 			$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR) + $mod;
 			$hour = 0;
 			$minute = 0;
 			$second = 0;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:472: characters 43-49
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:473: characters 43-49
 			$this2 = ($this1->arr[1] ?? null);
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:472: characters 9-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:473: characters 9-50
 			$offset = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:472: characters 40-41
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:473: characters 40-41
 			if ($second === null) {
 				$second = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:472: characters 37-38
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:473: characters 37-38
 			if ($minute === null) {
 				$minute = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:472: characters 34-35
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:473: characters 34-35
 			if ($hour === null) {
 				$hour = 0;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:472: characters 9-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:473: characters 9-50
 			$this_0 = DateTimeUtc_Impl_::create($year, 1, 1, $hour, $minute, $second, 0);
 			$this_1 = $offset;
 			$this1 = $this_0;
@@ -3809,7 +3810,7 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:472: characters 9-50
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:473: characters 9-50
 			$this1 = new ___Int64($high, $low);
 			$this2 = $this_1;
 			$this3 = \Array_hx::wrap([
@@ -3835,11 +3836,11 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function snapToWeekDay ($this1, $weekday, $firstDayOfWk = 0) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:356: lines 356-364
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:357: lines 357-365
 		if ($firstDayOfWk === null) {
 			$firstDayOfWk = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:357: characters 19-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:358: characters 19-28
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -3852,20 +3853,20 @@ final class DateTime_Impl_ {
 		}
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:357: lines 357-358
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:358: lines 358-359
 		$d = DateTimeUtc_Impl_::get_dayOfWeek($this3);
 		$s = $weekday;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:361: characters 5-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:362: characters 5-44
 		if ($s < $firstDayOfWk) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:361: characters 35-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:362: characters 35-44
 			$s += 7;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:362: characters 5-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:363: characters 5-44
 		if ($d < $firstDayOfWk) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:362: characters 35-44
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:363: characters 35-44
 			$d += 7;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:363: characters 5-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:364: characters 5-28
 		return DateTime_Impl_::jump($this1, TimePeriod::Day(), $s - $d);
 	}
 
@@ -3876,9 +3877,9 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function subtract ($this1, $time) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:542: characters 47-56
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:543: characters 47-56
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:542: characters 47-69
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:543: characters 47-69
 		$a = $this2;
 		$b = $time;
 		$high = (($a->high - $b->high) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
@@ -3888,11 +3889,11 @@ final class DateTime_Impl_ {
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
 		$this2 = new ___Int64($high, $low);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:542: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:543: characters 12-79
 		$dateTime = DateTimeUtc_Impl_::fromInt64($this2);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:542: characters 72-78
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:543: characters 72-78
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:542: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:543: characters 12-79
 		$this1 = \Array_hx::wrap([
 			$dateTime,
 			$this2,
@@ -3907,13 +3908,13 @@ final class DateTime_Impl_ {
 	 * @return ___Int64
 	 */
 	public static function subtractDate ($this1, $date) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:545: characters 38-47
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:546: characters 38-47
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:545: characters 38-64
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:546: characters 38-64
 		$a = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:545: characters 50-64
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:546: characters 50-64
 		$this2 = ($date->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:545: characters 38-64
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:546: characters 38-64
 		$b = $this2;
 		$high = (($a->high + $b->high) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		$low = (($a->low + $b->low) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
@@ -3922,18 +3923,18 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:545: characters 38-64
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:546: characters 38-64
 		$this2 = new ___Int64($high, $low);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:545: lines 545-546
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:546: lines 546-547
 		$base = DateTimeUtc_Impl_::fromInt64($this2);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:546: characters 35-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:547: characters 35-41
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:546: characters 16-42
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:547: characters 16-42
 		$date_0 = $base;
 		$date_1 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:547: characters 21-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:548: characters 21-35
 		$this1 = $date_0;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:547: characters 12-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:548: characters 12-36
 		$this2 = $this1;
 		return $this2;
 	}
@@ -3944,23 +3945,23 @@ final class DateTime_Impl_ {
 	 * @return string
 	 */
 	public static function toString ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:639: lines 639-640
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:640: lines 640-641
 		if (null === $this1) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:640: characters 7-16
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:641: characters 7-16
 			return "";
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:641: characters 44-53
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 44-53
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:641: characters 28-60
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 28-60
 		$this3 = Int64s::abs($this2);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:641: characters 62-68
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 62-68
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:641: characters 15-69
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 15-69
 		$abs_0 = $this3;
 		$abs_1 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 5-105
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:643: characters 5-105
 		$decimals = null;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 20-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:643: characters 20-36
 		$this2 = $abs_0;
 		$a = $this2;
 		$this2 = $abs_1;
@@ -3972,12 +3973,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 20-36
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:643: characters 20-36
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 20-104
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:643: characters 20-104
 		if (DateTimeUtc_Impl_::get_tickInSecond($this3) !== 0) {
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 50-71
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:643: characters 50-71
 			$this2 = $abs_0;
 			$a = $this2;
 			$this2 = $abs_1;
@@ -3989,26 +3990,26 @@ final class DateTime_Impl_ {
 				#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 				$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 			}
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 50-71
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:643: characters 50-71
 			$this2 = new ___Int64($high, $low);
 			$this3 = $this2;
-			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:642: characters 5-105
+			#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:643: characters 5-105
 			$decimals = "." . (Strings::trimCharsRight(Ints::lpad(DateTimeUtc_Impl_::get_tickInSecond($this3), "0", 7), ")")??'null');
 		} else {
 			$decimals = "";
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:643: characters 17-26
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 17-26
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:643: characters 17-40
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 17-40
 		$a = $this2;
 		$b = Int64s::$zero;
 		$v = (($a->high - $b->high) << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		if ($v === 0) {
 			$v = Int32_Impl_::ucompare($a->low, $b->low);
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:643: characters 5-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 5-41
 		$isneg = (($a->high < 0 ? ($b->high < 0 ? $v : -1) : ($b->high >= 0 ? $v : 1))) < 0;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 36-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 36-44
 		$this2 = $abs_0;
 		$a = $this2;
 		$this2 = $abs_1;
@@ -4020,12 +4021,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 36-44
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 36-44
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 34-46
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 34-46
 		$tmp = "" . (DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR)??'null') . "-";
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 48-62
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 48-62
 		$this2 = $abs_0;
 		$a = $this2;
 		$this2 = $abs_1;
@@ -4037,12 +4038,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 48-62
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 48-62
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 34-72
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 34-72
 		$tmp1 = ($tmp??'null') . (Ints::lpad(DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH), "0", 2)??'null') . "-";
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 74-86
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 74-86
 		$this2 = $abs_0;
 		$a = $this2;
 		$this2 = $abs_1;
@@ -4054,12 +4055,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 74-86
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 74-86
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 34-96
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 34-96
 		$tmp = ($tmp1??'null') . (Ints::lpad(DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY), "0", 2)??'null') . "T";
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 98-111
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 98-111
 		$this2 = $abs_0;
 		$a = $this2;
 		$this2 = $abs_1;
@@ -4071,12 +4072,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 98-111
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 98-111
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 34-121
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 34-121
 		$tmp1 = ($tmp??'null') . (Ints::lpad(DateTimeUtc_Impl_::get_hour($this3), "0", 2)??'null') . ":";
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 123-138
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 123-138
 		$this2 = $abs_0;
 		$a = $this2;
 		$this2 = $abs_1;
@@ -4088,12 +4089,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 123-138
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 123-138
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 34-148
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 34-148
 		$tmp = ($tmp1??'null') . (Ints::lpad(DateTimeUtc_Impl_::get_minute($this3), "0", 2)??'null') . ":";
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 150-165
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 150-165
 		$this2 = $abs_0;
 		$a = $this2;
 		$this2 = $abs_1;
@@ -4105,14 +4106,14 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 150-165
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 150-165
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 34-184
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 34-184
 		$tmp1 = ($tmp??'null') . (Ints::lpad(DateTimeUtc_Impl_::get_second($this3), "0", 2)??'null') . ($decimals??'null');
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 187-205
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 187-205
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:644: characters 5-209
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:645: characters 5-209
 		return ((($isneg ? "-" : ""))??'null') . (($tmp1??'null') . (Time_Impl_::toGmtString($this2)??'null'));
 	}
 
@@ -4122,7 +4123,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64
 	 */
 	public static function toUtc ($this1) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:632: characters 12-15
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:633: characters 12-15
 		$this2 = ($this1->arr[0] ?? null);
 		return $this2;
 	}
@@ -4134,7 +4135,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function withDay ($this1, $day) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 19-23
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4146,12 +4147,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 19-23
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 12-79
 		$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 25-30
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4163,12 +4164,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 25-30
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 12-79
 		$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 37-41
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4180,12 +4181,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 37-41
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 12-79
 		$hour = DateTimeUtc_Impl_::get_hour($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 43-49
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4197,12 +4198,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 43-49
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 12-79
 		$minute = DateTimeUtc_Impl_::get_minute($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 51-57
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4214,12 +4215,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 51-57
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 12-79
 		$second = DateTimeUtc_Impl_::get_second($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 59-70
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4231,32 +4232,32 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 59-70
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 12-79
 		$millisecond = DateTimeUtc_Impl_::get_millisecond($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 72-78
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 72-78
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 12-79
 		$offset = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 59-70
 		if ($millisecond === null) {
 			$millisecond = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 51-57
 		if ($second === null) {
 			$second = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 43-49
 		if ($minute === null) {
 			$minute = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 37-41
 		if ($hour === null) {
 			$hour = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 12-79
 		$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, $millisecond);
 		$this_1 = $offset;
 		$this1 = $this_0;
@@ -4269,7 +4270,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:518: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:519: characters 12-79
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this3 = \Array_hx::wrap([
@@ -4286,7 +4287,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function withHour ($this1, $hour) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 19-23
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4298,12 +4299,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 19-23
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 12-79
 		$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 25-30
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4315,12 +4316,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 25-30
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 12-79
 		$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 32-35
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4332,13 +4333,13 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 32-35
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 12-79
 		$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY);
 		$hour1 = $hour;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 43-49
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4350,12 +4351,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 43-49
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 12-79
 		$minute = DateTimeUtc_Impl_::get_minute($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 51-57
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4367,12 +4368,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 51-57
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 12-79
 		$second = DateTimeUtc_Impl_::get_second($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 59-70
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4384,32 +4385,32 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 59-70
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 12-79
 		$millisecond = DateTimeUtc_Impl_::get_millisecond($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 72-78
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 72-78
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 12-79
 		$offset = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 59-70
 		if ($millisecond === null) {
 			$millisecond = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 51-57
 		if ($second === null) {
 			$second = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 43-49
 		if ($minute === null) {
 			$minute = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 37-41
 		if ($hour1 === null) {
 			$hour1 = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 12-79
 		$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour1, $minute, $second, $millisecond);
 		$this_1 = $offset;
 		$this1 = $this_0;
@@ -4422,7 +4423,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:521: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:522: characters 12-79
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this3 = \Array_hx::wrap([
@@ -4439,7 +4440,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function withMillisecond ($this1, $millisecond) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 19-23
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4451,12 +4452,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 19-23
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 12-79
 		$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 25-30
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4468,12 +4469,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 25-30
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 12-79
 		$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 32-35
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4485,12 +4486,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 32-35
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 12-79
 		$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 37-41
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4502,12 +4503,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 37-41
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 12-79
 		$hour = DateTimeUtc_Impl_::get_hour($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 43-49
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4519,12 +4520,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 43-49
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 12-79
 		$minute = DateTimeUtc_Impl_::get_minute($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 51-57
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4536,33 +4537,33 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 51-57
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 12-79
 		$second = DateTimeUtc_Impl_::get_second($this3);
 		$millisecond1 = $millisecond;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 72-78
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 72-78
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 12-79
 		$offset = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 59-70
 		if ($millisecond1 === null) {
 			$millisecond1 = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 51-57
 		if ($second === null) {
 			$second = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 43-49
 		if ($minute === null) {
 			$minute = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 37-41
 		if ($hour === null) {
 			$hour = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 12-79
 		$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, $millisecond1);
 		$this_1 = $offset;
 		$this1 = $this_0;
@@ -4575,7 +4576,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:530: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:531: characters 12-79
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this3 = \Array_hx::wrap([
@@ -4592,7 +4593,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function withMinute ($this1, $minute) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 19-23
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4604,12 +4605,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 19-23
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 12-79
 		$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 25-30
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4621,12 +4622,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 25-30
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 12-79
 		$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 32-35
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4638,12 +4639,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 32-35
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 12-79
 		$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 37-41
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4655,13 +4656,13 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 37-41
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 12-79
 		$hour = DateTimeUtc_Impl_::get_hour($this3);
 		$minute1 = $minute;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 51-57
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4673,12 +4674,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 51-57
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 12-79
 		$second = DateTimeUtc_Impl_::get_second($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 59-70
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4690,32 +4691,32 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 59-70
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 12-79
 		$millisecond = DateTimeUtc_Impl_::get_millisecond($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 72-78
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 72-78
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 12-79
 		$offset = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 59-70
 		if ($millisecond === null) {
 			$millisecond = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 51-57
 		if ($second === null) {
 			$second = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 43-49
 		if ($minute1 === null) {
 			$minute1 = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 37-41
 		if ($hour === null) {
 			$hour = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 12-79
 		$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute1, $second, $millisecond);
 		$this_1 = $offset;
 		$this1 = $this_0;
@@ -4728,7 +4729,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:524: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:525: characters 12-79
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this3 = \Array_hx::wrap([
@@ -4745,7 +4746,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function withMonth ($this1, $month) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 19-23
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4757,12 +4758,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 19-23
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 12-79
 		$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 32-35
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4774,12 +4775,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 32-35
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 12-79
 		$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 37-41
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4791,12 +4792,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 37-41
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 12-79
 		$hour = DateTimeUtc_Impl_::get_hour($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 43-49
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4808,12 +4809,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 43-49
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 12-79
 		$minute = DateTimeUtc_Impl_::get_minute($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 51-57
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4825,12 +4826,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 51-57
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 12-79
 		$second = DateTimeUtc_Impl_::get_second($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 59-70
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4842,32 +4843,32 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 59-70
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 12-79
 		$millisecond = DateTimeUtc_Impl_::get_millisecond($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 72-78
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 72-78
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 12-79
 		$offset = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 59-70
 		if ($millisecond === null) {
 			$millisecond = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 51-57
 		if ($second === null) {
 			$second = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 43-49
 		if ($minute === null) {
 			$minute = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 37-41
 		if ($hour === null) {
 			$hour = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 12-79
 		$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, $millisecond);
 		$this_1 = $offset;
 		$this1 = $this_0;
@@ -4880,7 +4881,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:515: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:516: characters 12-79
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this3 = \Array_hx::wrap([
@@ -4897,9 +4898,9 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function withOffset ($this1, $offset) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:533: characters 25-28
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:534: characters 25-28
 		$this2 = ($this1->arr[0] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:533: characters 12-37
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:534: characters 12-37
 		$this1 = \Array_hx::wrap([
 			$this2,
 			$offset,
@@ -4914,7 +4915,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function withSecond ($this1, $second) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 19-23
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4926,12 +4927,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 19-23
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 19-23
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 12-79
 		$year = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_YEAR);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 25-30
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4943,12 +4944,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 25-30
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 12-79
 		$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 32-35
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4960,12 +4961,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 32-35
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 12-79
 		$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 37-41
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4977,12 +4978,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 37-41
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 12-79
 		$hour = DateTimeUtc_Impl_::get_hour($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 43-49
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -4994,13 +4995,13 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 43-49
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 12-79
 		$minute = DateTimeUtc_Impl_::get_minute($this3);
 		$second1 = $second;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 59-70
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -5012,32 +5013,32 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 59-70
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 12-79
 		$millisecond = DateTimeUtc_Impl_::get_millisecond($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 72-78
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 72-78
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 12-79
 		$offset = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 59-70
 		if ($millisecond === null) {
 			$millisecond = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 51-57
 		if ($second1 === null) {
 			$second1 = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 43-49
 		if ($minute === null) {
 			$minute = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 37-41
 		if ($hour === null) {
 			$hour = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 12-79
 		$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second1, $millisecond);
 		$this_1 = $offset;
 		$this1 = $this_0;
@@ -5050,7 +5051,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:527: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:528: characters 12-79
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this3 = \Array_hx::wrap([
@@ -5067,7 +5068,7 @@ final class DateTime_Impl_ {
 	 * @return ___Int64[]|\Array_hx
 	 */
 	public static function withYear ($this1, $year) {
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 25-30
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -5079,12 +5080,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 25-30
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 25-30
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 12-79
 		$month = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_MONTH);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 32-35
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -5096,12 +5097,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 32-35
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 32-35
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 12-79
 		$day = DateTimeUtc_Impl_::getDatePart($this3, DateTimeUtc_Impl_::$DATE_PART_DAY);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 37-41
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -5113,12 +5114,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 37-41
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 12-79
 		$hour = DateTimeUtc_Impl_::get_hour($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 43-49
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -5130,12 +5131,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 43-49
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 12-79
 		$minute = DateTimeUtc_Impl_::get_minute($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 51-57
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -5147,12 +5148,12 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 51-57
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 12-79
 		$second = DateTimeUtc_Impl_::get_second($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 59-70
 		$this2 = ($this1->arr[0] ?? null);
 		$a = $this2;
 		$this2 = ($this1->arr[1] ?? null);
@@ -5164,32 +5165,32 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:264: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 59-70
 		$this2 = new ___Int64($high, $low);
 		$this3 = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 12-79
 		$millisecond = DateTimeUtc_Impl_::get_millisecond($this3);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 72-78
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 72-78
 		$this2 = ($this1->arr[1] ?? null);
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 12-79
 		$offset = $this2;
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 59-70
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 59-70
 		if ($millisecond === null) {
 			$millisecond = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 51-57
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 51-57
 		if ($second === null) {
 			$second = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 43-49
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 43-49
 		if ($minute === null) {
 			$minute = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 37-41
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 37-41
 		if ($hour === null) {
 			$hour = 0;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 12-79
 		$this_0 = DateTimeUtc_Impl_::create($year, $month, $day, $hour, $minute, $second, $millisecond);
 		$this_1 = $offset;
 		$this1 = $this_0;
@@ -5202,7 +5203,7 @@ final class DateTime_Impl_ {
 			#C:\HaxeToolkit\haxe\std/haxe/Int64.hx:278: characters 4-8
 			$high = ($high << Int32_Impl_::$extraBits) >> Int32_Impl_::$extraBits;
 		}
-		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:512: characters 12-79
+		#C:\HaxeToolkit\haxe\lib\thx,core/0,44,0/src/thx/DateTime.hx:513: characters 12-79
 		$this1 = new ___Int64($high, $low);
 		$this2 = $this_1;
 		$this3 = \Array_hx::wrap([

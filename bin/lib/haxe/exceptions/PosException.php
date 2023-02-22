@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\std/haxe/exceptions/PosException.hx
  */
 
 namespace haxe\exceptions;

@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\lib\utils/utils/xapi/Params.hx
  */
 
 namespace xapi;
@@ -30,7 +31,15 @@ class Params {
 	/**
 	 * @var string
 	 */
+	const SUBJECT = "subjet";
+	/**
+	 * @var string
+	 */
 	const VOID = "void";
+	/**
+	 * @var string
+	 */
+	const XAPI_COMMON_LIBS = "https://qook.test.salt.ch/commonlibs/xapi-new/";
 
 }
 

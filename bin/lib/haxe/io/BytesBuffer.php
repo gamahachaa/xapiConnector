@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\std/php/_std/haxe/io/BytesBuffer.hx
  */
 
 namespace haxe\io;

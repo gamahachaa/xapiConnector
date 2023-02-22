@@ -1,5 +1,6 @@
 <?php
 /**
+ * Haxe source file: C:\HaxeToolkit\haxe\std/php/NativeStructArray.hx
  */
 
 namespace php\_NativeStructArray;
