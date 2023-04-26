@@ -31,7 +31,11 @@
     <library name="lrs" />
     <library name="xapi" />
     <library name="thx.core" />
-    <library name="msignal" />
+    <library name="xapi" />
+    <library name="tstool" />
+    <library name="signals" />
+    <library name="utils" />
+    <library name="quality" />
   </haxelib>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>

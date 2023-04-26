@@ -1,0 +1,12 @@
+-lib lrs
+-lib xapi
+-lib thx.core
+-lib xapi
+-lib tstool
+-lib signals
+-lib utils
+-lib quality
+-cp src
+-php bin
+-D haxeJSON
+-main Main
